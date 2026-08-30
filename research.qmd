@@ -1,0 +1,679 @@
+---
+page-layout: full
+format:
+  html:
+    css:
+      - styles.css
+    toc: false
+---
+
+<!-- =======================================================
+     FROM BIOLOGICAL QUESTION TO INFERENCE
+     ======================================================= -->
+
+<section class="biological-chain-section">
+
+<div class="biological-chain-inner column-screen-inset">
+
+
+<div class="section-overline">
+FROM BIOLOGICAL QUESTION TO INFERENCE
+</div>
+
+
+<div class="biological-chain-intro">
+
+<div>
+
+<h2>
+From a biological question<br>
+to an interpretable quantity.
+</h2>
+
+</div>
+
+
+<div class="biological-chain-intro-copy">
+
+<p>
+The quantity of interest for biologist is often not directly observable. Instead,
+a physical instrument detects a signal that is only indirectly related to it. The task is
+therefore to understand this relationship and recover the information that the
+measurement encodes.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- =======================================================
+     BIOLOGY — MATHEMATICS — PHYSICS
+     ======================================================= -->
+
+<div class="biology-physics-bridge">
+
+<div class="bridge-side bridge-biology">
+Biology defines what matters.
+</div>
+
+<div class="bridge-side bridge-physics">
+Physics determines what is measured.
+</div>
+
+<div class="bridge-mathematics">
+Mathematics connects the two.
+</div>
+
+</div>
+
+
+
+<!-- =======================================================
+     SIX-STEP CHAIN
+     ======================================================= -->
+
+<div class="measurement-chain">
+
+
+<!-- BIOLOGICAL SYSTEM -->
+
+<div class="measurement-step measurement-step-biological">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+BIOLOGICAL SYSTEM
+</div>
+
+<div class="measurement-step-visual measurement-step-visual-image">
+
+<img
+  src="assets/biological-system.png"
+  class="measurement-real-image measurement-biological-image"
+  alt="Stylized biological neuron"
+/>
+
+</div>
+
+<div class="measurement-step-title">
+Biological question
+</div>
+
+<div class="measurement-step-keywords">
+Structure · dynamics · function
+</div>
+
+</div>
+
+
+<div class="measurement-chain-arrow">
+→
+</div>
+
+
+
+<!-- MEASUREMENT -->
+
+<div class="measurement-step measurement-step-acquisition">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+MEASUREMENT
+</div>
+
+<div class="measurement-step-visual measurement-step-visual-image">
+
+<img
+  src="assets/measurement-sensors.png"
+  class="measurement-real-image measurement-sensors-image"
+  alt="Examples of biomedical measurement instruments and sensors"
+/>
+
+</div>
+
+<div class="measurement-step-title">
+Physical acquisition
+</div>
+
+<div class="measurement-step-keywords">
+Detector · hardware · acquisition
+</div>
+
+</div>
+
+
+<div class="measurement-chain-arrow">
+→
+</div>
+
+
+
+<!-- RAW DATA -->
+
+<div class="measurement-step measurement-step-raw">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+RAW DATA
+</div>
+
+<div class="measurement-step-visual measurement-step-visual-image measurement-data-visual">
+
+<img
+  src="assets/raw-data.png"
+  class="measurement-real-image measurement-data-image"
+  alt="Stylized examples of raw biomedical measurements"
+/>
+
+</div>
+
+<div class="measurement-step-title">
+Detected signal
+</div>
+
+<div class="measurement-step-keywords">
+Space · time · channels
+</div>
+
+</div>
+
+
+<div class="measurement-chain-arrow">
+→
+</div>
+
+
+
+<!-- MATHEMATICS -->
+
+<div class="measurement-step measurement-step-math">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+MATHEMATICS
+</div>
+
+<div class="measurement-step-visual">
+
+<div class="math-formula-orbit">
+
+<div class="math-formula-cell math-formula-top">
+y = Ax
+</div>
+
+<div class="math-formula-cell math-formula-left">
+p(x | y)
+</div>
+
+<div class="math-formula-cell math-formula-right">
+x<sup>k+1</sup> = T(x<sup>k</sup>)
+</div>
+
+<div class="math-formula-cell math-formula-bottom">
+x<sup>k</sup> − x<sup>*</sup> ≤
+<span class="math-fraction" aria-label="C over k">
+<span class="math-fraction-top">C</span>
+<span class="math-fraction-bottom">k</span>
+</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="measurement-step-title">
+From measurement to inference
+</div>
+
+<div class="measurement-step-keywords measurement-step-keywords-nowrap">
+Physical · statistical · numerical structure
+</div>
+
+</div>
+
+
+<div class="measurement-chain-arrow">
+→
+</div>
+
+
+
+<!-- INFERRED QUANTITIES -->
+
+<div class="measurement-step measurement-step-inferred">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+INFERRED QUANTITIES
+</div>
+
+<div class="measurement-step-visual measurement-step-visual-image measurement-data-visual">
+
+<img
+  src="assets/inferred-quantities.png"
+  class="measurement-real-image measurement-data-image"
+  alt="Stylized examples of inferred biomedical quantities"
+/>
+
+</div>
+
+<div class="measurement-step-title">
+Latent quantities
+</div>
+
+<div class="measurement-step-keywords">
+Parameters · estimates · uncertainty
+</div>
+
+</div>
+
+
+<div class="measurement-chain-arrow">
+→
+</div>
+
+
+
+<!-- INTERPRETATION -->
+
+<div class="measurement-step measurement-step-interpretation">
+
+<div class="measurement-step-topline"></div>
+
+<div class="measurement-step-label">
+INTERPRETATION
+</div>
+
+<div class="measurement-step-visual measurement-step-visual-image measurement-data-visual">
+
+<img
+  src="assets/interpretation.png"
+  class="measurement-real-image measurement-data-image"
+  alt="Biological interpretation through cellular organization, dynamics and function"
+/>
+
+</div>
+
+<div class="measurement-step-title">
+Biological insight
+</div>
+
+<div class="measurement-step-keywords">
+Quantitative biological or biomedical meaning
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- =======================================================
+     FEEDBACK LOOP
+     ======================================================= -->
+
+<div class="measurement-feedback">
+
+<div class="measurement-feedback-copy">
+
+<div class="measurement-feedback-label">
+FEEDBACK / MEASUREMENT DESIGN
+</div>
+
+<div class="measurement-feedback-text">
+Inference can shape how and what is measured next.
+</div>
+
+</div>
+
+<div class="measurement-feedback-line">
+
+<div class="measurement-feedback-left"></div>
+
+<div class="measurement-feedback-horizontal"></div>
+
+<div class="measurement-feedback-right"></div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     INSIDE THE MATHEMATICAL BLOCK
+     ======================================================= -->
+
+<section class="mathematical-block-section">
+
+<div class="mathematical-block-inner column-screen-inset">
+
+
+<div class="section-overline">
+INSIDE THE MATHEMATICAL BLOCK
+</div>
+
+
+<div class="mathematical-block-intro">
+
+<div>
+
+<h2>
+From raw measurements<br>
+to a reliable inference.
+</h2>
+
+</div>
+
+
+<div class="mathematical-block-copy">
+
+<p>
+I model how the physical and statistical measurement process generates the data,
+formulate the resulting inverse or estimation problem, and design computational
+methods adapted to its mathematical structure. Their assumptions, stability and
+behaviour are then analysed to assess how reliably the inferred quantities can be
+recovered.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- =======================================================
+     MODEL — FORMALIZE — SOLVE — ANALYSE
+     ======================================================= -->
+
+<div class="mathematical-process">
+
+
+<div class="mathematical-process-step">
+
+<div class="mathematical-process-number">
+01
+</div>
+
+<div class="mathematical-process-title" role="heading" aria-level="3">
+Model
+</div>
+
+<p>
+Describe how the physical system and the acquisition process generate
+the observed data.
+</p>
+
+<div class="mathematical-process-footer">
+
+<div>
+Physics · statistics · forward model
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="mathematical-process-arrow">
+→
+</div>
+
+
+
+<div class="mathematical-process-step">
+
+<div class="mathematical-process-number">
+02
+</div>
+
+<div class="mathematical-process-title" role="heading" aria-level="3">
+Formalize
+</div>
+
+<p>
+Identify the unknown quantities, the available information and the
+assumptions needed to make inference possible.
+</p>
+
+<div class="mathematical-process-footer">
+
+<div>
+Unknowns · constraints · priors · inverse problem
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="mathematical-process-arrow">
+→
+</div>
+
+
+
+<div class="mathematical-process-step">
+
+<div class="mathematical-process-number">
+03
+</div>
+
+<div class="mathematical-process-title" role="heading" aria-level="3">
+Solve
+</div>
+
+<p>
+Design a computational strategy adapted to the structure of the
+resulting mathematical problem.
+</p>
+
+<div class="mathematical-process-footer">
+
+<div>
+Optimization · inference · numerical methods · learning
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="mathematical-process-arrow">
+→
+</div>
+
+
+
+<div class="mathematical-process-step">
+
+<div class="mathematical-process-number">
+04
+</div>
+
+<div class="mathematical-process-title" role="heading" aria-level="3">
+Analyse
+</div>
+
+<p>
+Study what the solution means mathematically and how reliably it can
+be recovered from the available data.
+</p>
+
+<div class="mathematical-process-footer">
+
+<div>
+Stability · convergence · identifiability · uncertainty
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CONTINUOUS MATHEMATICAL THREAD
+     ======================================================= -->
+
+<section class="thread-section">
+
+<div class="thread-inner column-screen-inset">
+
+
+<div class="section-overline">
+A CONTINUOUS MATHEMATICAL THREAD
+</div>
+
+
+<div class="thread-header">
+
+<div>
+
+<h2>
+Different measurements.<br>
+Same mathematical formulation.
+</h2>
+
+</div>
+
+
+<div class="thread-header-copy">
+
+<p>
+My current research focuses on computational microscopy, but the
+mathematical approach predates my work in optical imaging.
+</p>
+
+<p>
+Earlier work on EEG and MEG source localization and sensor-array design
+posed many of the same questions through very different measurement
+physics.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="thread-domains">
+
+
+<div class="thread-domain thread-domain-current">
+
+<div class="thread-domain-label">
+EARLIER WORK
+</div>
+
+<div class="thread-domain-title">
+EEG & MEG
+</div>
+
+<div class="thread-domain-copy">
+Electromagnetic fields · sensor arrays · brain sources · spatial sampling
+</div>
+
+</div>
+
+
+
+<div class="thread-common">
+
+<div class="thread-common-chain">
+
+<span>Measurement</span>
+<span>→</span>
+<span>Forward model</span>
+<span>→</span>
+<span>Inverse problem</span>
+<span>→</span>
+<span>Prior information</span>
+<span>→</span>
+<span>Inference</span>
+
+</div>
+
+
+<div class="thread-feedback">
+
+<div class="thread-feedback-label">
+FEEDBACK / MEASUREMENT DESIGN
+</div>
+
+<div class="thread-feedback-text">
+Inference can shape what is measured next.
+</div>
+
+<div class="thread-feedback-line">
+
+<div class="thread-feedback-up"></div>
+<div class="thread-feedback-horizontal"></div>
+<div class="thread-feedback-down"></div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="thread-domain thread-domain-earlier">
+
+<div class="thread-domain-label">
+CURRENT FOCUS
+</div>
+
+<div class="thread-domain-title">
+Computational microscopy
+</div>
+
+<div class="thread-domain-copy">
+Photon counts · detector arrays · fluorescence dynamics · optical systems
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="thread-closing">
+
+<div class="thread-closing-copy">
+<span class="thread-closing-emphasis">The physics changed.</span> The noise statistics, experimental constraints and scale of the measurements changed with it.<br>
+What remained was the same underlying task: formalize what is measured, understand what is not directly observable, and infer it from indirect and noisy data.
+</div>
+
+</div>
+
+
+</div>
+
+</section>

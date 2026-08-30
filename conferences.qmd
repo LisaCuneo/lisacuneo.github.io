@@ -1,0 +1,1067 @@
+---
+page-layout: full
+format:
+  html:
+    css:
+      - styles.css
+      - conferences.css
+    toc: false
+---
+
+<!-- =======================================================
+     CONFERENCES — HEADER
+     ======================================================= -->
+
+<section class="conferences-header">
+
+<div class="conferences-header-inner column-screen-inset">
+
+<div class="conferences-overline">
+CONFERENCES
+</div>
+
+<div class="conferences-header-grid">
+
+<div
+  class="conferences-title"
+  role="heading"
+  aria-level="1"
+>
+Conferences &amp; talks.
+</div>
+
+</div>
+
+
+<!-- =======================================================
+     OVERVIEW
+     ======================================================= -->
+
+<div class="conferences-overview">
+
+<div class="conferences-overview-item">
+
+<a
+  href="#upcoming"
+  class="conferences-overview-title"
+>
+Upcoming
+</a>
+
+<span class="conferences-overview-count">
+future meetings
+</span>
+
+</div>
+
+<div class="conferences-overview-item">
+
+<a
+  href="#past"
+  class="conferences-overview-title"
+>
+Past
+</a>
+
+<span class="conferences-overview-count conferences-overview-links">
+<a href="#conferences">conferences</a><span>·</span><a href="#talks">talks</a><span>·</span><a href="#workshops">workshops</a>
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     UPCOMING
+     ======================================================= -->
+
+<section
+  class="conferences-section"
+  id="upcoming"
+>
+
+<div class="conferences-inner column-screen-inset">
+
+<div class="conferences-section-header">
+
+<div class="section-overline">
+UPCOMING
+</div>
+
+<h2>
+Where I will be next
+</h2>
+
+</div>
+
+<div class="conference-list">
+
+<article class="conference-entry conference-entry-upcoming">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">OCT</span>
+<span class="conference-date-year">2026</span>
+</div>
+
+<div class="conference-kind">
+UPCOMING WORKSHOP
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Biophotonics Workshop
+</h3>
+
+<p class="conference-context">
+Upcoming scientific workshop in biophotonics
+</p>
+
+</div>
+
+<div class="conference-place">
+Nice, France
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     PAST
+     ======================================================= -->
+
+<section
+  class="conferences-section conferences-section-alt"
+  id="past"
+>
+
+<div class="conferences-inner column-screen-inset">
+
+<div class="conferences-section-header">
+
+<div class="section-overline">
+PAST
+</div>
+
+<h2>
+Conferences and presentations
+</h2>
+
+</div>
+
+
+<div class="conference-category-section" id="conferences">
+
+<div class="conference-category-heading">
+CONFERENCES
+</div>
+
+<div class="conference-list">
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">29 MAR–01 APR</span>
+<span class="conference-date-year">2026</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Agnostic regularization with variance in ISM deconvolution problem
+</h3>
+
+<p class="conference-context">
+Focus on Microscopy — FOM 2026
+</p>
+
+<p class="conference-detail">
+Work on morphology-agnostic regularization for Image Scanning Microscopy deconvolution.
+</p>
+
+</div>
+
+<div class="conference-place">
+Stockholm, Sweden
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">16–18 JUN</span>
+<span class="conference-date-year">2025</span>
+</div>
+
+<div class="conference-kind">
+ORGANISATION
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+SIS 2025 — Statistics for Innovation
+</h3>
+
+<p class="conference-context">
+Scientific Conference of the Italian Statistical Society
+</p>
+
+<p class="conference-detail">
+Contributed to the local organisation of the conference.
+</p>
+
+</div>
+
+<div class="conference-place">
+University of Genoa · Genoa, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">24–27 MAR</span>
+<span class="conference-date-year">2024</span>
+</div>
+
+<div class="conference-kind">
+TALK · ORGANISATION
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Explainable-by-design machine learning model for unmixing fluorescence signal based on fluorescence lifetime
+</h3>
+
+<p class="conference-context">
+Focus on Microscopy — FOM 2024
+</p>
+
+<p class="conference-detail">
+Presented a talk and contributed to the organisation of the conference.
+</p>
+
+</div>
+
+<div class="conference-place">
+Genoa, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">06–08 SEP</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Explainable-by-design Machine Learning Model for Overlapping Fluorophores Separation based on fluorescence lifetime
+</h3>
+
+<p class="conference-context">
+CIBB 2023 · 18th Conference on Computational Intelligence Methods for Bioinformatics &amp; Biostatistics
+</p>
+
+<p class="conference-detail">
+Oral presentation in the session “The many aspects of machine learning explainability in medical imaging”.
+</p>
+
+</div>
+
+<div class="conference-place">
+Padova, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">28 AUG–01 SEP</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Bayesian approach to Fluorescence Correlation Spectroscopy
+</h3>
+
+<p class="conference-context">
+SIMAI 2023
+</p>
+
+<p class="conference-detail">
+Bayesian inference for the dynamical components encoded in fluorescence correlation measurements.
+</p>
+
+</div>
+
+<div class="conference-place">
+Matera, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">02–05 APR</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Scattering Networks and Singular Value Decomposition: different methods
+to remove background in Single-Molecule Localization Microscopy images
+</h3>
+
+<p class="conference-context">
+Focus on Microscopy — FOM 2023
+</p>
+
+<p class="conference-detail">
+Presentation on background removal in Single-Molecule Localization Microscopy.
+</p>
+
+</div>
+
+<div class="conference-place">
+Porto, Portugal
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">18–22 FEB</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Biophysical Society Annual Meeting — BPS 2023
+</h3>
+
+<p class="conference-context">
+Computational Methods and Machine Learning, Artificial Intelligence and Bioinformatics
+</p>
+
+<p class="conference-detail">
+Talk: “A deep learning method to separate fluorophores based on their fluorescence lifetime.”
+</p>
+
+</div>
+
+<div class="conference-place">
+San Diego, USA
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">18–22 SEP</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Young Applied Mathematicians Conference — YAMC 2022
+</h3>
+
+<p class="conference-context">
+Numerical modelling · numerical analysis · machine learning · statistics
+</p>
+
+<p class="conference-detail">
+Talk: “Scattering Networks: a tool to remove background in microscopy images.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Arenzano, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">12–16 SEP</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+108° Congresso Nazionale della Società Italiana di Fisica
+</h3>
+
+<p class="conference-context">
+Biophysics and medical physics
+</p>
+
+<p class="conference-detail">
+Talk: “A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Milano, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">11–14 SEP</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+XXVI Congresso Nazionale SIBPA
+</h3>
+
+<p class="conference-context">
+Italian Society of Pure and Applied Biophysics
+</p>
+
+<p class="conference-detail">
+Talk: “Unmixing overlapping fluorophores through a deep learning method based on fluorescence lifetime.”
+</p>
+
+</div>
+
+<div class="conference-place">
+San Miniato, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">10–13 APR</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Focus on Microscopy — FOM 2022
+</h3>
+
+<p class="conference-context">
+Optical microscopy · super-resolution · image formation · live-cell biophysics
+</p>
+
+<p class="conference-detail">
+Talk: “A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Online
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">01–04 NOV</span>
+<span class="conference-date-year">2021</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Frontiers in Optics + Laser Science Conference
+</h3>
+
+<p class="conference-context">
+Optics in biology and medicine · information acquisition and processing
+</p>
+
+<p class="conference-detail">
+Scientific contribution associated with the work on automated analysis of 3D fluorescence images of stained nuclei.
+</p>
+
+</div>
+
+<div class="conference-place">
+Online
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">05–08 OCT</span>
+<span class="conference-date-year">2021</span>
+</div>
+
+<div class="conference-kind">
+SYMPOSIUM
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+EMBO | EMBL Symposium: Seeing is Believing — Imaging the Molecular Processes of Life
+</h3>
+
+<p class="conference-context">
+European Molecular Biology Laboratory
+</p>
+
+<p class="conference-detail">
+Participant.
+</p>
+
+</div>
+
+<div class="conference-place">
+Virtual
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">13–17 SEP</span>
+<span class="conference-date-year">2021</span>
+</div>
+
+<div class="conference-kind">
+CONFERENCE TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+107° Congresso Nazionale della Società Italiana di Fisica
+</h3>
+
+<p class="conference-context">
+Biophysics and medical physics
+</p>
+
+<p class="conference-detail">
+Presentation: “An automated tool to estimate chromatin compaction in stained nuclei.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Online
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">28 JUN–01 JUL</span>
+<span class="conference-date-year">2021</span>
+</div>
+
+<div class="conference-kind">
+POSTER · ORGANISATION
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+XXV Congresso Nazionale SIBPA
+</h3>
+
+<p class="conference-context">
+Italian Society of Pure and Applied Biophysics
+</p>
+
+<p class="conference-detail">
+Poster: “An automated tool to quantify chromatin compaction in 3D fluorescence images.” I also contributed to the organisation of the event.
+</p>
+
+</div>
+
+<div class="conference-place">
+Online
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+
+<div class="conference-category-section" id="talks">
+
+<div class="conference-category-heading">
+TALKS &amp; SEMINARS
+</div>
+
+<div class="conference-list">
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">07 MAR</span>
+<span class="conference-date-year">2024</span>
+</div>
+
+<div class="conference-kind">
+INVITED TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Scattering Networks and Singular Value Decomposition: different methods
+to remove background in Single-Molecule Localization Microscopy images
+</h3>
+
+<p class="conference-context">
+Big Data and Data Science Laboratory · DISMA · SmartData@PoliTO
+</p>
+
+<p class="conference-detail">
+Invited by Ivan S. Trapasso.
+</p>
+
+</div>
+
+<div class="conference-place">
+Politecnico di Torino · Torino, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">21 JUL</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+INVITED TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Scattering Networks and Singular Value Decomposition: different methods
+to remove background in Single-Molecule Localization Microscopy images
+</h3>
+
+<p class="conference-context">
+Artificial Intelligence Research Group Talks
+</p>
+
+<p class="conference-detail">
+Computer Laboratory · University of Cambridge · invited by Pietro Liò.
+</p>
+
+</div>
+
+<div class="conference-place">
+Cambridge, UK
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">05–06 JUN</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+FLASH TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Cambridge Stem Cell Institute Annual Retreat
+</h3>
+
+<p class="conference-context">
+Industry Flash Talk
+</p>
+
+<p class="conference-detail">
+Presentation of the Genoa Instruments PRISM system.
+</p>
+
+</div>
+
+<div class="conference-place">
+Cambridge, UK
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">23 MAY</span>
+<span class="conference-date-year">2023</span>
+</div>
+
+<div class="conference-kind">
+INVITED TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Scattering Networks and Singular Value Decomposition: different methods
+to remove background in Single-Molecule Localization Microscopy images
+</h3>
+
+<p class="conference-context">
+Laser Analytics Group · Physics Troublemaking Meeting
+</p>
+
+<p class="conference-detail">
+Department of Chemical Engineering and Biotechnology · University of
+Cambridge · invited by Clemens Kaminski.
+</p>
+
+</div>
+
+<div class="conference-place">
+Cambridge, UK
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">12 OCT</span>
+<span class="conference-date-year">2020</span>
+</div>
+
+<div class="conference-kind">
+INVITED SEMINAR
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+An inverse problem perspective on the optimal design of sensor arrays for on-scalp MEG
+</h3>
+
+<p class="conference-context">
+Inverse Problems Seminar · Department of Mathematics and Statistics
+</p>
+
+<p class="conference-detail">
+Presentation of my Master's thesis on the design of hypothetical on-scalp MEG sensor configurations in terms of sensitivity and source localisation.
+</p>
+
+</div>
+
+<div class="conference-place">
+University of Helsinki · Online
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+
+<div class="conference-category-section" id="workshops">
+
+<div class="conference-category-heading">
+WORKSHOPS &amp; SCHOOLS
+</div>
+
+<div class="conference-list">
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">29 SEP–03 OCT</span>
+<span class="conference-date-year">2025</span>
+</div>
+
+<div class="conference-kind">
+WORKSHOP TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+Reconstruction Approaches in Image Scanning Microscopy: Regularization and Optimization
+</h3>
+
+<p class="conference-context">
+(Blind) inverse problems workshop · CIRM
+</p>
+
+<p class="conference-detail">
+Talk on reconstruction, regularization and optimization approaches for Image Scanning Microscopy.
+</p>
+
+</div>
+
+<div class="conference-place">
+Marseille, France
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">06–08 SEP</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+WORKSHOP TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+PRIMO Workshop 2022
+</h3>
+
+<p class="conference-context">
+Post-graduate Researchers in Inverse Problems, Machine Learning and Optimization
+</p>
+
+<p class="conference-detail">
+Talk: “Scattering Networks: a tool to remove background in microscopy images.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Trieste, Italy
+</div>
+
+</article>
+
+<article class="conference-entry">
+
+<div class="conference-meta">
+
+<div class="conference-date">
+<span class="conference-date-main">10–15 JUL</span>
+<span class="conference-date-year">2022</span>
+</div>
+
+<div class="conference-kind">
+FLASH TALK
+</div>
+
+</div>
+
+<div class="conference-main">
+
+<h3>
+International School of Physics “Enrico Fermi”
+</h3>
+
+<p class="conference-context">
+Multimodal and Nanoscale Optical Microscopy
+</p>
+
+<p class="conference-detail">
+Flash talk: “Scattering Networks: a tool to remove the background.”
+</p>
+
+</div>
+
+<div class="conference-place">
+Varenna, Italy
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+

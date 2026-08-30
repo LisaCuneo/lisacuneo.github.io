@@ -1,0 +1,29 @@
+project:
+  render:
+    - index.qmd
+    - research.qmd
+    - publications.qmd
+    - conferences.qmd
+    - teaching.qmd
+
+website:
+  navbar:
+    left:
+      - href: research.qmd
+        text: Research
+
+      - href: publications.qmd
+        text: Publications
+
+      - href: conferences.qmd
+        text: Conferences
+
+      - href: teaching.qmd
+        text: Teaching
+
+      - href: cv.pdf
+        text: CV
+
+format:
+  html:
+    include-after-body: nav-menu-public.html

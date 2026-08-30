@@ -1,0 +1,1275 @@
+---
+page-layout: full
+format:
+  html:
+    css:
+      - styles.css
+      - research.css
+    toc: false
+---
+
+<!-- =======================================================
+     PROJECTS — PAGE HEADER
+     ======================================================= -->
+
+<section class="research-page-header">
+
+<div class="research-page-header-inner column-screen-inset">
+
+<div class="research-page-overline">
+PROJECTS
+</div>
+
+<div class="research-page-header-grid">
+
+
+<div
+  class="research-page-title"
+  role="heading"
+  aria-level="1"
+>
+From biological questions
+to quantitative information.
+</div>
+
+
+<div class="research-page-header-copy">
+
+<p class="research-page-lead">
+My research connects biological and biomedical questions to the physical
+measurements used to investigate them, and to the mathematical methods
+needed to recover the quantities of interest.
+</p>
+
+<p>
+Depending on the biological question, on what the measurement contains,
+and on what is not directly observable, the solution may involve an inverse
+problem, an optimization method, statistical inference, machine learning —
+or a combination of them.
+</p>
+
+<p class="research-page-principle">
+The projects below are grouped by the question they ask,
+rather than by the technique used to solve it.
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- =======================================================
+     PROJECT THEMES
+     ======================================================= -->
+
+<div class="research-page-themes">
+
+<a class="research-page-theme" href="#reconstruct" aria-label="Go to Reconstruct projects"><span class="research-page-theme-number">01</span><span class="research-page-theme-title">Reconstruct</span><span class="research-page-theme-description">Recover information from noisy and incomplete measurements.</span></a>
+
+<a class="research-page-theme" href="#learn" aria-label="Go to Learn projects"><span class="research-page-theme-number">02</span><span class="research-page-theme-title">Learn</span><span class="research-page-theme-description">Use data-driven models while retaining physical structure.</span></a>
+
+<a class="research-page-theme" href="#infer" aria-label="Go to Infer projects"><span class="research-page-theme-number">03</span><span class="research-page-theme-title">Infer</span><span class="research-page-theme-description">Estimate hidden physical parameters, states and uncertainty.</span></a>
+
+<a class="research-page-theme" href="#control" aria-label="Go to Control projects"><span class="research-page-theme-number">04</span><span class="research-page-theme-title">Control</span><span class="research-page-theme-description">Use inference to influence what the instrument measures next.</span></a>
+
+<a class="research-page-theme" href="#earlier-work" aria-label="Go to Earlier work projects"><span class="research-page-theme-number">05</span><span class="research-page-theme-title">Earlier work</span><span class="research-page-theme-description">Inverse problems and measurement design beyond microscopy.</span></a>
+
+</div>
+</section>
+
+
+
+<!-- =======================================================
+     01 — RECONSTRUCTING INFORMATION
+     ======================================================= -->
+
+<section class="research-theme-section research-theme-light" id="reconstruct">
+
+<div class="research-theme-inner column-screen-inset">
+
+
+<div class="research-theme-header">
+
+<div>
+
+<div class="section-overline">
+01 / RECONSTRUCTING INFORMATION
+</div>
+
+<h2>
+Recovering structure from noisy and incomplete measurements.
+</h2>
+
+</div>
+
+
+<p>
+Reconstruction is not only about removing noise or blur. The central
+question is what information the acquisition contains, and how its
+statistical and physical structure can be exploited to recover quantities
+that are not directly observed.
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     01.1 — REGULARIZATION BY NOISE
+     ======================================================= -->
+
+<article class="research-entry">
+
+
+<div class="research-entry-visual">
+
+<div class="research-rbn-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+
+<div class="rbn-measurements">
+
+<div class="rbn-measurement">
+<span>y₁</span>
+</div>
+
+<div class="rbn-measurement">
+<span>y₂</span>
+</div>
+
+<div class="rbn-measurement">
+<span>y₃</span>
+</div>
+
+<div class="rbn-measurement">
+<span>y₄</span>
+</div>
+
+</div>
+
+
+<div class="rbn-coupling">
+
+<div class="rbn-coupling-line"></div>
+
+<div class="rbn-coupling-label">
+shared latent information
+</div>
+
+</div>
+
+
+<div class="rbn-output">
+
+<div class="rbn-output-image">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="rbn-output-label">
+reconstruction
+</div>
+
+</div>
+
+
+<div class="research-placeholder-caption">
+Independent measurements → coupled reconstruction
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+01.1
+</div>
+
+<div class="research-entry-tags">
+REGULARIZATION BY NOISE · POISSON INVERSE PROBLEMS · OPTIMIZATION
+</div>
+
+<h3>
+Can independent noise realizations provide their own prior?
+</h3>
+
+<p>
+Many microscopy reconstruction methods regularize an inverse problem by
+introducing an explicit assumption about the expected image structure.
+Regularization by Noise asks whether repeated noisy measurements can instead
+provide the prior themselves.
+</p>
+
+<p>
+Independent acquisitions of the same object contain the same latent
+biological information but different noise realizations. I use this
+statistical redundancy to couple the corresponding reconstructions, so that
+information that is reproducible across measurements is favoured over
+realization-specific fluctuations.
+</p>
+
+<p class="research-entry-note">
+The project connects experimental fluorescence microscopy with Poisson
+inverse problems, variational modelling, numerical optimization and
+convergence analysis.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =======================================================
+     01.2 — MODEL-BASED LIFETIME UNMIXING
+     ======================================================= -->
+
+<article class="research-entry research-entry-reverse">
+
+
+<div class="research-entry-visual">
+
+<div class="research-lifetime-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+
+<div class="lifetime-source">
+
+<div class="lifetime-source-image">
+<span class="lifetime-source-structure lifetime-source-one"></span>
+<span class="lifetime-source-structure lifetime-source-two"></span>
+</div>
+
+<div class="lifetime-source-label">
+mixed measurement
+</div>
+
+</div>
+
+
+<div class="lifetime-time">
+
+<div class="lifetime-decay lifetime-decay-one"></div>
+<div class="lifetime-decay lifetime-decay-two"></div>
+
+<div class="lifetime-time-label">
+photon arrival time
+</div>
+
+</div>
+
+
+<div class="lifetime-separation-arrow">
+→
+</div>
+
+
+<div class="lifetime-results">
+
+<div class="lifetime-result">
+
+<div class="lifetime-result-image lifetime-result-one">
+<span></span>
+</div>
+
+<div>
+component 1
+</div>
+
+</div>
+
+
+<div class="lifetime-result">
+
+<div class="lifetime-result-image lifetime-result-two">
+<span></span>
+</div>
+
+<div>
+component 2
+</div>
+
+</div>
+
+</div>
+
+
+<div class="research-placeholder-caption">
+Space + time → joint reconstruction and unmixing
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+01.2
+</div>
+
+<div class="research-entry-tags">
+FLUORESCENCE LIFETIME · POISSON MODELLING · VARIATIONAL METHODS
+</div>
+
+<h3>
+Using space and time jointly to separate molecular information.
+</h3>
+
+<p>
+Fluorophores with overlapping spectra may be difficult to distinguish from
+intensity alone. Their fluorescence dynamics, however, provide an additional
+temporal signature in the detected photons.
+</p>
+
+<p>
+I formulate the acquisition as a spatio-temporal Poisson inverse problem,
+using spatial and lifetime information jointly rather than treating image
+reconstruction and temporal separation as independent processing steps.
+</p>
+
+<p class="research-entry-note">
+Here, fluorescence lifetime is not an auxiliary quantity estimated after
+imaging. It is part of the measurement model itself.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<div class="research-theme-closing">
+
+<div class="research-theme-closing-lead">
+The reconstruction should reflect the information carried by the acquisition.
+</div>
+
+<p>
+In Regularization by Noise, information is shared across independent
+realizations of the same object. In fluorescence-lifetime imaging,
+information is distributed across space and photon arrival time. In both
+cases, the mathematical formulation is built around structure that is
+already present in the measurements.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     02 — LEARNING PHYSICAL INFORMATION
+     ======================================================= -->
+
+<section class="research-theme-section research-theme-white" id="learn">
+
+<div class="research-theme-inner column-screen-inset">
+
+
+<div class="research-theme-header">
+
+<div>
+
+<div class="section-overline">
+02 / LEARNING PHYSICAL INFORMATION
+</div>
+
+<h2>
+Learning from data without discarding what is already known.
+</h2>
+
+</div>
+
+
+<p>
+Machine learning becomes particularly useful when the relationship between
+measurement and quantity of interest is difficult to describe completely by
+an explicit computational model. Physical knowledge, however, does not need
+to disappear when learning enters the problem.
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     02.1 — PHYSICS-AWARE LIFETIME UNMIXING
+     ======================================================= -->
+
+<article class="research-entry">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+<div class="placeholder-flow">
+
+<div class="placeholder-node">
+<span>measurement</span>
+<small>space + photon time</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>physics</span>
+<small>known acquisition structure</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>learning</span>
+<small>trainable inference</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>output</span>
+<small>lifetimes + components</small>
+</div>
+
+</div>
+
+<div class="research-placeholder-caption">
+Physical structure embedded in the learned inference
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+02.1
+</div>
+
+<div class="research-entry-tags">
+PHYSICS-AWARE LEARNING · FLUORESCENCE LIFETIME · EXPLAINABLE MODELS
+</div>
+
+<h3>
+What should a network learn when part of the answer is already dictated by physics?
+</h3>
+
+<p>
+A purely data-driven model can learn a mapping from measurements to
+quantities of interest, but part of that mapping may already be constrained
+by the acquisition physics.
+</p>
+
+<p>
+I investigate physics-aware architectures for fluorescence-lifetime
+unmixing in which deterministic operations derived from the measurement
+model coexist with trainable components. The aim is to use learning where it
+is useful while keeping the role of the physical model explicit.
+</p>
+
+<p class="research-entry-note">
+The resulting architecture is designed to return interpretable physical
+quantities — including fluorescence lifetimes and separated spatial
+components — rather than an unconstrained latent representation.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =======================================================
+     02.2 — SMLM BACKGROUND
+     ======================================================= -->
+
+<article class="research-entry research-entry-reverse">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+<div class="placeholder-flow placeholder-flow-three">
+
+<div class="placeholder-node">
+<span>raw SMLM</span>
+<small>emitters + background</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>representation</span>
+<small>scattering coefficients</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>separation</span>
+<small>low-rank structure</small>
+</div>
+
+</div>
+
+<div class="research-placeholder-caption">
+Structured representation → background separation
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+02.2
+</div>
+
+<div class="research-entry-tags">
+SINGLE-MOLECULE LOCALIZATION MICROSCOPY · SCATTERING NETWORKS · SVD
+</div>
+
+<h3>
+Separating background from the signal needed for molecular localization.
+</h3>
+
+<p>
+Single-molecule localization microscopy relies on detecting sparse emitter
+signals in measurements that may contain substantial structured background.
+Removing that background without destroying the information used for
+localization is therefore part of the measurement problem itself.
+</p>
+
+<p>
+In this work I explored representations based on scattering transforms
+combined with singular-value decomposition to identify and separate
+background structure from the signal of interest.
+</p>
+
+<p class="research-entry-note">
+The project sits between signal representation, dimensionality reduction
+and computational microscopy, with the downstream localization problem
+determining what information must be preserved.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<div class="research-theme-closing">
+
+<div class="research-theme-closing-lead">
+Learning does not replace modelling.
+</div>
+
+<p>
+In these projects, data-driven tools are used inside a larger inference
+problem whose physical meaning remains explicit. The question is not simply
+which model predicts best, but which representation preserves the
+information needed to answer the underlying measurement problem.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     03 — INFERRING HIDDEN PARAMETERS
+     ======================================================= -->
+
+<section class="research-theme-section research-theme-light" id="infer">
+
+<div class="research-theme-inner column-screen-inset">
+
+
+<div class="research-theme-header">
+
+<div>
+
+<div class="section-overline">
+03 / INFERRING HIDDEN PARAMETERS
+</div>
+
+<h2>
+When the image is not the final quantity of interest.
+</h2>
+
+</div>
+
+
+<p>
+Many measurements are acquired not to reconstruct an image, but to estimate
+a smaller set of latent physical quantities. In these problems, the central
+questions become identifiability, uncertainty and the relationship between
+model parameters and observable data.
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     03.1 — PSF DISTILLER
+     ======================================================= -->
+
+<article class="research-entry">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER · ONGOING
+</div>
+
+<div class="placeholder-flow placeholder-flow-three">
+
+<div class="placeholder-node">
+<span>bead PSF</span>
+<small>measured intensity</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>optical model</span>
+<small>aberrated PSF</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>a</span>
+<small>Zernike coefficients</small>
+</div>
+
+</div>
+
+<div class="research-placeholder-caption">
+Measured PSF → inverse optical problem → aberration parameters
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+03.1 · ONGOING
+</div>
+
+<div class="research-entry-tags">
+PSF DISTILLER · OPTICAL ABERRATIONS · NONCONVEX INVERSE PROBLEMS
+</div>
+
+<h3>
+Can an observed point-spread function reveal the aberrations that produced it?
+</h3>
+
+<p>
+The point-spread function of a microscope contains information about the
+optical system itself. Aberrations alter its shape, and those distortions
+can therefore be treated as measurements of otherwise hidden optical
+parameters.
+</p>
+
+<p>
+PSF Distiller formulates the recovery of aberration coefficients from
+measured bead PSFs as an inverse optical problem. The unknown wavefront is
+represented through Zernike coefficients and linked to the measured
+intensity through a nonlinear forward model.
+</p>
+
+<p class="research-entry-note">
+This is ongoing work. A central difficulty is the nonconvex structure of the
+resulting estimation problem and the reliable recovery of physically
+meaningful aberration parameters.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =======================================================
+     03.2 — BAYESIAN FCS
+     ======================================================= -->
+
+<article class="research-entry research-entry-reverse">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+<div class="placeholder-flow placeholder-flow-three">
+
+<div class="placeholder-node">
+<span>G(τ)</span>
+<small>correlation data</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>p(θ | y)</span>
+<small>Bayesian inference</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>θ</span>
+<small>species · diffusion · fractions</small>
+</div>
+
+</div>
+
+<div class="research-placeholder-caption">
+Correlation measurement → posterior inference → molecular dynamics
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+03.2
+</div>
+
+<div class="research-entry-tags">
+FLUORESCENCE CORRELATION SPECTROSCOPY · BAYESIAN INFERENCE · MODEL SELECTION
+</div>
+
+<h3>
+Inferring how many dynamical components are hidden in a correlation measurement.
+</h3>
+
+<p>
+Fluorescence correlation spectroscopy encodes molecular dynamics in the
+temporal fluctuations of a detected fluorescence signal. Interpreting the
+result requires inferring the dynamical components responsible for the
+observed correlation function.
+</p>
+
+<p>
+I worked on a Bayesian formulation in which the number of molecular species,
+their diffusion times and their relative fractions are treated as unknown
+quantities to be inferred from the measurement.
+</p>
+
+<p class="research-entry-note">
+The probabilistic formulation makes model uncertainty part of the inference
+problem instead of fixing the number of components in advance.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =======================================================
+     03.3 — BAYESIAN LOCALIZATION
+     ======================================================= -->
+
+<article class="research-entry research-entry-compact">
+
+
+<div class="research-entry-copy research-entry-copy-wide">
+
+<div class="research-entry-index">
+03.3 · EARLY WORK
+</div>
+
+<div class="research-entry-tags">
+BAYESIAN LOCALIZATION · PHOTON-LIMITED MEASUREMENTS · UNCERTAINTY
+</div>
+
+<h3>
+Localization as a probabilistic inference problem.
+</h3>
+
+<p>
+I also explored Bayesian formulations of localization from photon-limited
+measurements, where the unknown position is inferred through a posterior
+distribution rather than represented only by a single point estimate.
+</p>
+
+<p class="research-entry-note">
+This was an early-stage line of work and is presented here as part of the
+broader progression toward probabilistic parameter estimation in
+computational microscopy.
+</p>
+
+</div>
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder research-generic-placeholder-compact">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+<div class="placeholder-flow placeholder-flow-three">
+
+<div class="placeholder-node">
+<span>photons</span>
+<small>measurement</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>p(r | y)</span>
+<small>posterior</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>r̂ ± ?</span>
+<small>position + uncertainty</small>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</article>
+
+
+
+<div class="research-theme-closing">
+
+<div class="research-theme-closing-lead">
+Sometimes the quantity to recover is a parameter, not an image.
+</div>
+
+<p>
+Optical aberrations, molecular diffusion parameters and particle positions
+are different physical quantities, but they pose the same mathematical
+question: which aspects of an indirect measurement constrain the hidden
+parameters, and with what degree of certainty?
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     04 — PUTTING INFERENCE INSIDE THE INSTRUMENT
+     ======================================================= -->
+
+<section class="research-theme-section research-theme-white" id="control">
+
+<div class="research-theme-inner column-screen-inset">
+
+
+<div class="research-theme-header">
+
+<div>
+
+<div class="section-overline">
+04 / PUTTING INFERENCE INSIDE THE INSTRUMENT
+</div>
+
+<h2>
+When an estimate can change the next measurement.
+</h2>
+
+</div>
+
+
+<p>
+Inference does not necessarily have to happen after an experiment has
+finished. If the quantity of interest evolves while data are being acquired,
+estimation can become part of the acquisition loop itself.
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     04.1 — RECURSIVE PARTICLE TRACKING
+     ======================================================= -->
+
+<article class="research-entry research-entry-control">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder research-control-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER · ONGOING
+</div>
+
+<div class="control-loop">
+
+
+<div class="control-loop-top">
+
+<div class="placeholder-node">
+<span>yₜ</span>
+<small>SPAD photon counts</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>filter</span>
+<small>dynamics + Poisson model</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>x̂ₜ</span>
+<small>particle state</small>
+</div>
+
+</div>
+
+
+<div class="control-loop-feedback">
+<span>feedback to acquisition</span>
+</div>
+
+
+</div>
+
+<div class="research-placeholder-caption">
+Measurement → state estimate → feedback → next measurement
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+04.1 · ONGOING
+</div>
+
+<div class="research-entry-tags">
+PARTICLE TRACKING · KALMAN FILTERING · SPAD ARRAYS · FEEDBACK
+</div>
+
+<h3>
+Can the microscope use the current estimate to decide what to measure next?
+</h3>
+
+<p>
+Tracking a moving fluorescent particle is a sequential estimation problem.
+Each acquisition contains information about the current particle position,
+while the particle dynamics provide information about how that position is
+expected to evolve over time.
+</p>
+
+<p>
+In ongoing work extending a SPAD-based tracking framework, I combine a
+dynamical model of Brownian motion with the photon-counting measurement
+process in a recursive state-estimation scheme.
+</p>
+
+<p>
+The estimate can then be fed back to the microscope, allowing acquisition
+and inference to become parts of the same loop rather than two consecutive
+stages.
+</p>
+
+<p class="research-entry-note research-entry-note-accent">
+The estimate is not only an output of the experiment. It can become an input
+to the next measurement.
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<div class="research-theme-closing">
+
+<div class="research-theme-closing-lead">
+Computation can become part of the measurement process.
+</div>
+
+<p>
+Once inference operates at acquisition time, mathematical modelling,
+state estimation and instrument control are no longer separate layers.
+The measurement model determines the estimate, and the estimate can in turn
+determine how the next measurement is acquired.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     05 — EARLIER WORK
+     ======================================================= -->
+
+<section class="research-theme-section research-theme-light" id="earlier-work">
+
+<div class="research-theme-inner column-screen-inset">
+
+
+<div class="research-theme-header">
+
+<div>
+
+<div class="section-overline">
+05 / EARLIER WORK
+</div>
+
+<h2>
+Different physics, the same concern with what can be inferred.
+</h2>
+
+</div>
+
+
+<p>
+Before focusing on computational microscopy, I worked on inverse problems
+arising from electromagnetic measurements of brain activity. The physical
+system was different, but the relationship between measurement design and
+inference was already central.
+</p>
+
+</div>
+
+
+
+<!-- =======================================================
+     05.1 — MEG SENSOR DESIGN
+     ======================================================= -->
+
+<article class="research-entry">
+
+
+<div class="research-entry-visual">
+
+<div class="research-generic-placeholder">
+
+<div class="research-placeholder-label">
+FIGURE PLACEHOLDER
+</div>
+
+<div class="placeholder-flow">
+
+<div class="placeholder-node">
+<span>sources</span>
+<small>brain activity</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>fields</span>
+<small>forward model</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node placeholder-node-accent">
+<span>sensors</span>
+<small>array geometry</small>
+</div>
+
+<div class="placeholder-flow-arrow">
+→
+</div>
+
+<div class="placeholder-node">
+<span>inverse</span>
+<small>source information</small>
+</div>
+
+</div>
+
+<div class="research-placeholder-caption">
+Source model → measurement geometry → inverse information
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="research-entry-copy">
+
+<div class="research-entry-index">
+05.1
+</div>
+
+<div class="research-entry-tags">
+MEG · SENSOR-ARRAY DESIGN · INVERSE SOURCE LOCALIZATION
+</div>
+
+<h3>
+How should sensors be placed to make an inverse problem more informative?
+</h3>
+
+<p>
+In magnetoencephalography, neuronal activity is observed indirectly through
+the magnetic fields measured outside the head. The geometry and density of
+the sensor array therefore influence which spatial information can be
+captured and subsequently reconstructed.
+</p>
+
+<p>
+My earlier work studied the design of MEG sensor arrays from this
+perspective, linking spatial sampling and measurement configuration to the
+inverse source-localization problem.
+</p>
+
+<p class="research-entry-note">
+This work established an early connection between two questions that remain
+central in my research: what information does a measurement contain, and
+how does measurement design affect what can ultimately be inferred?
+</p>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =======================================================
+     FINAL RESEARCH CLOSING
+     ======================================================= -->
+
+<div class="research-final-closing">
+
+<div class="research-final-closing-title">
+Different measurements.<br>
+Same mathematical habit.
+</div>
+
+<p>
+Across optical imaging, photon-counting systems and electromagnetic
+measurements, I am interested in the same underlying structure: identify the
+quantity that matters, understand how the instrument encodes it, formulate
+the resulting inference problem, and exploit that structure computationally.
+</p>
+
+</div>
+
+
+</div>
+
+</section>

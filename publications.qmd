@@ -1,0 +1,940 @@
+---
+page-layout: full
+format:
+  html:
+    css:
+      - styles.css
+      - publications.css
+    toc: false
+---
+<!-- =======================================================
+     PUBLICATIONS — HEADER
+     ======================================================= -->
+
+<section class="publications-header">
+
+<div class="publications-header-inner column-screen-inset">
+
+<div class="publications-overline">
+PUBLICATIONS
+</div>
+
+
+<div class="publications-header-grid">
+
+<div
+  class="publications-title"
+  role="heading"
+  aria-level="1"
+>
+<span class="publications-title-first">Publications</span><span class="publications-title-second">and ongoing work.</span>
+</div>
+
+
+</div>
+
+
+
+<!-- =======================================================
+     OVERVIEW
+     ======================================================= -->
+
+<div class="publications-overview">
+
+
+<div class="publications-overview-item">
+
+<a
+  href="#published"
+  class="publications-overview-title"
+>
+Published
+</a>
+
+<span class="publications-overview-count">
+7 journal articles
+</span>
+
+</div>
+
+
+
+<div class="publications-overview-item">
+
+<a
+  href="#proceedings"
+  class="publications-overview-title"
+>
+Proceedings
+</a>
+
+<span class="publications-overview-count">
+6 contributions
+</span>
+
+</div>
+
+
+
+<div class="publications-overview-item">
+
+<a
+  href="#ongoing"
+  class="publications-overview-title"
+>
+Ongoing manuscripts
+</a>
+
+<span class="publications-overview-count">
+4 manuscripts
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     PUBLISHED
+     ======================================================= -->
+
+<section class="publications-section" id="published">
+
+<div class="publications-inner column-screen-inset">
+
+
+<div class="publications-section-header">
+
+<div class="section-overline">
+PUBLISHED
+</div>
+
+<h2>
+Peer-reviewed journal articles
+</h2>
+
+</div>
+
+
+
+<div class="publication-list">
+
+
+<!-- 01 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+OCT 2024
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Hunting imaging biomarkers in pulmonary fibrosis: Benchmarks of the AIIB23 challenge.
+</h3>
+
+<p class="publication-authors">
+Guang Yang, Michail Mamalakis, <strong>Lisa Cuneo</strong>, Francesco Prinzi, Gianluca Carlini et al.
+</p>
+
+<p class="publication-venue">
+Medical Image Analysis
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.media.2024.103253"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 02 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+FEB 2024
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Remodeling of the nuclear landscapes and epigenome during retro-transformation of neuroblastoma cells mediated by the non-coding RNA NDM29
+</h3>
+
+<p class="publication-authors">
+Francesca Baldini, Lama Zeaiter, <strong>Lisa Cuneo</strong>, Paolo Bianchini, Laura Vergani, Aldo Pagano, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Biophysical Journal
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.bpj.2023.11.561"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 03 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+OCT 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Nuclear and chromatin rearrangement associate to epigenome and gene expression changes in a model of in vitro adipogenesis and hypertrophy.
+</h3>
+
+<p class="publication-authors">
+Francesca Baldini, Lama Zeaiter, Farah Diab, Hawraa Zbeeb, <strong>Lisa Cuneo</strong>, Aldo Pagano, Piero Portincasa, Alberto Diaspro, Laura Vergani
+</p>
+
+<p class="publication-venue">
+Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.bbalip.2023.159368"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 04 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+An automated tool to estimate chromatin compaction in stained nuclei.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Marco Castello, Francesca Baldini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2022-22193-5"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 05 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Investigating nanoscale chromatin alterations involved in neuroblastoma transformation by optical nanoscopy.
+</h3>
+
+<p class="publication-authors">
+Francesca Baldini, Isotta Cainero, <strong>Lisa Cuneo</strong>, Michele Oneto, Elena Gatta, Chantal Usai, Aldo Pagano, Laura Vergani, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2022-22191-7"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 06 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Marco Castello, Simonluca Piazza, Irene Nepita, Isotta Cainero, Giorgio Tortarolo, Luca Lanzanò, Paolo Bianchini, Giuseppe Vicidomini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2023-23130-x"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 07 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+OCT 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Emerging Mueller matrix microscopy applications in biophysics and biomedicine.
+</h3>
+
+<p class="publication-authors">
+Alberto Diaspro, Paolo Bianchini, Fabio Callegari, <strong>Lisa Cuneo</strong>, Riccardo Marongiu, Aymeric Le Gratiet, Ali Mohebi, Marco Scotto, Colin J. R. Sheppard
+</p>
+
+<p class="publication-venue">
+La Rivista del Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1007/s40766-023-00046-5"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CONFERENCE PROCEEDINGS
+     ======================================================= -->
+
+<section class="publications-section publications-section-alt" id="proceedings">
+
+<div class="publications-inner column-screen-inset">
+
+
+<div class="publications-section-header">
+
+<div class="section-overline">
+CONFERENCE PROCEEDINGS
+</div>
+
+<h2>
+Conference proceedings
+</h2>
+
+</div>
+
+
+
+<div class="publication-list">
+
+
+<!-- 01 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+SEP 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+The Artificial Microscope.
+</h3>
+
+<p class="publication-authors">
+Alberto Diaspro, Paolo Bianchini, <strong>Lisa Cuneo</strong>
+</p>
+
+<p class="publication-venue">
+EPJ Web of Conferences, Volume 287, EOS Annual Meeting (EOSAM)
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1051/epjconf/202328713012"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 02 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+SEP 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Scattering Networks: a tool to remove the background.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Simone Civita, Paolo Bianchini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+The Italian Physical Society - Proceedings of the International School of Physics "Enrico Fermi", Volume 210: Multimodal and Nanoscale Optical Microscopy, pp. 143–145
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.3254/ENFI230014"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 03 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+FEB 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+A deep learning method to separate fluorophores based on their fluorescence lifetime.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Marco Castello, Simonluca Piazza, Irene Nepita, Luca Lanzanò, Paolo Bianchini, Giuseppe Vicidomini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Biophysical Journal 122 (3), p. 462a
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.bpj.2022.11.2483"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 04 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+FEB 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Decrypting nanoscale chromatin architecture alterations implicated in neuroblastoma transformation by optical nanoscopy.
+</h3>
+
+<p class="publication-authors">
+Francesca Baldini, Isotta Cainero, <strong>Lisa Cuneo</strong>, Irene Nepita, Chantal Usai, Paolo Bianchini, Laura Vergani, Aldo Pagano, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Biophysical Journal 121 (3), p. 476a
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.bpj.2021.11.402"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 05 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+FEB 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Investigating the role of chromatin compaction at the nanoscale in Hutchinson-Gilford progeria syndrome using expansion microscopy
+</h3>
+
+<p class="publication-authors">
+Chantal Usai, Isotta Cainero, <strong>Lisa Cuneo</strong>, Francesca Baldini, Matteo Mariangeli, Irene Nepita, Paolo Bianchini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Biophysical Journal 121 (3), p. 362a
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1016/j.bpj.2021.11.938"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- 06 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+NOV 2021
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+An Automated Tool to Analyse 3D Fluorescence Images of Stained Nuclei.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Francesca Baldini, Marco Castello, Irene Nepita, Simonluca Piazza, Laura Vergani, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Technical Digest Series, Optica Publishing Group, paper JTh5A.111
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1364/FIO.2021.JTh5A.111"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     ONGOING MANUSCRIPTS
+     ======================================================= -->
+
+<section class="publications-section" id="ongoing">
+
+<div class="publications-inner column-screen-inset">
+
+
+<div class="publications-section-header">
+
+<div class="section-overline">
+ONGOING MANUSCRIPTS
+</div>
+
+<h2>
+Submitted and ongoing work
+</h2>
+
+</div>
+
+
+
+<div class="publication-list">
+
+
+<!-- 01 -->
+
+<article class="publication-entry publication-entry-unpublished">
+
+<div class="publication-meta publication-meta-status">
+
+<div class="publication-status-text">
+UNDER SUBMISSION
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Regularizations for ISM inverse problem
+</h3>
+
+<p class="publication-authors">
+Sofia Agostoni, <strong>Lisa Cuneo</strong>, Christian Daniele, Giacomo Garrè, Alessandro Zunino, Luca Calatroni, Giuseppe Vicidomini
+</p>
+
+<p class="publication-venue">
+Medical Image Analysis
+</p>
+
+</div>
+
+
+<div class="publication-links"></div>
+
+</article>
+
+
+
+<!-- 02 -->
+
+<article class="publication-entry publication-entry-unpublished">
+
+<div class="publication-meta publication-meta-status">
+
+<div class="publication-status-text">
+UNDER REVIEW
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Advanced Background Removal Methods in Single Molecule Localization Microscopy Using Scattering Networks and SVD
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Simone Civita, Ivan Trapasso, Luca Ratti, Paolo Bianchini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Scientific Reports
+</p>
+
+</div>
+
+
+<div class="publication-links"></div>
+
+</article>
+
+
+
+<!-- 03 -->
+
+<article class="publication-entry publication-entry-unpublished">
+
+<div class="publication-meta publication-meta-status">
+
+<div class="publication-status-text">
+IN PREPARATION
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Independent noise realizations enable morphology-agnostic regularization for image deconvolution microscopy
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Alessandro Zunino, Laurent Le, Sofia Agostoni, Saverio Salzo, Massimiliano Pontil, Luca Calatroni, Giuseppe Vicidomini
+</p>
+
+<p class="publication-venue">
+Nature Methods
+</p>
+
+</div>
+
+
+<div class="publication-links"></div>
+
+</article>
+
+
+
+<!-- 04 -->
+
+<article class="publication-entry publication-entry-unpublished">
+
+<div class="publication-meta publication-meta-status">
+
+<div class="publication-status-text">
+IN PREPARATION
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Regularization by Independent Noise Realizations: A Variational Model and a Convergent Relaxed Block Proximal-Gradient Method
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Saverio Salzo, Giuseppe Vicidomini, Luca Calatroni, Massimiliano Pontil
+</p>
+
+<p class="publication-venue">
+SIAM Imaging
+</p>
+
+</div>
+
+
+<div class="publication-links"></div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+

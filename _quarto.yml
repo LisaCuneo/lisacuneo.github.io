@@ -1,0 +1,22 @@
+project:
+  type: website
+  resources:
+    - cv.pdf
+
+profile:
+  default: local
+
+website:
+  title: "Lisa Cuneo"
+
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/LisaCuneo
+        aria-label: GitHub
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false

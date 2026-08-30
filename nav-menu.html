@@ -1,0 +1,536 @@
+<!-- =======================================================
+     GLOBAL FLOATING NAVIGATION
+     ======================================================= -->
+
+<button
+  class="floating-menu-button"
+  id="floating-menu-button"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="floating-menu-drawer"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div
+  class="floating-menu-overlay"
+  id="floating-menu-overlay"
+></div>
+
+<aside
+  class="floating-menu-drawer"
+  id="floating-menu-drawer"
+  aria-hidden="true"
+>
+
+  <div class="floating-menu-label">
+    NAVIGATION
+  </div>
+
+  <nav class="floating-menu-nav" aria-label="Site navigation">
+
+    <a href="index.html" data-page-link="index.html">
+      Home
+    </a>
+
+    <a href="research.html" data-page-link="research.html">
+      Research
+    </a>
+
+
+    <!-- ===================================================
+         PROJECTS
+         =================================================== -->
+
+    <div
+      class="floating-menu-group"
+      data-menu-group="projects"
+    >
+
+      <div class="floating-menu-group-row">
+
+        <a
+          href="projects.html"
+          class="floating-menu-parent-link"
+          data-page-link="projects.html"
+        >
+          Projects
+        </a>
+
+        <button
+          class="floating-menu-toggle"
+          type="button"
+          aria-label="Show Projects sections"
+          aria-expanded="false"
+          aria-controls="floating-submenu-projects"
+          data-menu-toggle="projects"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+
+      </div>
+
+      <div
+        class="floating-menu-submenu"
+        id="floating-submenu-projects"
+        data-menu-submenu="projects"
+      >
+
+        <a
+          href="projects.html#reconstruct"
+          data-section-page="projects.html"
+          data-section-link="reconstruct"
+        >
+          Reconstruct
+        </a>
+
+        <a
+          href="projects.html#learn"
+          data-section-page="projects.html"
+          data-section-link="learn"
+        >
+          Learn
+        </a>
+
+        <a
+          href="projects.html#infer"
+          data-section-page="projects.html"
+          data-section-link="infer"
+        >
+          Infer
+        </a>
+
+        <a
+          href="projects.html#control"
+          data-section-page="projects.html"
+          data-section-link="control"
+        >
+          Control
+        </a>
+
+        <a
+          href="projects.html#earlier-work"
+          data-section-page="projects.html"
+          data-section-link="earlier-work"
+        >
+          Earlier work
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- ===================================================
+         PUBLICATIONS
+         =================================================== -->
+
+    <div
+      class="floating-menu-group"
+      data-menu-group="publications"
+    >
+
+      <div class="floating-menu-group-row">
+
+        <a
+          href="publications.html"
+          class="floating-menu-parent-link"
+          data-page-link="publications.html"
+        >
+          Publications
+        </a>
+
+        <button
+          class="floating-menu-toggle"
+          type="button"
+          aria-label="Show Publications sections"
+          aria-expanded="false"
+          aria-controls="floating-submenu-publications"
+          data-menu-toggle="publications"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+
+      </div>
+
+      <div
+        class="floating-menu-submenu"
+        id="floating-submenu-publications"
+        data-menu-submenu="publications"
+      >
+
+        <a
+          href="publications.html#published"
+          data-section-page="publications.html"
+          data-section-link="published"
+        >
+          Published
+        </a>
+
+        <a
+          href="publications.html#proceedings"
+          data-section-page="publications.html"
+          data-section-link="proceedings"
+        >
+          Proceedings
+        </a>
+
+        <a
+          href="publications.html#ongoing"
+          data-section-page="publications.html"
+          data-section-link="ongoing"
+        >
+          Ongoing manuscripts
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- ===================================================
+         CONFERENCES
+         =================================================== -->
+
+    <div
+      class="floating-menu-group"
+      data-menu-group="conferences"
+    >
+
+      <div class="floating-menu-group-row">
+
+        <a
+          href="conferences.html"
+          class="floating-menu-parent-link"
+          data-page-link="conferences.html"
+        >
+          Conferences
+        </a>
+
+        <button
+          class="floating-menu-toggle"
+          type="button"
+          aria-label="Show Conferences sections"
+          aria-expanded="false"
+          aria-controls="floating-submenu-conferences"
+          data-menu-toggle="conferences"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+
+      </div>
+
+      <div
+        class="floating-menu-submenu"
+        id="floating-submenu-conferences"
+        data-menu-submenu="conferences"
+      >
+
+        <a
+          href="conferences.html#upcoming"
+          data-section-page="conferences.html"
+          data-section-link="upcoming"
+        >
+          Upcoming
+        </a>
+
+        <a
+          href="conferences.html#conferences"
+          data-section-page="conferences.html"
+          data-section-link="conferences"
+        >
+          Conferences
+        </a>
+
+        <a
+          href="conferences.html#talks"
+          data-section-page="conferences.html"
+          data-section-link="talks"
+        >
+          Talks
+        </a>
+
+        <a
+          href="conferences.html#workshops"
+          data-section-page="conferences.html"
+          data-section-link="workshops"
+        >
+          Workshops
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <a href="teaching.html" data-page-link="teaching.html">
+      Teaching
+    </a>
+
+    <a href="cv.pdf">
+      CV
+    </a>
+
+    <a
+      href="mailto:lisa.cuneo@iit.it"
+      class="floating-menu-contact"
+    >
+      Contact
+    </a>
+
+  </nav>
+
+</aside>
+
+<script>
+(function () {
+
+  const body = document.body;
+  const button = document.getElementById("floating-menu-button");
+  const drawer = document.getElementById("floating-menu-drawer");
+  const overlay = document.getElementById("floating-menu-overlay");
+
+  if (!button || !drawer || !overlay) {
+    return;
+  }
+
+
+  /* =====================================================
+     SUBMENU STATE
+     ===================================================== */
+
+  function closeAllSubmenus() {
+
+    drawer
+      .querySelectorAll("[data-menu-submenu]")
+      .forEach(function (submenu) {
+        submenu.classList.remove("is-open");
+      });
+
+    drawer
+      .querySelectorAll("[data-menu-group]")
+      .forEach(function (group) {
+        group.classList.remove("is-open");
+      });
+
+    drawer
+      .querySelectorAll("[data-menu-toggle]")
+      .forEach(function (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+
+        const groupName = toggle.getAttribute("data-menu-toggle");
+        const label = groupName.charAt(0).toUpperCase() + groupName.slice(1);
+        toggle.setAttribute("aria-label", "Show " + label + " sections");
+      });
+  }
+
+
+  /* =====================================================
+     DRAWER
+     ===================================================== */
+
+  function updateScrollState() {
+    body.classList.toggle("nav-scrolled", window.scrollY > 8);
+  }
+
+  function openMenu() {
+    /* Every time the drawer opens, start from the compact view. */
+    closeAllSubmenus();
+
+    body.classList.add("floating-menu-open");
+    button.setAttribute("aria-expanded", "true");
+    button.setAttribute("aria-label", "Close navigation menu");
+    drawer.setAttribute("aria-hidden", "false");
+  }
+
+  function closeMenu() {
+    body.classList.remove("floating-menu-open");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "Open navigation menu");
+    drawer.setAttribute("aria-hidden", "true");
+  }
+
+  function toggleMenu() {
+    if (body.classList.contains("floating-menu-open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+
+  /* =====================================================
+     PAGE / SECTION HELPERS
+     ===================================================== */
+
+  function currentPageName() {
+    const path = window.location.pathname;
+    const file = path.split("/").pop();
+    return file || "index.html";
+  }
+
+  function clearActiveStates() {
+    drawer
+      .querySelectorAll(".is-current-page, .is-active")
+      .forEach(function (element) {
+        element.classList.remove("is-current-page", "is-active");
+      });
+  }
+
+  function updateActiveNavigation() {
+    clearActiveStates();
+
+    const page = currentPageName();
+
+    drawer
+      .querySelectorAll("[data-page-link]")
+      .forEach(function (link) {
+        if (link.getAttribute("data-page-link") === page) {
+          link.classList.add("is-current-page");
+        }
+      });
+
+    const sectionLinks = Array.from(
+      drawer.querySelectorAll(
+        '[data-section-page="' + page + '"][data-section-link]'
+      )
+    );
+
+    if (!sectionLinks.length) {
+      return;
+    }
+
+    const sections = sectionLinks
+      .map(function (link) {
+        const id = link.getAttribute("data-section-link");
+        return {
+          link: link,
+          element: document.getElementById(id)
+        };
+      })
+      .filter(function (item) {
+        return item.element;
+      });
+
+    if (!sections.length) {
+      return;
+    }
+
+    let active = null;
+    const referenceY = 130;
+
+    sections.forEach(function (item) {
+      if (item.element.getBoundingClientRect().top <= referenceY) {
+        active = item;
+      }
+    });
+
+    if (active) {
+      active.link.classList.add("is-active");
+    }
+  }
+
+
+  /* =====================================================
+     INDEPENDENT SUBMENUS
+     ===================================================== */
+
+  drawer
+    .querySelectorAll("[data-menu-toggle]")
+    .forEach(function (toggle) {
+
+      toggle.addEventListener("click", function () {
+
+        const groupName = toggle.getAttribute("data-menu-toggle");
+        const group = drawer.querySelector(
+          '[data-menu-group="' + groupName + '"]'
+        );
+        const submenu = drawer.querySelector(
+          '[data-menu-submenu="' + groupName + '"]'
+        );
+
+        if (!group || !submenu) {
+          return;
+        }
+
+        const isOpen = submenu.classList.contains("is-open");
+        const nextOpen = !isOpen;
+
+        submenu.classList.toggle("is-open", nextOpen);
+        group.classList.toggle("is-open", nextOpen);
+
+        toggle.setAttribute(
+          "aria-expanded",
+          nextOpen ? "true" : "false"
+        );
+
+        const label = groupName.charAt(0).toUpperCase() + groupName.slice(1);
+        toggle.setAttribute(
+          "aria-label",
+          (nextOpen ? "Hide " : "Show ") + label + " sections"
+        );
+      });
+
+    });
+
+
+  /* =====================================================
+     LINK NAVIGATION
+     ===================================================== */
+
+  /*
+     Never intercept navigation. Links are plain HTML anchors and the
+     browser follows their href normally. For same-page hash links we
+     close the drawer on the next event-loop tick, after the browser has
+     had a chance to process the click.
+  */
+
+  drawer
+    .querySelectorAll('a[href]')
+    .forEach(function (link) {
+
+      link.addEventListener("click", function () {
+        window.setTimeout(closeMenu, 0);
+      });
+
+    });
+
+
+  /* =====================================================
+     EVENTS
+     ===================================================== */
+
+  button.addEventListener("click", function () {
+    toggleMenu();
+  });
+
+  overlay.addEventListener("click", function () {
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      updateScrollState();
+      updateActiveNavigation();
+    },
+    { passive: true }
+  );
+
+  window.addEventListener("hashchange", updateActiveNavigation);
+
+  closeAllSubmenus();
+  updateScrollState();
+  updateActiveNavigation();
+
+})();
+</script>

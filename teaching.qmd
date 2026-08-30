@@ -1,0 +1,1150 @@
+---
+page-layout: full
+format:
+  html:
+    css:
+      - styles.css
+      - teaching.css
+    toc: false
+---
+
+<!-- =======================================================
+     TEACHING — HEADER
+     ======================================================= -->
+
+<section class="tt-header">
+
+<div class="tt-header-inner column-screen-inset">
+
+<div class="tt-header-grid">
+
+<div
+  class="tt-title"
+  role="heading"
+  aria-level="1"
+>
+Teaching &amp; academic activities.
+</div>
+
+
+
+</div>
+
+
+<!-- =======================================================
+     OVERVIEW
+     ======================================================= -->
+
+<div class="tt-overview">
+
+<div class="tt-overview-item">
+
+<a href="#teaching" class="tt-overview-title">
+Teaching
+</a>
+
+<span class="tt-overview-count">
+4 course assignments
+</span>
+
+</div>
+
+<div class="tt-overview-item">
+
+<a href="#schools" class="tt-overview-title">
+Schools &amp; workshops
+</a>
+
+<span class="tt-overview-count">
+training · organisation · lecturing
+</span>
+
+</div>
+
+<div class="tt-overview-item">
+
+<a href="#awards" class="tt-overview-title">
+Awards &amp; grants
+</a>
+
+<span class="tt-overview-count">
+recognition · travel · challenges
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     TEACHING
+     ======================================================= -->
+
+<section class="tt-section" id="teaching">
+
+<div class="tt-inner column-screen-inset">
+
+<h2 class="tt-section-title">
+Teaching
+</h2>
+
+<div class="tt-list">
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-date">
+2024–2026
+</div>
+
+<div class="tt-entry-type">
+STATISTICS
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Applied Statistics
+</h3>
+
+<p class="tt-entry-context">
+Exercise classes · University of Genoa
+</p>
+
+<p>
+Second-year course for the Degree in Mathematics and SMID
+(Statistics, Mathematics and Data Processing).
+</p>
+
+<p class="tt-entry-detail">
+Supervisors: Eva Riccomagno and Francesco Porro
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-date">
+2022–2023
+</div>
+
+<div class="tt-entry-type">
+ANALYSIS
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Mathematical Analysis 2
+</h3>
+
+<p class="tt-entry-context">
+Exercise classes · University of Genoa
+</p>
+
+<p>
+Second-year course for the Degree in Mathematics.
+</p>
+
+<p class="tt-entry-detail">
+Supervisor: Giovanni Alberti
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-date">
+2021–2023
+</div>
+
+<div class="tt-entry-type">
+STATISTICS
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Descriptive Statistics
+</h3>
+
+<p class="tt-entry-context">
+Exercise classes · University of Genoa
+</p>
+
+<p>
+First-year course for the Degree in Mathematics and SMID
+(Statistics, Mathematics and Data Processing).
+</p>
+
+<p class="tt-entry-detail">
+Supervisors: Alberto Sorrentino and Francesco Porro
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-date">
+2021–2023
+</div>
+
+<div class="tt-entry-type">
+ANALYSIS
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Mathematical Analysis — Module 2
+</h3>
+
+<p class="tt-entry-context">
+Exercise classes · University of Genoa
+</p>
+
+<p>
+Second-year course for the Degree in Mechanical Engineering.
+</p>
+
+<p class="tt-entry-detail">
+Supervisor: Edoardo Mainini
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     SCHOOLS & WORKSHOPS
+     ======================================================= -->
+
+<section class="tt-section" id="schools">
+
+<div class="tt-inner column-screen-inset">
+
+<h2 class="tt-section-title">
+Schools &amp; workshops
+</h2>
+
+<div class="tt-training-board">
+
+<div class="tt-training-column-heads">
+
+<div class="tt-training-column-title">
+Schools
+</div>
+
+<div class="tt-training-column-title">
+Workshops
+</div>
+
+</div>
+
+
+<div class="tt-training-shared-label">
+TEACHING & ORGANISATION
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+FEB 2026
+</span>
+
+<span class="tt-school-role tt-school-role-accent">
+LECTURER
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Image Scanning Microscopy: from image formation to inverse problem
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+CIL Winter School
+</p>
+
+<p class="tt-school-note">
+Lecture on fluorescence microscopy, image formation, point-spread function
+modelling, optical aberrations and the inverse-problem formulation of Image
+Scanning Microscopy.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+DEC 2024
+</span>
+
+<span class="tt-school-role">
+ORGANISATION
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Computational Imaging & Learning: From physics to data-driven methods
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Contributed to the organisation of the event
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+FEB 2026
+</span>
+
+<span class="tt-school-role">
+ORGANISATION
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+CIL School 2026
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Advanced microscopy and computational imaging school
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+NOV 2023
+</span>
+
+<span class="tt-school-role">
+ORGANISATION
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+8th NIC@IIT Advanced Microscopy Practical Workshop
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Contributed to the organisation of the event
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<div class="tt-training-placeholder" aria-hidden="true"></div>
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+NOV 2022
+</span>
+
+<span class="tt-school-role">
+ORGANISATION
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+7th NIC@IIT Advanced Microscopy Practical Workshop
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Contributed to the organisation of the event
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-shared-label tt-training-shared-label-secondary">
+PARTICIPANT / TRAINING
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+SEP 2024
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Applied Harmonic Analysis and Machine Learning
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+MALGA School · Machine Learning Genoa Center · University of Genoa
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+NOV–DEC 2021
+</span>
+
+<span class="tt-school-role">
+WORKSHOP
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+6th NIC@IIT Practical Workshop on Advanced Microscopy
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+SEP 2022
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Applied Harmonic Analysis and Machine Learning
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+MALGA School · Machine Learning Genoa Center · University of Genoa
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+NOV 2021
+</span>
+
+<span class="tt-school-role">
+WORKSHOP
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+VaMOS Workshop
+</h3>
+
+<div class="tt-school-location">
+Online
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Advanced Optimization Methods for Inverse Problems & Applications to Image Microscopy
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+JAN–FEB 2022
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+UMI-MIVA Winter School
+</h3>
+
+<div class="tt-school-location">
+Online
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Advanced Methods for Mathematical Image Analysis
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+OCT 2021
+</span>
+
+<span class="tt-school-role">
+WORKSHOP
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+PRIMO Workshop 2021
+</h3>
+
+<div class="tt-school-location">
+Online
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Post-graduate Researchers in Inverse Problems, Machine Learning and Optimization
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+JUL 2020
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Convex Optimization
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+20-hour advanced course with theory and practical laboratory sessions · Machine Learning Genoa Center
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+APR 2021
+</span>
+
+<span class="tt-school-role">
+WORKSHOP
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+NonInvasive Mathematics Workshop
+</h3>
+
+<div class="tt-school-location">
+Online
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Mathematics, engineering and neuroscience for non-invasive electro- and magneto-encephalography
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+JUL 2020
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Deep Learning: A Hands-on Introduction
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+20-hour advanced course with theory and practical laboratory sessions · Machine Learning Genoa Center
+</p>
+
+</div>
+
+</article>
+
+
+<article class="tt-school-entry tt-training-workshop">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+MAY 2018
+</span>
+
+<span class="tt-school-role">
+WORKSHOP
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+Invasive Mathematics
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-school-context">
+Mathematics, engineering, neuroscience and clinical research around invasive brain imaging and StereoEEG
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="tt-training-pair">
+
+<article class="tt-school-entry tt-training-school">
+
+<div class="tt-school-meta">
+
+<span class="tt-school-date">
+JUN 2018
+</span>
+
+<span class="tt-school-role">
+SCHOOL
+</span>
+
+</div>
+
+<div class="tt-school-main">
+
+<div class="tt-school-heading-row">
+
+<h3>
+7th Summer School of Neuroengineering “Massimo Grattarola”
+</h3>
+
+<div class="tt-school-location">
+Genoa, Italy
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+
+<div class="tt-training-placeholder" aria-hidden="true"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =======================================================
+     AWARDS & GRANTS
+     ======================================================= -->
+
+<section class="tt-section tt-section-alt" id="awards">
+
+<div class="tt-inner column-screen-inset">
+
+<h2 class="tt-section-title">
+Awards &amp; grants
+</h2>
+
+<div class="tt-list tt-awards-list">
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type tt-award-type">
+TRAVEL GRANT
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+SIBPA Travel Grant
+</h3>
+
+<p class="tt-entry-context">
+€1,500 travel support
+</p>
+
+<p>
+Grant from the Italian Society of Pure and Applied Biophysics
+(SIBPA) to participate in the Biophysical Society Annual Meeting
+in San Diego, California.
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type tt-award-type">
+BEST COMMUNICATION
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+107th Congresso SIF
+</h3>
+
+<p class="tt-entry-context">
+Selected among the Best Communications
+</p>
+
+<p>
+“An automated tool to estimate chromatin compaction in stained nuclei”
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type tt-award-type">
+BEST FLASH TALK
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+International School of Physics “Enrico Fermi”
+</h3>
+
+<p class="tt-entry-context">
+Selected among the Best Communications
+</p>
+
+<p>
+“Scattering Networks: a tool to remove the background”
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type tt-award-type">
+BEST COMMUNICATION
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+108th Congresso SIF
+</h3>
+
+<p class="tt-entry-context">
+Selected among the Best Communications
+</p>
+
+<p>
+“A deep learning-based method to spectrally separate overlapping
+fluorophores based on their fluorescence lifetime”
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type">
+MICCAI AIIB23
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Task 1 — Segmentation
+</h3>
+
+<p class="tt-entry-context">
+Airway-Informed Quantitative CT Imaging Biomarker for Fibrotic Lung Disease
+</p>
+
+<p>
+8th position out of 20 participants.
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="tt-entry">
+
+<div class="tt-entry-meta">
+
+<div class="tt-entry-type">
+MICCAI AIIB23
+</div>
+
+</div>
+
+
+<div class="tt-entry-main">
+
+<h3>
+Task 2 — Binary classification
+</h3>
+
+<p class="tt-entry-context">
+Airway-Informed Quantitative CT Imaging Biomarker for Fibrotic Lung Disease
+</p>
+
+<p>
+4th position out of 6 participants.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
