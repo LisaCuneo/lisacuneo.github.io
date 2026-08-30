@@ -1,0 +1,531 @@
+/* =========================================================
+   Lisa Cuneo — Conferences
+   ========================================================= */
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.conferences-header {
+  width: 100%;
+
+  background: var(--page-bg);
+
+  border-bottom: 1px solid var(--line);
+}
+
+.conferences-header-inner {
+  width: 100%;
+  max-width: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding:
+    clamp(2.6rem, 4.5vh, 3.6rem)
+    clamp(2rem, 4vw, 4rem)
+    clamp(2rem, 3.8vh, 3rem);
+}
+
+.conferences-overline {
+  margin-bottom: 1rem;
+
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  letter-spacing: 0.12em;
+
+  color: var(--text-soft);
+}
+
+
+/* =========================================================
+   HEADER GRID
+   ========================================================= */
+
+.conferences-header-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  align-items: start;
+}
+
+.conferences-title {
+  font-size: clamp(2.3rem, 3.05vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.04;
+
+  letter-spacing: -0.043em;
+
+  color: var(--text-main);
+}
+
+/* =========================================================
+   OVERVIEW
+   ========================================================= */
+
+.conferences-overview {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(2rem, 5vw, 5rem);
+
+  width: 100%;
+
+  margin-top: clamp(1.8rem, 3vh, 2.4rem);
+}
+
+.conferences-overview-item {
+  display: flex;
+
+  align-items: baseline;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  min-width: 0;
+
+  padding-top: 0.75rem;
+
+  border-top: 1px solid var(--line-dark);
+}
+
+.conferences-overview-title {
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.3;
+
+  letter-spacing: -0.015em;
+
+  text-decoration: none !important;
+
+  color: var(--text-main) !important;
+}
+
+.conferences-overview-title:hover {
+  color: var(--accent) !important;
+
+  text-decoration: none !important;
+}
+
+.conferences-overview-count {
+  flex: 0 0 auto;
+
+  font-size: 0.64rem;
+  line-height: 1.4;
+
+  white-space: nowrap;
+
+  color: var(--text-faint);
+}
+
+.conferences-overview-links {
+  display: inline-flex;
+
+  align-items: baseline;
+
+  gap: 0.35rem;
+}
+
+.conferences-overview-links a {
+  text-decoration: none !important;
+
+  color: var(--text-faint) !important;
+}
+
+.conferences-overview-links a:hover {
+  color: var(--accent) !important;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.conferences-section {
+  width: 100%;
+
+  background: var(--page-bg);
+
+  border-bottom: 1px solid var(--line);
+
+  scroll-margin-top: 1.5rem;
+}
+
+.conferences-section-alt {
+  background: var(--section-bg);
+}
+
+.conferences-inner {
+  width: 100%;
+  max-width: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding:
+    clamp(3.2rem, 5.5vh, 4.3rem)
+    clamp(2rem, 4vw, 4rem)
+    clamp(3.7rem, 6.5vh, 5rem);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.conferences-section-header {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  align-items: start;
+
+  margin-bottom: 1.5rem;
+}
+
+.conferences-section-header
+.section-overline {
+  margin-bottom: 0.6rem;
+}
+
+.conferences-section-header h2 {
+  margin: 0;
+
+  padding: 0;
+  border: 0;
+
+  font-size: clamp(1.45rem, 1.8vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+
+  color: var(--text-main);
+}
+
+
+
+/* =========================================================
+   PAST CATEGORIES
+   ========================================================= */
+
+.conference-category-section {
+  width: 100%;
+
+  scroll-margin-top: 1.5rem;
+}
+
+.conference-category-section +
+.conference-category-section {
+  margin-top: clamp(2.7rem, 5vh, 4rem);
+}
+
+.conference-category-heading {
+  margin-bottom: 0.8rem;
+
+  font-size: 0.58rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  letter-spacing: 0.1em;
+
+  color: var(--text-faint);
+}
+
+
+/* =========================================================
+   EVENT LIST
+   ========================================================= */
+
+.conference-list {
+  width: 100%;
+
+  border-top: 1px solid var(--line-dark);
+}
+
+
+/* =========================================================
+   EVENT
+   ========================================================= */
+
+.conference-entry {
+  display: grid;
+
+  grid-template-columns:
+    105px
+    minmax(0, 1fr)
+    170px;
+
+  gap: clamp(1.2rem, 2.8vw, 3rem);
+
+  align-items: start;
+
+  padding:
+    1.2rem
+    0
+    1.3rem;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* =========================================================
+   DATE / TYPE
+   ========================================================= */
+
+.conference-meta {
+  min-width: 0;
+
+  padding-top: 0.08rem;
+}
+
+.conference-date {
+  margin-bottom: 0.58rem;
+
+  font-size: 0.56rem;
+  font-weight: 600;
+  line-height: 1.3;
+
+  letter-spacing: 0.075em;
+
+  color: var(--accent-soft);
+}
+
+.conference-date-main,
+.conference-date-year {
+  display: block;
+}
+
+.conference-date-year {
+  margin-top: 0.08rem;
+}
+
+.conference-kind {
+  max-width: 100px;
+
+  font-size: 0.51rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  letter-spacing: 0.075em;
+
+  color: var(--text-faint);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.conference-main {
+  min-width: 0;
+}
+
+.conference-main h3 {
+  max-width: 1000px;
+
+  margin:
+    0
+    0
+    0.42rem;
+
+  padding: 0;
+  border: 0;
+
+  font-size: clamp(0.88rem, 1.02vw, 1rem);
+  font-weight: 500;
+  line-height: 1.35;
+
+  letter-spacing: -0.015em;
+
+  color: var(--text-main);
+}
+
+.conference-main p {
+  max-width: 1050px;
+
+  margin:
+    0
+    0
+    0.3rem;
+
+  font-size: 0.76rem;
+  line-height: 1.5;
+
+  color: var(--text-soft);
+}
+
+.conference-context {
+  font-weight: 500;
+
+  color: var(--accent-soft) !important;
+}
+
+.conference-detail {
+  font-size: 0.7rem !important;
+
+  color: var(--text-soft) !important;
+}
+
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.conference-place {
+  padding-top: 0.08rem;
+
+  font-size: 0.64rem;
+  line-height: 1.5;
+
+  text-align: right;
+
+  color: var(--text-faint);
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+@media (hover: hover) {
+
+  .conference-entry {
+    transition: background-color 130ms ease;
+  }
+
+  .conference-entry:hover {
+    background: rgba(37, 63, 88, 0.022);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .conferences-header-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.2rem;
+  }
+
+  .conferences-section-header {
+    grid-template-columns: 1fr;
+
+    gap: 0.8rem;
+  }
+
+  .conferences-section-header
+  .section-overline {
+    grid-column: 1;
+  }
+
+  .conference-entry {
+    grid-template-columns:
+      100px
+      minmax(0, 1fr)
+      140px;
+  }
+
+}
+
+
+/* =========================================================
+   NARROW TABLET
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+  .conferences-overview {
+    grid-template-columns: 1fr;
+
+    gap: 0.8rem;
+  }
+
+  .conference-entry {
+    grid-template-columns:
+      92px
+      minmax(0, 1fr);
+
+    gap: 1rem;
+  }
+
+  .conference-place {
+    grid-column: 2;
+
+    text-align: left;
+  }
+
+  .conferences-empty {
+    grid-template-columns: 1fr;
+
+    gap: 0.6rem;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .conferences-header-inner,
+  .conferences-inner {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .conferences-header-inner {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .conferences-title {
+    font-size: clamp(2.15rem, 10vw, 2.8rem);
+  }
+
+  .conference-entry {
+    grid-template-columns: 1fr;
+
+    gap: 0.55rem;
+
+    padding:
+      1.1rem
+      0;
+  }
+
+  .conference-meta {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.8rem;
+  }
+
+  .conference-date {
+    margin-bottom: 0;
+  }
+
+  .conference-kind {
+    max-width: none;
+  }
+
+  .conference-place {
+    grid-column: 1;
+
+    text-align: left;
+  }
+
+}
