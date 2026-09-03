@@ -7,6 +7,7 @@ format:
   html:
     css:
       - styles.css
+      - home-contact.css
     toc: false
     include-in-header: seo-home.html
 ---
@@ -197,16 +198,15 @@ CONTACT
 
 <a
   href="mailto:lisa.cuneo@iit.it"
-  class="home-contact-link home-contact-email"
+  class="home-contact-link"
 >
 
 <span class="home-contact-link-label">
 Email
 </span>
 
-<span class="home-contact-value">
-lisa.cuneo@iit.it
-<span class="home-contact-arrow">↗</span>
+<span class="home-contact-arrow">
+↗
 </span>
 
 </a>
