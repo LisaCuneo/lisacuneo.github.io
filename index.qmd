@@ -193,12 +193,14 @@ CONTACT
 <div class="home-contact-links">
 
 
+<div class="home-contact-cell">
+
 <a
   href="mailto:lisa.cuneo@iit.it"
   class="home-contact-link home-contact-email"
 >
 
-<span>
+<span class="home-contact-link-label">
 Email
 </span>
 
@@ -209,6 +211,10 @@ lisa.cuneo@iit.it
 
 </a>
 
+</div>
+
+
+<div class="home-contact-cell">
 
 <a
   href="https://github.com/LisaCuneo"
@@ -217,7 +223,7 @@ lisa.cuneo@iit.it
   rel="noopener noreferrer"
 >
 
-<span>
+<span class="home-contact-link-label">
 GitHub
 </span>
 
@@ -227,6 +233,10 @@ GitHub
 
 </a>
 
+</div>
+
+
+<div class="home-contact-cell">
 
 <a
   href="https://scholar.google.com/citations?user=PaPH0T4AAAAJ&hl=en"
@@ -235,7 +245,7 @@ GitHub
   rel="noopener noreferrer"
 >
 
-<span>
+<span class="home-contact-link-label">
 Google Scholar
 </span>
 
@@ -245,6 +255,10 @@ Google Scholar
 
 </a>
 
+</div>
+
+
+<div class="home-contact-cell">
 
 <a
   href="cv.pdf"
@@ -252,7 +266,7 @@ Google Scholar
   target="_blank"
 >
 
-<span>
+<span class="home-contact-link-label">
 CV
 </span>
 
@@ -261,6 +275,8 @@ CV
 </span>
 
 </a>
+
+</div>
 
 
 </div>
