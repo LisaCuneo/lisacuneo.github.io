@@ -47,6 +47,7 @@ modelling, acquisition and computation increasingly become part of the
 same measurement process.
 </p>
 
+
 <div class="home-hero-actions">
 
 <a
@@ -59,6 +60,7 @@ Explore my research
 </div>
 
 </div>
+
 
 
 <!-- RIGHT -->
@@ -75,11 +77,13 @@ Explore my research
 
 </div>
 
+
 <div class="home-portrait-identity">
 
 <div class="home-portrait-name">
 Lisa Cuneo
 </div>
+
 
 <a
   href="mailto:lisa.cuneo@iit.it"
@@ -88,7 +92,9 @@ Lisa Cuneo
 lisa.cuneo@iit.it
 </a>
 
+
 <div class="home-affiliations">
+
 
 <!-- CLSM -->
 
@@ -151,11 +157,13 @@ Istituto Italiano di Tecnologia · Genoa
 
 </a>
 
-</div>
 
 </div>
 
 </div>
+
+</div>
+
 
 </div>
 
@@ -164,66 +172,99 @@ Istituto Italiano di Tecnologia · Genoa
 </section>
 
 
+
 <!-- =======================================================
      CONTACT
      ======================================================= -->
 
-<section class="home-contact" id="contact">
+<section
+  class="home-contact"
+  id="contact"
+>
 
 <div class="home-contact-inner column-screen-inset">
+
 
 <div class="home-contact-label">
 CONTACT
 </div>
 
+
 <div class="home-contact-links">
 
-<div class="home-contact-cell">
+
 <a
   href="mailto:lisa.cuneo@iit.it"
   class="home-contact-link home-contact-email"
 >
-<span class="home-contact-link-label">Email</span>
-<span class="home-contact-value">lisa.cuneo@iit.it <span class="home-contact-arrow">↗</span></span>
-</a>
-</div>
 
-<div class="home-contact-cell">
+<span>
+Email
+</span>
+
+<span class="home-contact-value">
+lisa.cuneo@iit.it
+<span class="home-contact-arrow">↗</span>
+</span>
+
+</a>
+
+
 <a
   href="https://github.com/LisaCuneo"
   class="home-contact-link"
   target="_blank"
   rel="noopener noreferrer"
 >
-<span class="home-contact-link-label">GitHub</span>
-<span class="home-contact-arrow">↗</span>
-</a>
-</div>
 
-<div class="home-contact-cell">
+<span>
+GitHub
+</span>
+
+<span class="home-contact-arrow">
+↗
+</span>
+
+</a>
+
+
 <a
-  href="YOUR_GOOGLE_SCHOLAR_URL"
+  href="https://scholar.google.com/citations?user=PaPH0T4AAAAJ&hl=en"
   class="home-contact-link"
   target="_blank"
   rel="noopener noreferrer"
 >
-<span class="home-contact-link-label">Google Scholar</span>
-<span class="home-contact-arrow">↗</span>
-</a>
-</div>
 
-<div class="home-contact-cell">
+<span>
+Google Scholar
+</span>
+
+<span class="home-contact-arrow">
+↗
+</span>
+
+</a>
+
+
 <a
   href="cv.pdf"
   class="home-contact-link"
   target="_blank"
 >
-<span class="home-contact-link-label">CV</span>
-<span class="home-contact-arrow">↗</span>
+
+<span>
+CV
+</span>
+
+<span class="home-contact-arrow">
+↗
+</span>
+
 </a>
-</div>
+
 
 </div>
+
 
 </div>
 
