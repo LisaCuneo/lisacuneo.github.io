@@ -1,26 +1,39 @@
 /* =========================================================
-   HOME — CONTACT SECTION OVERRIDES
-   Keeps the existing site styling, but makes the four contact
-   items compact and forces them into a clean, aligned grid.
+   HOME — CONTACT SECTION
+   Compact four-column contact grid.
    ========================================================= */
 
 .home-contact-links {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  grid-auto-flow: row !important;
+  grid-template-rows: 128px !important;
+  grid-auto-rows: 128px !important;
   align-items: stretch !important;
   gap: 0 !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .home-contact-cell,
 .home-contact-cell:nth-child(n) {
   grid-column: auto !important;
   grid-row: auto !important;
+
   position: static !important;
+  display: block !important;
+
+  width: auto !important;
+  height: 128px !important;
+  min-height: 0 !important;
+  max-height: 128px !important;
+
   margin: 0 !important;
   padding: 0 !important;
-  min-height: 0 !important;
-  height: auto !important;
   transform: none !important;
 }
 
@@ -29,11 +42,15 @@
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+
   width: 100% !important;
-  min-height: 72px !important;
-  height: auto !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
   margin: 0 !important;
   padding: 0 1.15rem !important;
+
   transform: none !important;
 }
 
@@ -45,16 +62,27 @@
 @media (max-width: 900px) {
   .home-contact-links {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, 112px) !important;
+    grid-auto-rows: 112px !important;
+  }
+
+  .home-contact-cell,
+  .home-contact-cell:nth-child(n) {
+    height: 112px !important;
+    max-height: 112px !important;
   }
 }
 
 @media (max-width: 560px) {
   .home-contact-links {
     grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4, 88px) !important;
+    grid-auto-rows: 88px !important;
   }
 
-  .home-contact-link,
-  .home-contact-cell:nth-child(n) .home-contact-link {
-    min-height: 64px !important;
+  .home-contact-cell,
+  .home-contact-cell:nth-child(n) {
+    height: 88px !important;
+    max-height: 88px !important;
   }
 }
