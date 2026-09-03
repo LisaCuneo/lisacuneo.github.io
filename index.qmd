@@ -1,10 +1,14 @@
 ---
 page-layout: full
+pagetitle: "Lisa Cuneo | Applied Mathematics & Computational Imaging"
+description: "Lisa Cuneo is an applied mathematician working on inverse problems, optimization, numerical analysis, machine learning and computational imaging."
+image: assets/lisa-cuneo.jpg
 format:
   html:
     css:
       - styles.css
     toc: false
+    include-in-header: seo-home.html
 ---
 
 <!-- =======================================================
@@ -27,7 +31,7 @@ APPLIED MATHEMATICS · INVERSE PROBLEMS · COMPUTATIONAL IMAGING
 </div>
 
 <h1 class="home-hero-title">
-Turning physical measurements into biological insight
+Turning physical measurements into biological insight.
 </h1>
 
 <p class="home-hero-lead">

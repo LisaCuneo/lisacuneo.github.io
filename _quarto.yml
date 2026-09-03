@@ -10,6 +10,8 @@ profile:
 website:
   title: "Lisa Cuneo"
   site-url: "https://lisacuneo.github.io/"
+  description: "Academic website of Lisa Cuneo, applied mathematician working on inverse problems, optimization, numerical analysis, machine learning and computational imaging."
+  open-graph: true
 
   navbar:
     right:
@@ -22,3 +24,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    canonical-url: true
