@@ -2,12 +2,14 @@ project:
   type: website
   resources:
     - cv.pdf
+    - googleb5e71a886e230686.html
 
 profile:
   default: local
 
 website:
   title: "Lisa Cuneo"
+  site-url: "https://lisacuneo.github.io/"
 
   navbar:
     right:
