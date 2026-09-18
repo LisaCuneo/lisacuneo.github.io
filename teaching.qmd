@@ -6,6 +6,7 @@ format:
       - styles.css
       - teaching.css
     toc: false
+    anchor-sections: false
 ---
 
 <!-- =======================================================
@@ -56,7 +57,7 @@ Schools &amp; workshops
 </a>
 
 <span class="tt-overview-count">
-training · organisation · lecturing
+lecturing · talks · organisation
 </span>
 
 </div>
@@ -262,7 +263,7 @@ Supervisor: Edoardo Mainini
 
 
 <!-- =======================================================
-     SCHOOLS & WORKSHOPS
+     SCHOOLS & WORKSHOPS — TEACHING / TALKS / ORGANISATION
      ======================================================= -->
 
 <section class="tt-section" id="schools">
@@ -273,456 +274,292 @@ Supervisor: Edoardo Mainini
 Schools &amp; workshops
 </h2>
 
-<div class="tt-training-board">
+<div class="tt-events-list">
 
-<div class="tt-training-column-heads">
 
-<div class="tt-training-column-title">
-Schools
+<!-- CIL SCHOOL 2026 -->
+
+<article class="tt-event-entry">
+
+<div class="tt-event-meta">
+
+<div class="tt-event-date">
+23–27 FEB 2026
 </div>
 
-<div class="tt-training-column-title">
-Workshops
+<div class="tt-event-role tt-event-role-accent">
+LECTURER · ORGANISATION
 </div>
-
-</div>
-
-
-<div class="tt-training-shared-label">
-TEACHING & ORGANISATION
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-FEB 2026
-</span>
-
-<span class="tt-school-role tt-school-role-accent">
-LECTURER
-</span>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
 
 <h3>
-Image Scanning Microscopy: from image formation to inverse problem
+Computational Imaging &amp; Learning: From Physics to data-driven methods
 </h3>
 
-<div class="tt-school-location">
+<div class="tt-event-location">
 Genoa, Italy
 </div>
 
 </div>
 
-<p class="tt-school-context">
-CIL Winter School
+<p class="tt-event-contribution">
+Lecture: “Image Scanning Microscopy: from image formation to inverse problem”
 </p>
 
-<p class="tt-school-note">
-Lecture on fluorescence microscopy, image formation, point-spread function
-modelling, optical aberrations and the inverse-problem formulation of Image
-Scanning Microscopy.
+<p class="tt-event-context">
+PhD winter school
 </p>
+
+<a
+  href="https://sites.google.com/view/gruppomiva/eventi"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
 
 </div>
 
 </article>
 
 
-<article class="tt-school-entry tt-training-workshop">
+<!-- CIRM 2025 -->
 
-<div class="tt-school-meta">
+<article class="tt-event-entry">
 
-<span class="tt-school-date">
-DEC 2024
-</span>
+<div class="tt-event-meta">
 
-<span class="tt-school-role">
-ORGANISATION
-</span>
+<div class="tt-event-date">
+29 SEP–03 OCT 2025
+</div>
+
+<div class="tt-event-role tt-event-role-accent">
+WORKSHOP TALK
+</div>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
 
 <h3>
-Computational Imaging & Learning: From physics to data-driven methods
+(Blind) inverse problems in imaging: from foundations to applications
 </h3>
 
-<div class="tt-school-location">
-Genoa, Italy
+<div class="tt-event-location">
+Marseille, France
 </div>
 
 </div>
 
-<p class="tt-school-context">
-Contributed to the organisation of the event
+<p class="tt-event-contribution">
+Talk: “Reconstruction Approaches in Image Scanning Microscopy: Regularization and Optimization”
 </p>
 
-</div>
-
-</article>
-
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-FEB 2026
-</span>
-
-<span class="tt-school-role">
-ORGANISATION
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-CIL School 2026
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-<p class="tt-school-context">
-Advanced microscopy and computational imaging school
+<p class="tt-event-context">
+CIRM
 </p>
+
+<a
+  href="https://conferences.cirm-math.fr/3349.html"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
 
 </div>
 
 </article>
 
 
-<article class="tt-school-entry tt-training-workshop">
+<!-- NIC@IIT 2024 -->
 
-<div class="tt-school-meta">
+<article class="tt-event-entry">
 
-<span class="tt-school-date">
-NOV 2023
-</span>
+<div class="tt-event-meta">
 
-<span class="tt-school-role">
+<div class="tt-event-date">
+02–06 DEC 2024
+</div>
+
+<div class="tt-event-role">
 ORGANISATION
-</span>
+</div>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
+
+<h3>
+9th NIC@IIT and MOSBRI Advanced Microscopy Practical Workshop
+</h3>
+
+<div class="tt-event-location">
+Genoa, Italy
+</div>
+
+</div>
+
+<p class="tt-event-contribution">
+Contributed to the organisation of the event.
+</p>
+
+<a
+  href="https://mix.iit.it/events/iit-nikon-imaging-center/9th-nic-iit-and-mosbri"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
+
+</div>
+
+</article>
+
+
+<!-- NIC@IIT 2023 -->
+
+<article class="tt-event-entry">
+
+<div class="tt-event-meta">
+
+<div class="tt-event-date">
+27 NOV–01 DEC 2023
+</div>
+
+<div class="tt-event-role">
+ORGANISATION
+</div>
+
+</div>
+
+<div class="tt-event-main">
+
+<div class="tt-event-heading-row">
 
 <h3>
 8th NIC@IIT Advanced Microscopy Practical Workshop
 </h3>
 
-<div class="tt-school-location">
+<div class="tt-event-location">
 Genoa, Italy
 </div>
 
 </div>
 
-<p class="tt-school-context">
-Contributed to the organisation of the event
+<p class="tt-event-contribution">
+Contributed to the organisation of the event.
 </p>
+
+<a
+  href="https://mix.iit.it/events/iit-nikon-imaging-center/8th-nic-iit-2023"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
 
 </div>
 
 </article>
 
+
+<!-- NIC@IIT 2022 -->
+
+<article class="tt-event-entry">
+
+<div class="tt-event-meta">
+
+<div class="tt-event-date">
+28 NOV–02 DEC 2022
 </div>
 
-
-<div class="tt-training-pair">
-
-<div class="tt-training-placeholder" aria-hidden="true"></div>
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-NOV 2022
-</span>
-
-<span class="tt-school-role">
+<div class="tt-event-role">
 ORGANISATION
-</span>
+</div>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
 
 <h3>
 7th NIC@IIT Advanced Microscopy Practical Workshop
 </h3>
 
-<div class="tt-school-location">
+<div class="tt-event-location">
 Genoa, Italy
 </div>
 
 </div>
 
-<p class="tt-school-context">
-Contributed to the organisation of the event
+<p class="tt-event-contribution">
+Contributed to the organisation of the event.
 </p>
 
+<a
+  href="https://mix.iit.it/events/iit-nikon-imaging-center/7th-nic-iit-2022"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
+
 </div>
 
 </article>
 
+
+<!-- PRIMO 2022 -->
+
+<article class="tt-event-entry">
+
+<div class="tt-event-meta">
+
+<div class="tt-event-date">
+06–08 SEP 2022
 </div>
 
-
-<div class="tt-training-shared-label tt-training-shared-label-secondary">
-PARTICIPANT / TRAINING
+<div class="tt-event-role tt-event-role-accent">
+WORKSHOP TALK
 </div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-SEP 2024
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
 
 <h3>
-Applied Harmonic Analysis and Machine Learning
+PRIMO Workshop 2022
 </h3>
 
-<div class="tt-school-location">
-Genoa, Italy
+<div class="tt-event-location">
+Trieste, Italy
 </div>
 
 </div>
 
-<p class="tt-school-context">
-MALGA School · Machine Learning Genoa Center · University of Genoa
+<p class="tt-event-contribution">
+Talk: “Scattering Networks: a tool to remove background in microscopy images.”
 </p>
 
-</div>
-
-</article>
-
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-NOV–DEC 2021
-</span>
-
-<span class="tt-school-role">
-WORKSHOP
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-6th NIC@IIT Practical Workshop on Advanced Microscopy
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-</div>
-
-</article>
-
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-SEP 2022
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-Applied Harmonic Analysis and Machine Learning
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-<p class="tt-school-context">
-MALGA School · Machine Learning Genoa Center · University of Genoa
-</p>
-
-</div>
-
-</article>
-
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-NOV 2021
-</span>
-
-<span class="tt-school-role">
-WORKSHOP
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-VaMOS Workshop
-</h3>
-
-<div class="tt-school-location">
-Online
-</div>
-
-</div>
-
-<p class="tt-school-context">
-Advanced Optimization Methods for Inverse Problems & Applications to Image Microscopy
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-JAN–FEB 2022
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-UMI-MIVA Winter School
-</h3>
-
-<div class="tt-school-location">
-Online
-</div>
-
-</div>
-
-<p class="tt-school-context">
-Advanced Methods for Mathematical Image Analysis
-</p>
-
-</div>
-
-</article>
-
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-OCT 2021
-</span>
-
-<span class="tt-school-role">
-WORKSHOP
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-PRIMO Workshop 2021
-</h3>
-
-<div class="tt-school-location">
-Online
-</div>
-
-</div>
-
-<p class="tt-school-context">
+<p class="tt-event-context">
 Post-graduate Researchers in Inverse Problems, Machine Learning and Optimization
 </p>
 
@@ -730,203 +567,58 @@ Post-graduate Researchers in Inverse Problems, Machine Learning and Optimization
 
 </article>
 
+
+<!-- ENRICO FERMI 2022 -->
+
+<article class="tt-event-entry">
+
+<div class="tt-event-meta">
+
+<div class="tt-event-date">
+10–15 JUL 2022
 </div>
 
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-JUL 2020
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
+<div class="tt-event-role tt-event-role-accent">
+FLASH TALK
+</div>
 
 </div>
 
-<div class="tt-school-main">
+<div class="tt-event-main">
 
-<div class="tt-school-heading-row">
+<div class="tt-event-heading-row">
 
 <h3>
-Convex Optimization
+International School of Physics “Enrico Fermi”
 </h3>
 
-<div class="tt-school-location">
-Genoa, Italy
+<div class="tt-event-location">
+Varenna, Italy
 </div>
 
 </div>
 
-<p class="tt-school-context">
-20-hour advanced course with theory and practical laboratory sessions · Machine Learning Genoa Center
+<p class="tt-event-contribution">
+Flash talk: “Scattering Networks: a tool to remove the background.”
 </p>
 
-</div>
-
-</article>
-
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-APR 2021
-</span>
-
-<span class="tt-school-role">
-WORKSHOP
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-NonInvasive Mathematics Workshop
-</h3>
-
-<div class="tt-school-location">
-Online
-</div>
-
-</div>
-
-<p class="tt-school-context">
-Mathematics, engineering and neuroscience for non-invasive electro- and magneto-encephalography
+<p class="tt-event-context">
+Multimodal and Nanoscale Optical Microscopy
 </p>
 
-</div>
-
-</article>
-
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-JUL 2020
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-Deep Learning: A Hands-on Introduction
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-<p class="tt-school-context">
-20-hour advanced course with theory and practical laboratory sessions · Machine Learning Genoa Center
-</p>
+<a
+  href="https://mix.iit.it/events/ivsla/varenna-2022"
+  class="tt-event-website"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Event website ↗
+</a>
 
 </div>
 
 </article>
 
-
-<article class="tt-school-entry tt-training-workshop">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-MAY 2018
-</span>
-
-<span class="tt-school-role">
-WORKSHOP
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-Invasive Mathematics
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-<p class="tt-school-context">
-Mathematics, engineering, neuroscience and clinical research around invasive brain imaging and StereoEEG
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-
-<div class="tt-training-pair">
-
-<article class="tt-school-entry tt-training-school">
-
-<div class="tt-school-meta">
-
-<span class="tt-school-date">
-JUN 2018
-</span>
-
-<span class="tt-school-role">
-SCHOOL
-</span>
-
-</div>
-
-<div class="tt-school-main">
-
-<div class="tt-school-heading-row">
-
-<h3>
-7th Summer School of Neuroengineering “Massimo Grattarola”
-</h3>
-
-<div class="tt-school-location">
-Genoa, Italy
-</div>
-
-</div>
-
-</div>
-
-</article>
-
-
-<div class="tt-training-placeholder" aria-hidden="true"></div>
-
-</div>
 
 </div>
 
@@ -1033,7 +725,7 @@ International School of Physics “Enrico Fermi”
 </h3>
 
 <p class="tt-entry-context">
-Selected among the Best Communications
+Selected as Best Flash Talk
 </p>
 
 <p>

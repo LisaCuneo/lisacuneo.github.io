@@ -172,7 +172,6 @@ DOI ↗
 </article>
 
 
-
 <!-- 02 -->
 
 <article class="publication-entry">
@@ -216,7 +215,6 @@ DOI ↗
 </div>
 
 </article>
-
 
 
 <!-- 03 -->
@@ -264,146 +262,7 @@ DOI ↗
 </article>
 
 
-
 <!-- 04 -->
-
-<article class="publication-entry">
-
-<div class="publication-meta">
-
-<div class="publication-date">
-AUG 2022
-</div>
-</div>
-
-
-<div class="publication-main">
-
-<h3>
-An automated tool to estimate chromatin compaction in stained nuclei.
-</h3>
-
-<p class="publication-authors">
-<strong>Lisa Cuneo</strong>, Marco Castello, Francesca Baldini, Alberto Diaspro
-</p>
-
-<p class="publication-venue">
-Il Nuovo Cimento
-</p>
-
-</div>
-
-
-<div class="publication-links">
-
-<a
-  href="https://doi.org/10.1393/ncc/i2022-22193-5"
-  class="publication-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-DOI ↗
-</a>
-
-</div>
-
-</article>
-
-
-
-<!-- 05 -->
-
-<article class="publication-entry">
-
-<div class="publication-meta">
-
-<div class="publication-date">
-AUG 2022
-</div>
-</div>
-
-
-<div class="publication-main">
-
-<h3>
-Investigating nanoscale chromatin alterations involved in neuroblastoma transformation by optical nanoscopy.
-</h3>
-
-<p class="publication-authors">
-Francesca Baldini, Isotta Cainero, <strong>Lisa Cuneo</strong>, Michele Oneto, Elena Gatta, Chantal Usai, Aldo Pagano, Laura Vergani, Alberto Diaspro
-</p>
-
-<p class="publication-venue">
-Il Nuovo Cimento
-</p>
-
-</div>
-
-
-<div class="publication-links">
-
-<a
-  href="https://doi.org/10.1393/ncc/i2022-22191-7"
-  class="publication-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-DOI ↗
-</a>
-
-</div>
-
-</article>
-
-
-
-<!-- 06 -->
-
-<article class="publication-entry">
-
-<div class="publication-meta">
-
-<div class="publication-date">
-AUG 2023
-</div>
-</div>
-
-
-<div class="publication-main">
-
-<h3>
-A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime.
-</h3>
-
-<p class="publication-authors">
-<strong>Lisa Cuneo</strong>, Marco Castello, Simonluca Piazza, Irene Nepita, Isotta Cainero, Giorgio Tortarolo, Luca Lanzanò, Paolo Bianchini, Giuseppe Vicidomini, Alberto Diaspro
-</p>
-
-<p class="publication-venue">
-Il Nuovo Cimento
-</p>
-
-</div>
-
-
-<div class="publication-links">
-
-<a
-  href="https://doi.org/10.1393/ncc/i2023-23130-x"
-  class="publication-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-DOI ↗
-</a>
-
-</div>
-
-</article>
-
-
-
-<!-- 07 -->
 
 <article class="publication-entry">
 
@@ -448,12 +307,145 @@ DOI ↗
 </article>
 
 
+<!-- 05 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2023
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Marco Castello, Simonluca Piazza, Irene Nepita, Isotta Cainero, Giorgio Tortarolo, Luca Lanzanò, Paolo Bianchini, Giuseppe Vicidomini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2023-23130-x"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 06 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+An automated tool to estimate chromatin compaction in stained nuclei.
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Marco Castello, Francesca Baldini, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2022-22193-5"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
+
+<!-- 07 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+AUG 2022
+</div>
+</div>
+
+
+<div class="publication-main">
+
+<h3>
+Investigating nanoscale chromatin alterations involved in neuroblastoma transformation by optical nanoscopy.
+</h3>
+
+<p class="publication-authors">
+Francesca Baldini, Isotta Cainero, <strong>Lisa Cuneo</strong>, Michele Oneto, Elena Gatta, Chantal Usai, Aldo Pagano, Laura Vergani, Alberto Diaspro
+</p>
+
+<p class="publication-venue">
+Il Nuovo Cimento
+</p>
+
+</div>
+
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1393/ncc/i2022-22191-7"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
+
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- =======================================================
@@ -798,7 +790,7 @@ Submitted and ongoing work
 <div class="publication-meta publication-meta-status">
 
 <div class="publication-status-text">
-UNDER SUBMISSION
+UNDER REVIEW
 </div>
 </div>
 
@@ -806,7 +798,7 @@ UNDER SUBMISSION
 <div class="publication-main">
 
 <h3>
-Regularizations for ISM inverse problem
+Self-Tuning Regularization for Image Scanning Microscopy
 </h3>
 
 <p class="publication-authors">
@@ -876,7 +868,7 @@ IN PREPARATION
 <div class="publication-main">
 
 <h3>
-Independent noise realizations enable morphology-agnostic regularization for image deconvolution microscopy
+Independent noise realizations enable morphologically agnostic image reconstruction in single-photon-sensitive microscopy
 </h3>
 
 <p class="publication-authors">

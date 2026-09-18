@@ -373,6 +373,23 @@
   color: var(--text-soft) !important;
 }
 
+.conference-website {
+  display: inline-block;
+
+  margin-top: 0.08rem;
+
+  font-size: 0.68rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: var(--accent-soft) !important;
+  text-decoration: none !important;
+}
+
+.conference-website:hover {
+  color: var(--text-main) !important;
+}
+
 
 /* =========================================================
    LOCATION
@@ -529,3 +546,10 @@
   }
 
 }
+
+/* Hide Quarto's automatic heading permalink inside conference rows. */
+.conference-main h3 .anchorjs-link,
+.conference-main h3 > a.anchorjs-link {
+  display: none !important;
+}
+
