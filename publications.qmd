@@ -6,6 +6,7 @@ format:
       - styles.css
       - publications.css
     toc: false
+    anchor-sections: false
 ---
 <!-- =======================================================
      PUBLICATIONS — HEADER
@@ -812,7 +813,17 @@ Medical Image Analysis
 </div>
 
 
-<div class="publication-links"></div>
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.48550/arXiv.2605.31426"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+PREPRINT DOI ↗
+</a>
+
+</div>
 
 </article>
 
@@ -882,7 +893,17 @@ Nature Methods
 </div>
 
 
-<div class="publication-links"></div>
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.64898/2026.09.12.751176"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+PREPRINT DOI ↗
+</a>
+
+</div>
 
 </article>
 

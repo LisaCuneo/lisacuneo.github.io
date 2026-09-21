@@ -7,7 +7,7 @@
    PAGE HEADER
    ========================================================= */
 
-.research-page-header {
+.projects-page-header {
   width: 100%;
 
   background: var(--page-bg);
@@ -15,7 +15,7 @@
   border-bottom: 1px solid var(--line);
 }
 
-.research-page-header-inner {
+.projects-page-header-inner {
   width: 100%;
   max-width: 1500px;
 
@@ -28,7 +28,7 @@
     clamp(4rem, 7vh, 5.5rem);
 }
 
-.research-page-overline {
+.projects-page-overline {
   margin-bottom: clamp(1.7rem, 3vh, 2.3rem);
 
   font-size: 0.68rem;
@@ -45,7 +45,7 @@
    HEADER CONTENT
    ========================================================= */
 
-.research-page-header-grid {
+.projects-page-header-grid {
   display: grid;
 
   grid-template-columns:
@@ -57,7 +57,7 @@
   align-items: start;
 }
 
-.research-page-title {
+.projects-page-title {
   max-width: 850px;
 
   font-size: clamp(2.9rem, 3.55vw, 3.6rem);
@@ -69,13 +69,13 @@
   color: var(--text-main);
 }
 
-.research-page-header-copy {
+.projects-page-header-copy {
   max-width: 660px;
 
   padding-top: 0.35rem;
 }
 
-.research-page-header-copy p {
+.projects-page-header-copy p {
   margin:
     0
     0
@@ -87,14 +87,14 @@
   color: var(--text-soft);
 }
 
-.research-page-header-copy .research-page-lead {
+.projects-page-header-copy .projects-page-lead {
   font-size: 0.98rem;
   line-height: 1.62;
 
   color: var(--text-main);
 }
 
-.research-page-principle {
+.projects-page-principle {
   margin-top: 1.6rem !important;
   margin-bottom: 0 !important;
 
@@ -113,7 +113,7 @@
    PROJECT MAP
    ========================================================= */
 
-.research-project-map {
+.projects-project-map {
   width: 100%;
 
   margin-top: clamp(4rem, 7vh, 5.5rem);
@@ -123,7 +123,7 @@
   border-top: 1px solid var(--line-dark);
 }
 
-.research-project-map-label {
+.projects-project-map-label {
   margin-bottom: clamp(1.8rem, 3vh, 2.5rem);
 
   font-size: 0.61rem;
@@ -135,7 +135,7 @@
   color: var(--text-faint);
 }
 
-.research-project-map-grid {
+.projects-project-map-grid {
   display: grid;
 
   grid-template-columns:
@@ -146,7 +146,7 @@
   width: 100%;
 }
 
-.research-project-branch {
+.projects-project-branch {
   min-width: 0;
 
   padding-left: 1rem;
@@ -154,7 +154,7 @@
   border-left: 1px solid var(--line-dark);
 }
 
-.research-project-branch-title {
+.projects-project-branch-title {
   display: inline-block;
 
   margin-bottom: 0.65rem;
@@ -169,11 +169,11 @@
   text-decoration: none !important;
 }
 
-.research-project-branch-title:hover {
+.projects-project-branch-title:hover {
   color: var(--accent) !important;
 }
 
-.research-project-branch-description {
+.projects-project-branch-description {
   max-width: 260px;
 
   margin:
@@ -187,25 +187,25 @@
   color: var(--text-soft);
 }
 
-.research-project-links {
+.projects-project-links {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.research-project-links li {
+.projects-project-links li {
   margin: 0;
   padding: 0;
 
   border-top: 1px solid var(--line);
 }
 
-.research-project-links li:last-child {
+.projects-project-links li:last-child {
   border-bottom: 1px solid var(--line);
 }
 
-.research-project-links a {
+.projects-project-links a {
   position: relative;
 
   display: block;
@@ -224,7 +224,7 @@
   text-decoration: none !important;
 }
 
-.research-project-links a::after {
+.projects-project-links a::after {
   content: "↘";
 
   position: absolute;
@@ -237,7 +237,7 @@
   color: var(--accent-soft);
 }
 
-.research-project-links a:hover {
+.projects-project-links a:hover {
   color: var(--accent) !important;
 }
 
@@ -245,7 +245,7 @@
    THEMATIC SECTIONS
    ========================================================= */
 
-.research-theme-section {
+.projects-theme-section {
   width: 100vw;
 
   margin-left: calc(50% - 50vw);
@@ -255,15 +255,15 @@
   scroll-margin-top: 1.5rem;
 }
 
-.research-theme-light {
+.projects-theme-light {
   background: var(--section-bg);
 }
 
-.research-theme-white {
+.projects-theme-white {
   background: var(--page-bg);
 }
 
-.research-theme-inner {
+.projects-theme-inner {
   width: 100%;
   max-width: 1500px;
 
@@ -281,7 +281,7 @@
    THEME HEADER
    ========================================================= */
 
-.research-theme-header {
+.projects-theme-header {
   display: grid;
 
   grid-template-columns:
@@ -295,7 +295,7 @@
   margin-bottom: clamp(4.5rem, 8vh, 6.5rem);
 }
 
-.research-theme-header h2 {
+.projects-theme-header h2 {
   max-width: 880px;
 
   margin: 0;
@@ -312,7 +312,7 @@
   color: var(--text-main);
 }
 
-.research-theme-header > p {
+.projects-theme-header > p {
   max-width: 620px;
 
   margin:
@@ -328,12 +328,12 @@
 
 
 /* Direct project links from the introductory map. */
-.research-entry[id] {
+.projects-entry[id] {
   scroll-margin-top: 5rem;
 }
 
-.research-page-header .anchorjs-link,
-.research-theme-section .anchorjs-link {
+.projects-page-header .anchorjs-link,
+.projects-theme-section .anchorjs-link {
   display: none !important;
 }
 
@@ -342,7 +342,7 @@
    PROJECT ENTRIES
    ========================================================= */
 
-.research-entry {
+.projects-entry {
   display: grid;
 
   grid-template-columns:
@@ -360,27 +360,27 @@
   border-top: 1px solid var(--line-dark);
 }
 
-.research-entry-reverse .research-entry-visual {
+.projects-entry-reverse .projects-entry-visual {
   order: 2;
 }
 
-.research-entry-reverse .research-entry-copy {
+.projects-entry-reverse .projects-entry-copy {
   order: 1;
 }
 
-.research-entry-visual {
+.projects-entry-visual {
   min-width: 0;
 }
 
-.research-entry-copy {
+.projects-entry-copy {
   max-width: 630px;
 }
 
-.research-entry-copy-wide {
+.projects-entry-copy-wide {
   max-width: 720px;
 }
 
-.research-entry-index {
+.projects-entry-index {
   margin-bottom: 1rem;
 
   font-size: 0.68rem;
@@ -392,7 +392,7 @@
   color: var(--text-faint);
 }
 
-.research-entry-tags {
+.projects-entry-tags {
   margin-bottom: 1.35rem;
 
   font-size: 0.64rem;
@@ -404,7 +404,7 @@
   color: var(--accent-soft);
 }
 
-.research-entry-copy h3 {
+.projects-entry-copy h3 {
   margin:
     0
     0
@@ -422,7 +422,7 @@
   color: var(--text-main);
 }
 
-.research-entry-copy p {
+.projects-entry-copy p {
   margin:
     0
     0
@@ -434,7 +434,7 @@
   color: var(--text-soft);
 }
 
-.research-entry-copy .research-entry-note {
+.projects-entry-copy .projects-entry-note {
   margin-top: 1.5rem;
 
   padding-left: 1rem;
@@ -445,7 +445,7 @@
   line-height: 1.65;
 }
 
-.research-entry-copy .research-entry-note-accent {
+.projects-entry-copy .projects-entry-note-accent {
   border-left-color: var(--accent);
 
   color: var(--text-main);
@@ -456,7 +456,7 @@
    COMPACT ENTRY
    ========================================================= */
 
-.research-entry-compact {
+.projects-entry-compact {
   grid-template-columns:
     minmax(450px, 1.15fr)
     minmax(360px, 0.85fr);
@@ -471,9 +471,9 @@
    SHARED PLACEHOLDER
    ========================================================= */
 
-.research-rbn-placeholder,
-.research-lifetime-placeholder,
-.research-generic-placeholder {
+.projects-rbn-placeholder,
+.projects-lifetime-placeholder,
+.projects-generic-placeholder {
   position: relative;
 
   width: 100%;
@@ -486,11 +486,11 @@
   background: #f9f9f7;
 }
 
-.research-generic-placeholder-compact {
+.projects-generic-placeholder-compact {
   aspect-ratio: 1.5 / 1;
 }
 
-.research-placeholder-label {
+.projects-placeholder-label {
   position: absolute;
 
   left: 1.5rem;
@@ -505,7 +505,7 @@
   color: var(--text-faint);
 }
 
-.research-placeholder-caption {
+.projects-placeholder-caption {
   position: absolute;
 
   left: 1.5rem;
@@ -1065,7 +1065,7 @@
    THEME CLOSING
    ========================================================= */
 
-.research-theme-closing {
+.projects-theme-closing {
   display: grid;
 
   grid-template-columns:
@@ -1081,7 +1081,7 @@
   border-top: 1px solid var(--line-dark);
 }
 
-.research-theme-closing-lead {
+.projects-theme-closing-lead {
   max-width: 540px;
 
   font-size: clamp(1.55rem, 2vw, 2rem);
@@ -1093,7 +1093,7 @@
   color: var(--accent);
 }
 
-.research-theme-closing p {
+.projects-theme-closing p {
   max-width: 760px;
 
   margin: 0;
@@ -1109,7 +1109,7 @@
    FINAL CLOSING
    ========================================================= */
 
-.research-final-closing {
+.projects-final-closing {
   display: grid;
 
   grid-template-columns:
@@ -1127,7 +1127,7 @@
   border-top: 1px solid var(--line-dark);
 }
 
-.research-final-closing-title {
+.projects-final-closing-title {
   font-size: clamp(1.7rem, 2.3vw, 2.4rem);
   font-weight: 400;
   line-height: 1.13;
@@ -1137,7 +1137,7 @@
   color: var(--accent);
 }
 
-.research-final-closing p {
+.projects-final-closing p {
   max-width: 760px;
 
   margin: 0;
@@ -1155,22 +1155,22 @@
 
 @media (max-width: 1100px) {
 
-  .research-page-header-grid,
-  .research-theme-header,
-  .research-theme-closing,
-  .research-final-closing {
+  .projects-page-header-grid,
+  .projects-theme-header,
+  .projects-theme-closing,
+  .projects-final-closing {
     grid-template-columns: 1fr;
 
     gap: 2rem;
   }
 
-  .research-page-header-copy {
+  .projects-page-header-copy {
     max-width: 760px;
 
     padding-top: 0;
   }
 
-  .research-project-map-grid {
+  .projects-project-map-grid {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
 
@@ -1179,19 +1179,19 @@
       3rem;
   }
 
-  .research-entry,
-  .research-entry-compact {
+  .projects-entry,
+  .projects-entry-compact {
     grid-template-columns: 1fr;
 
     gap: 2.8rem;
   }
 
-  .research-entry-copy {
+  .projects-entry-copy {
     max-width: 760px;
   }
 
-  .research-entry-reverse .research-entry-visual,
-  .research-entry-reverse .research-entry-copy {
+  .projects-entry-reverse .projects-entry-visual,
+  .projects-entry-reverse .projects-entry-copy {
     order: initial;
   }
 
@@ -1234,7 +1234,7 @@
     text-align: center;
   }
 
-  .research-generic-placeholder {
+  .projects-generic-placeholder {
     min-height: 430px;
 
     aspect-ratio: auto;
@@ -1253,62 +1253,62 @@
 
 @media (max-width: 650px) {
 
-  .research-page-header-inner,
-  .research-theme-inner {
+  .projects-page-header-inner,
+  .projects-theme-inner {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
   }
 
-  .research-page-header-inner {
+  .projects-page-header-inner {
     padding-top: 3.2rem;
     padding-bottom: 4rem;
   }
 
-  .research-page-title {
+  .projects-page-title {
     font-size: clamp(2.6rem, 11vw, 3.5rem);
   }
 
-  .research-project-map-grid {
+  .projects-project-map-grid {
     grid-template-columns: 1fr;
 
     gap: 2rem;
   }
 
-  .research-project-branch {
+  .projects-project-branch {
     padding-left: 0.9rem;
   }
 
-  .research-project-branch-description {
+  .projects-project-branch-description {
     max-width: 520px;
   }
 
-  .research-theme-header h2 {
+  .projects-theme-header h2 {
     font-size: clamp(2.4rem, 10vw, 3.2rem);
   }
 
-  .research-entry,
-  .research-entry-compact {
+  .projects-entry,
+  .projects-entry-compact {
     padding:
       3rem
       0;
   }
 
-  .research-entry-copy h3 {
+  .projects-entry-copy h3 {
     font-size: clamp(2rem, 9vw, 2.8rem);
   }
 
-  .research-rbn-placeholder,
-  .research-lifetime-placeholder {
+  .projects-rbn-placeholder,
+  .projects-lifetime-placeholder {
     min-height: 330px;
 
     aspect-ratio: auto;
   }
 
-  .research-theme-closing-lead {
+  .projects-theme-closing-lead {
     font-size: 1.7rem;
   }
 
-  .research-final-closing-title {
+  .projects-final-closing-title {
     font-size: 2rem;
   }
 
