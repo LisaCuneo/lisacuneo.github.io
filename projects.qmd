@@ -28,8 +28,8 @@ PROJECTS
   role="heading"
   aria-level="1"
 >
-Mathematical approaches to
-biological measurement problems.
+Mathematical approaches applied to
+biological measurements
 </div>
 
 <div class="projects-page-header-copy">
@@ -71,8 +71,8 @@ Explicit models, losses, regularization and numerical optimization.
 
 <ul class="projects-project-links">
 <li><a href="#regularization-by-noise">Regularization by Noise</a></li>
-<li><a href="#lifetime-unmixing-model">Lifetime unmixing · model-based</a></li>
-<li><a href="#psf-distiller">PSF Distiller</a></li>
+<li><a href="#psf-distiller">PSF Distiller &amp; blind deconvolution</a></li>
+<li><a href="#lifetime-unmixing-model">Lifetime unmixing · optimization</a></li>
 </ul>
 
 </div>
@@ -154,7 +154,7 @@ MODEL-BASED & OPTIMIZATION
 </div>
 
 <h2>
-Writing the measurement problem explicitly.
+Exploiting a known physical forward model.
 </h2>
 
 </div>
@@ -171,68 +171,142 @@ Here, the relationship between measurement and unknown is represented through an
 
 <div class="projects-entry-visual">
 
-<div class="projects-rbn-placeholder">
+<figure class="projects-rbn-figure projects-rbn-chain">
 
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER
+<div class="rbn-chain-layout">
+
+<div class="rbn-chain-top">
+
+<div class="rbn-chain-panel rbn-chain-panel-object">
+
+<div class="rbn-chain-panel-title">
+BIOLOGICAL OBJECT
 </div>
 
-
-<div class="rbn-measurements">
-
-<div class="rbn-measurement">
-<span>y₁</span>
-</div>
-
-<div class="rbn-measurement">
-<span>y₂</span>
-</div>
-
-<div class="rbn-measurement">
-<span>y₃</span>
-</div>
-
-<div class="rbn-measurement">
-<span>y₄</span>
+<div class="rbn-chain-object-visual">
+<img
+  src="assets/rbn-biological-object-full.png"
+  alt="Schematic biological cell extracted from the RbN microscopy figure."
+/>
 </div>
 
 </div>
 
+<div class="rbn-chain-panel rbn-chain-panel-spad">
 
-<div class="rbn-coupling">
-
-<div class="rbn-coupling-line"></div>
-
-<div class="rbn-coupling-label">
-shared latent information
+<div class="rbn-chain-panel-title">
+TIME-RESOLVED SPAD
 </div>
 
-</div>
+<div class="rbn-chain-spad-stack">
 
+<img
+  src="assets/spad-spatial-classified.gif"
+  alt="Animated photon stream showing photon detections assigned to pixels of a 5 by 5 SPAD detector."
+  class="rbn-chain-gif rbn-chain-gif-spatial"
+/>
 
-<div class="rbn-output">
+<div class="rbn-chain-spad-bottom">
 
-<div class="rbn-output-image">
-<span></span>
-<span></span>
-<span></span>
-</div>
+<img
+  src="assets/spad-class-images.gif"
+  alt="Animated microscopy images corresponding to the three independent temporal noise realizations."
+  class="rbn-chain-gif rbn-chain-gif-images"
+/>
 
-<div class="rbn-output-label">
-reconstruction
-</div>
-
-</div>
-
-
-<div class="projects-placeholder-caption">
-Independent measurements → coupled reconstruction
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+<div class="rbn-chain-result">
+
+<div class="rbn-chain-panel-title rbn-chain-result-title">
+MORPHOLOGY-AGNOSTIC RECONSTRUCTION
+</div>
+
+<div class="rbn-result-grid">
+
+<figure class="rbn-compare-card rbn-compare-card-top rbn-compare-card-left">
+<figcaption>TOMM20 · Mitochondrial membrane</figcaption>
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-tomm20-rbn.jpg" alt="TOMM20 reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn"/>
+<img src="assets/rbn-tomm20-clsm.jpg" alt="TOMM20 CLSM input" class="rbn-compare-image rbn-compare-clsm"/>
+<div class="rbn-compare-label rbn-compare-label-left">CLSM</div>
+<div class="rbn-compare-label rbn-compare-label-right">s²ISM-RbN</div>
+<div class="rbn-compare-divider" aria-hidden="true"><span>↔</span></div>
+<input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for TOMM20"/>
+</div>
+</figure>
+
+<figure class="rbn-compare-card rbn-compare-card-top rbn-compare-card-right">
+<figcaption>Vimentin · Intermediate filaments</figcaption>
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-vimentin-rbn.jpg" alt="Vimentin reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn"/>
+<img src="assets/rbn-vimentin-clsm.jpg" alt="Vimentin CLSM input" class="rbn-compare-image rbn-compare-clsm"/>
+<div class="rbn-compare-label rbn-compare-label-left">CLSM</div>
+<div class="rbn-compare-label rbn-compare-label-right">s²ISM-RbN</div>
+<div class="rbn-compare-divider" aria-hidden="true"><span>↔</span></div>
+<input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for vimentin"/>
+</div>
+</figure>
+
+<figure class="rbn-compare-card rbn-compare-card-bottom rbn-compare-card-left">
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-tubulin-rbn.jpg" alt="Alpha-tubulin reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn"/>
+<img src="assets/rbn-tubulin-clsm.jpg" alt="Alpha-tubulin CLSM input" class="rbn-compare-image rbn-compare-clsm"/>
+<div class="rbn-compare-label rbn-compare-label-left">CLSM</div>
+<div class="rbn-compare-label rbn-compare-label-right">s²ISM-RbN</div>
+<div class="rbn-compare-divider" aria-hidden="true"><span>↔</span></div>
+<input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for alpha-tubulin"/>
+</div>
+<figcaption>α-Tubulin · Microtubules</figcaption>
+</figure>
+
+<figure class="rbn-compare-card rbn-compare-card-bottom rbn-compare-card-right">
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-h3k9me3-rbn.jpg" alt="Histone H3K9me3 reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn"/>
+<img src="assets/rbn-h3k9me3-clsm.jpg" alt="Histone H3K9me3 CLSM input" class="rbn-compare-image rbn-compare-clsm"/>
+<div class="rbn-compare-label rbn-compare-label-left">CLSM</div>
+<div class="rbn-compare-label rbn-compare-label-right">s²ISM-RbN</div>
+<div class="rbn-compare-divider" aria-hidden="true"><span>↔</span></div>
+<input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for Histone H3K9me3"/>
+</div>
+<figcaption>Histone H3K9me3 · Chromatin</figcaption>
+</figure>
+
+<div class="rbn-result-center-cell" aria-hidden="true">
+<img src="assets/rbn-biological-object-center.png" alt=""/>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</figure>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".rbn-compare").forEach(function (comparison) {
+    const range = comparison.querySelector(".rbn-compare-range");
+    if (!range) return;
+
+    const update = function () {
+      comparison.style.setProperty("--position", range.value + "%");
+    };
+
+    range.addEventListener("input", update);
+    update();
+  });
+});
+</script>
+
+</div>
 
 
 <div class="projects-entry-copy">
@@ -241,151 +315,42 @@ Independent measurements → coupled reconstruction
 01.1</div>
 
 <div class="projects-entry-tags">
-REGULARIZATION BY NOISE · POISSON INVERSE PROBLEMS · OPTIMIZATION
+REGULARIZATION BY NOISE
 </div>
 
 <h3>
-Can independent noise realizations provide their own prior?
+Can multiple noise realizations reveal information about the sample?
 </h3>
 
 <p>
-Many microscopy reconstruction methods regularize an inverse problem by
-introducing an explicit assumption about the expected image structure.
-Regularization by Noise asks whether repeated noisy measurements can instead
-provide the prior themselves.
+Time-resolved SPAD detection preserves the arrival time of individual photons. Partitioning the photon stream into disjoint temporal windows turns a single acquisition into multiple independent Poisson realizations of the same underlying object.
 </p>
 
 <p>
-Independent acquisitions of the same object contain the same latent
-biological information but different noise realizations. I use this
-statistical redundancy to couple the corresponding reconstructions, so that
-information that is reproducible across measurements is favoured over
-realization-specific fluctuations.
-</p>
-
-<p class="projects-entry-note">
-The project connects experimental fluorescence microscopy with Poisson
-inverse problems, variational modelling, numerical optimization and
-convergence analysis.
-</p>
-
-</div>
-
-
-</article>
-
-<article class="projects-entry projects-entry-reverse" id="lifetime-unmixing-model">
-
-
-<div class="projects-entry-visual">
-
-<div class="projects-lifetime-placeholder">
-
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER
-</div>
-
-
-<div class="lifetime-source">
-
-<div class="lifetime-source-image">
-<span class="lifetime-source-structure lifetime-source-one"></span>
-<span class="lifetime-source-structure lifetime-source-two"></span>
-</div>
-
-<div class="lifetime-source-label">
-mixed measurement
-</div>
-
-</div>
-
-
-<div class="lifetime-time">
-
-<div class="lifetime-decay lifetime-decay-one"></div>
-<div class="lifetime-decay lifetime-decay-two"></div>
-
-<div class="lifetime-time-label">
-photon arrival time
-</div>
-
-</div>
-
-
-<div class="lifetime-separation-arrow">
-→
-</div>
-
-
-<div class="lifetime-results">
-
-<div class="lifetime-result">
-
-<div class="lifetime-result-image lifetime-result-one">
-<span></span>
-</div>
-
-<div>
-component 1
-</div>
-
-</div>
-
-
-<div class="lifetime-result">
-
-<div class="lifetime-result-image lifetime-result-two">
-<span></span>
-</div>
-
-<div>
-component 2
-</div>
-
-</div>
-
-</div>
-
-
-<div class="projects-placeholder-caption">
-Space + time → joint reconstruction and unmixing
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="projects-entry-copy">
-
-<div class="projects-entry-index">
-01.2</div>
-
-<div class="projects-entry-tags">
-FLUORESCENCE LIFETIME · POISSON MODELLING · VARIATIONAL METHODS
-</div>
-
-<h3>
-Using space and time jointly to separate molecular information.
-</h3>
-
-<p>
-Fluorophores with overlapping spectra may be difficult to distinguish from
-intensity alone. Their fluorescence dynamics, however, provide an additional
-temporal signature in the detected photons.
+In Image Scanning Microscopy, the SPAD array produces a 5×5 set of detector images, each providing a blurred observation of the same specimen. These measurements must then be combined and deconvolved to recover a higher-resolution estimate of the underlying object rather than the optically blurred image formed by the microscope.
 </p>
 
 <p>
-I formulate the acquisition as a spatio-temporal Poisson inverse problem,
-using spatial and lifetime information jointly rather than treating image
-reconstruction and temporal separation as independent processing steps.
+Richardson–Lucy (RL) is a natural reconstruction method for photon-counting data because it follows the physical forward model and Poisson statistics. Its iterations are, however, semi-convergent: after an initial improvement, prolonged optimization progressively fits the measurement noise. In practice, RL therefore requires either early stopping or an explicit prior on the unknown image.
 </p>
 
-<p class="projects-entry-note">
-Here, fluorescence lifetime is not an auxiliary quantity estimated after
-imaging. It is part of the measurement model itself.
+<p>
+Regularization by Noise replaces morphology-based priors with agreement across independent realizations: reproducible features are preserved, while realization-specific fluctuations are suppressed. The prior is therefore statistical rather than morphological, allowing the same regularization principle to be applied across very different biological structures. The resulting coupled variational problem also leads to a nontrivial optimization task, for which we are developing a dedicated algorithm with convergence guarantees.
 </p>
+
+<div class="projects-entry-links">
+<a
+  href="https://www.biorxiv.org/content/10.64898/2026.09.12.751176v1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+bioRxiv preprint · DOI 10.64898/2026.09.12.751176 ↗
+</a>
+</div>
+
+<div class="projects-entry-keywords">
+Poisson inverse problems · morphology-agnostic regularization · variational modelling · numerical optimization · convergence analysis
+</div>
 
 </div>
 
@@ -394,87 +359,221 @@ imaging. It is part of the measurement model itself.
 
 <article class="projects-entry" id="psf-distiller">
 
-
 <div class="projects-entry-visual">
 
-<div class="projects-generic-placeholder">
+<figure class="psf-distiller-figure">
 
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER · ONGOING
+<div class="psf-distiller-panel psf-distiller-calibration">
+
+<div class="psf-distiller-panel-heading">
+<span>01 · CALIBRATION FROM A BEAD</span>
+<small>known object → optical aberrations</small>
 </div>
 
-<div class="placeholder-flow placeholder-flow-three">
+<div class="psf-calibration-flow">
 
-<div class="placeholder-node">
-<span>bead PSF</span>
-<small>measured intensity</small>
+<div class="psf-distiller-media-card psf-calibration-input-card">
+<div class="psf-distiller-media-label">SIMULATED 5×5 ISM PSFs</div>
+<div class="psf-calibration-psf-frame">
+<img src="assets/psf-calibration-ism-psfs.png" alt="Simulated 5 by 5 ISM PSF dataset used as input for Zernike coefficient estimation">
+</div>
+<div class="psf-calibration-equation" aria-label="ISM point spread function model">
+  <div><i>h</i>(<b>x</b><sub>s</sub> | <b>x</b><sub>d</sub>) = <i>h</i><sub>exc</sub>(<b>x</b><sub>s</sub>) · [<i>h</i><sub>em</sub> ∗ <i>p</i>](<b>x</b><sub>s</sub> − <b>x</b><sub>d</sub>)</div>
+  <div class="psf-calibration-equation-approx">≈ <i>h</i>[<b>x</b><sub>s</sub> − <b>μ</b>(<b>x</b><sub>d</sub>)]</div>
+</div>
 </div>
 
-<div class="placeholder-flow-arrow">
-→
-</div>
+<div class="psf-distiller-arrow" aria-hidden="true">→</div>
 
-<div class="placeholder-node placeholder-node-accent">
-<span>optical model</span>
-<small>aberrated PSF</small>
+<div class="psf-distiller-media-card psf-distiller-media-card-wide">
+<div class="psf-distiller-media-label">RECOVERED ZERNIKE COEFFICIENTS · SIMULATION</div>
+<div class="psf-zernike-results">
+<img src="assets/psf-zernike-excitation-sim.png" alt="Ground-truth and fitted Zernike coefficients for the excitation PSF in simulation">
+<img src="assets/psf-zernike-emission-sim.png" alt="Ground-truth and fitted Zernike coefficients for the emission PSF in simulation">
 </div>
-
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>a</span>
-<small>Zernike coefficients</small>
-</div>
-
-</div>
-
-<div class="projects-placeholder-caption">
-Measured PSF → inverse optical problem → aberration parameters
 </div>
 
 </div>
 
 </div>
 
+<div class="psf-distiller-panel psf-distiller-blind">
 
+<div class="psf-distiller-panel-heading">
+<span>02 · BLIND DECONVOLUTION</span>
+<small>unknown object + unknown PSF → estimate both</small>
+</div>
+
+<div class="psf-blind-flow">
+
+<div class="psf-distiller-media-card">
+<div class="psf-distiller-media-label">ISM DATA · 25 DETECTOR IMAGES</div>
+<div class="psf-blind-square">
+<img src="assets/psf-blind-input-grid.png" alt="Twenty-five ISM detector images used as input for blind deconvolution">
+</div>
+</div>
+
+<div class="psf-distiller-arrow" aria-hidden="true">→</div>
+
+<div class="psf-blind-results">
+
+<div class="psf-distiller-media-card">
+<div class="psf-distiller-media-label">RECONSTRUCTED OBJECT</div>
+<div class="psf-blind-square">
+<img src="assets/psf-blind-reconstruction.png" alt="Reconstructed biological object from blind deconvolution">
+</div>
+</div>
+
+<div class="psf-distiller-media-card psf-blind-psf-card">
+<div class="psf-distiller-media-label">ESTIMATED PSFs</div>
+<div class="psf-blind-psf-frame">
+<img src="assets/psf-blind-psfs.png" alt="Twenty-five detector-dependent PSFs estimated jointly with the object">
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<figcaption class="psf-distiller-caption">
+calibration: 5×5 PSF measurements → aberration coefficients &nbsp;&nbsp;|&nbsp;&nbsp; blind deconvolution: 25 ISM detector images → object + PSFs
+</figcaption>
+
+</figure>
+
+</div>
 
 <div class="projects-entry-copy">
 
 <div class="projects-entry-index">
-01.3 · ONGOING</div>
+01.2 · ONGOING</div>
 
 <div class="projects-entry-tags">
-PSF DISTILLER · OPTICAL ABERRATIONS · NONCONVEX INVERSE PROBLEMS
+PSF DISTILLER & BLIND DECONVOLUTION
 </div>
 
 <h3>
-Can an observed point-spread function reveal the aberrations that produced it?
+Can the microscope response be recovered directly from the data?
 </h3>
 
 <p>
-The point-spread function of a microscope contains information about the
-optical system itself. Aberrations alter its shape, and those distortions
-can therefore be treated as measurements of otherwise hidden optical
-parameters.
+The point-spread function (PSF) describes the optical response of the microscope. Aberrations distort its shape, so recovering the PSF also reveals how the imaging system departs from the ideal model.
 </p>
 
+<div class="projects-entry-subhead">CALIBRATION FROM A BEAD</div>
 <p>
-PSF Distiller formulates the recovery of aberration coefficients from
-measured bead PSFs as an inverse optical problem. The unknown wavefront is
-represented through Zernike coefficients and linked to the measured
-intensity through a nonlinear forward model.
+A fluorescent bead provides a known calibration object. In ISM, the 5×5 detector array produces 25 related PSFs whose shifts depend on detector position but whose optical content comes from the same excitation and emission paths. I fit the complete PSF grid with a physics-based model and express the recovered wavefront distortions through Zernike coefficients. On simulated data, the estimated excitation and emission coefficients can be compared directly with the ground truth.
 </p>
 
-<p class="projects-entry-note">
-This is ongoing work. A central difficulty is the nonconvex structure of the
-resulting estimation problem and the reliable recovery of physically
-meaningful aberration parameters.
+<div class="projects-entry-subhead">BLIND DECONVOLUTION</div>
+<p>
+With a biological sample, the object is no longer known: the 25 detector images are blurred by PSFs that are themselves unknown. I therefore treat reconstruction as a blind multi-image inverse problem, jointly estimating the specimen and the microscope response from the same ISM acquisition while exploiting the shared image-formation physics across detector channels.
 </p>
+
+<div class="projects-entry-keywords">
+Point-spread function · optical aberrations · Zernike polynomials · microscope calibration · blind deconvolution
+</div>
 
 </div>
 
+</article>
+
+<article class="projects-entry projects-entry-reverse" id="lifetime-unmixing-model">
+
+<div class="projects-entry-visual">
+
+<figure class="lifetime-visual-panel">
+
+<div class="lifetime-panel-headings">
+<div>MIXED TCSPC-ISM DATA</div>
+<div>UNMIXED SUPER-RESOLVED TARGETS</div>
+</div>
+
+<div class="lifetime-visual-grid">
+
+<div class="lifetime-input-column">
+
+<div class="lifetime-input-frame">
+<img
+  src="assets/lifetime-mixed-tcspc.gif"
+  alt="Animated mixed TCSPC-ISM acquisition shown across photon-arrival-time bins."
+/>
+<span class="lifetime-dimension-badge">x × y × t</span>
+</div>
+
+<div class="lifetime-subheading">LIFETIME FINGERPRINTS</div>
+
+<img
+  class="lifetime-fingerprint-plot"
+  src="assets/lifetime-fingerprints.svg"
+  alt="Fluorescence lifetime fingerprints with 3 ns and 6 ns decay times."
+/>
+
+</div>
+
+<div class="lifetime-output-column">
+
+<div class="lifetime-target-card">
+<img
+  src="assets/lifetime-target-3ns.png"
+  alt="Unmixed super-resolved reconstruction of target 1 with a 3 ns fluorescence lifetime."
+/>
+<span class="lifetime-target-label">TARGET 1 · τ = 3 ns</span>
+</div>
+
+<div class="lifetime-target-card">
+<img
+  src="assets/lifetime-target-6ns.png"
+  alt="Unmixed super-resolved reconstruction of target 2 with a 6 ns fluorescence lifetime."
+/>
+<span class="lifetime-target-label">TARGET 2 · τ = 6 ns</span>
+</div>
+
+</div>
+
+</div>
+
+<figcaption class="lifetime-visual-caption">
+one mixed x–y–t TCSPC-ISM acquisition → joint spatial–temporal unmixing → one super-resolved image per target
+</figcaption>
+
+</figure>
+
+</div>
+
+<div class="projects-entry-copy">
+
+<div class="projects-entry-index">
+01.3</div>
+
+<div class="projects-entry-tags">
+LIFETIME UNMIXING · MODEL-BASED OPTIMIZATION
+</div>
+
+<h3>
+Can reconstruction and lifetime unmixing be solved as a single inverse problem?
+</h3>
+
+<p>
+Time-resolved microscopy acquires an <em>x–y–t</em> dataset: TCSPC — Time-Correlated Single-Photon Counting — adds photon-arrival time to the spatial measurement. When fluorophores overlap spectrally, differences in their fluorescence decay provide an additional contrast mechanism for multi-label separation.
+</p>
+
+<div class="projects-entry-subhead">APPROACH 1 · JOINT OPTIMIZATION</div>
+<p>
+In time-resolved Image Scanning Microscopy, I formulate spatial reconstruction and temporal unmixing as one spatio-temporal inverse problem, rather than reconstructing space and analysing time in separate steps.
+</p>
+
+<p>
+Reference decay signatures are used to separate the mixed signal while the detector-array information recovers spatial detail. The output is therefore one separated, super-resolved reconstruction for each molecular target rather than a pixel-wise lifetime map.
+</p>
+
+<div class="projects-entry-keywords">
+Spatio-temporal inverse problems · TCSPC · fluorescence lifetime · multi-target imaging · super-resolution
+</div>
+
+</div>
 
 </article>
 
@@ -500,13 +599,13 @@ PHYSICS-AWARE LEARNING
 </div>
 
 <h2>
-Learning from data without turning the measurement into a black box.
+Embedding measurement physics into learning.
 </h2>
 
 </div>
 
 <p>
-Learning is used when a fully explicit computational model is incomplete or impractical, while the acquisition physics still constrains what should be learned, how the representation is built, or which information must be preserved.
+Data-driven models learn complex relationships directly from microscopy measurements, while physical knowledge of image formation and signal structure remains part of the model design. Depending on the problem, this information enters through the architecture, the representation or the reconstruction constraints, keeping the learned solution connected to the acquisition.
 </p>
 
 </div>
@@ -514,60 +613,40 @@ Learning is used when a fully explicit computational model is incomplete or impr
 
 <article class="projects-entry" id="lifetime-unmixing-learning">
 
-
 <div class="projects-entry-visual">
 
-<div class="projects-generic-placeholder">
+<figure class="lifetime-learning-figure">
 
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER
+<div class="lifetime-learning-head">
+<div>APPROACH 2 · EXPLAINABLE-BY-DESIGN</div>
+<div>TIME-RESOLVED UNMIXING</div>
 </div>
 
-<div class="placeholder-flow">
-
-<div class="placeholder-node">
-<span>measurement</span>
-<small>space + photon time</small>
+<div class="lifetime-learning-panel">
+<div class="lifetime-learning-label">MIXED INPUT → INTERPRETABLE COMPONENTS</div>
+<img
+  class="lifetime-learning-components"
+  src="assets/lifetime-learning-components.png"
+  alt="Synthetic time-resolved mixture together with the two underlying spatial components and their fluorescence decay parameters."
+/>
 </div>
 
-<div class="placeholder-flow-arrow">
-→
+<div class="lifetime-learning-panel lifetime-learning-panel-architecture">
+<div class="lifetime-learning-label">TRAINABLE → EXPLAINABLE → DETERMINISTIC</div>
+<img
+  class="lifetime-learning-architecture"
+  src="assets/lifetime-learning-architecture.png"
+  alt="Explainable-by-design neural network that predicts spatial components and fluorescence decay parameters and deterministically reconstructs the measured time-resolved sequence."
+/>
 </div>
 
-<div class="placeholder-node placeholder-node-accent">
-<span>physics</span>
-<small>known acquisition structure</small>
-</div>
+<figcaption class="lifetime-learning-caption">
+<em>x–y–t</em> sequence → spatial components A<sub>i</sub> + decay parameters τ<sub>i</sub> → deterministic reconstruction of the measurement
+</figcaption>
 
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>learning</span>
-<small>trainable inference</small>
-</div>
-
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>output</span>
-<small>lifetimes + components</small>
-</div>
+</figure>
 
 </div>
-
-<div class="projects-placeholder-caption">
-Physical structure embedded in the learned inference
-</div>
-
-</div>
-
-</div>
-
-
 
 <div class="projects-entry-copy">
 
@@ -575,34 +654,30 @@ Physical structure embedded in the learned inference
 02.1</div>
 
 <div class="projects-entry-tags">
-PHYSICS-AWARE LEARNING · FLUORESCENCE LIFETIME · EXPLAINABLE MODELS
+LIFETIME UNMIXING · EXPLAINABLE-BY-DESIGN LEARNING
 </div>
 
 <h3>
-What should a network learn when part of the answer is already dictated by physics?
+Can the same unmixing problem be learned without hiding the physics?
 </h3>
 
 <p>
-A purely data-driven model can learn a mapping from measurements to
-quantities of interest, but part of that mapping may already be constrained
-by the acquisition physics.
+A second route is to learn the separation directly from time-resolved data. The network receives the complete <em>W × H × T</em> sequence and processes spatial and temporal information together, rather than fitting each pixel independently.
 </p>
 
 <p>
-I investigate physics-aware architectures for fluorescence-lifetime
-unmixing in which deterministic operations derived from the measurement
-model coexist with trainable components. The aim is to use learning where it
-is useful while keeping the role of the physical model explicit.
+The architecture is explainable by design: separate branches predict a spatial component A<sub>i</sub> and a fluorescence-decay parameter τ<sub>i</sub> for each species. A deterministic part then rebuilds the corresponding time-resolved components and sums them back to the measured sequence, keeping the physical meaning of the intermediate outputs explicit.
 </p>
 
-<p class="projects-entry-note">
-The resulting architecture is designed to return interpretable physical
-quantities — including fluorescence lifetimes and separated spatial
-components — rather than an unconstrained latent representation.
+<p>
+Because training is constrained through reconstruction of the input sequence, the method does not require a ground-truth decomposition for every measurement. The original two-component formulation was subsequently extended toward the separation of up to four spectrally overlapping fluorophores.
 </p>
 
+<div class="projects-entry-keywords">
+Fluorescence lifetime · explainable-by-design · physics-aware learning · spectral unmixing · spatio-temporal imaging
 </div>
 
+</div>
 
 </article>
 
