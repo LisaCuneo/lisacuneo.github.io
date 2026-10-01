@@ -617,22 +617,43 @@ Data-driven models learn complex relationships directly from microscopy measurem
 
 <figure class="lifetime-learning-figure">
 
-<div class="lifetime-learning-head">
-<div>APPROACH 2 · EXPLAINABLE-BY-DESIGN</div>
-<div>TIME-RESOLVED UNMIXING</div>
+<div class="lifetime-learning-head lifetime-learning-head-stacked">
+<div class="lifetime-learning-project-title">Lifetime unmixing</div>
+<div class="lifetime-learning-project-subtitle"><strong>EXPLAINABLE-BY-DESIGN</strong> Neural Networks</div>
 </div>
 
-<div class="lifetime-learning-panel">
-<div class="lifetime-learning-label">MIXED INPUT → INTERPRETABLE COMPONENTS</div>
+<div class="lifetime-learning-components-grid">
+
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title"><em>Image</em>(x, y, t)</div>
 <img
-  class="lifetime-learning-components"
-  src="assets/lifetime-learning-components.png"
-  alt="Synthetic time-resolved mixture together with the two underlying spatial components and their fluorescence decay parameters."
+  class="lifetime-learning-component-image"
+  src="assets/lifetime-learning-mixed.gif"
+  alt="Animated synthetic time-resolved mixture, shown from t = 0 to t = 12 ns and then restarted from t = 0."
 />
 </div>
 
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title"><em>A</em><sub>1</sub>(x, y) &nbsp; τ<sub>1</sub> = 3.4 ns</div>
+<img
+  class="lifetime-learning-component-image"
+  src="assets/lifetime-learning-A1.png"
+  alt="First spatial component of the simulated mixture."
+/>
+</div>
+
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title"><em>A</em><sub>2</sub>(x, y) &nbsp; τ<sub>2</sub> = 2.8 ns</div>
+<img
+  class="lifetime-learning-component-image"
+  src="assets/lifetime-learning-A2.png"
+  alt="Second spatial component of the simulated mixture."
+/>
+</div>
+
+</div>
+
 <div class="lifetime-learning-panel lifetime-learning-panel-architecture">
-<div class="lifetime-learning-label">TRAINABLE → EXPLAINABLE → DETERMINISTIC</div>
 <img
   class="lifetime-learning-architecture"
   src="assets/lifetime-learning-architecture.png"
@@ -683,51 +704,37 @@ Fluorescence lifetime · explainable-by-design · physics-aware learning · spec
 
 <article class="projects-entry projects-entry-reverse" id="smlm-background">
 
-
 <div class="projects-entry-visual">
 
-<div class="projects-generic-placeholder">
+<figure class="smlm-figure">
 
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER
+<div class="smlm-figure-head">
+<div>BACKGROUND REMOVAL FOR SMLM</div>
 </div>
 
-<div class="placeholder-flow placeholder-flow-three">
-
-<div class="placeholder-node">
-<span>raw SMLM</span>
-<small>emitters + background</small>
+<div class="smlm-graphical-panel">
+<img
+  class="smlm-graphical-abstract"
+  src="assets/smlm-graphical-abstract.png"
+  alt="Graphical abstract showing SMLM input frames and localizations, the scattering-network encoder and learned decoder, and background-suppressed output frames and localizations."
+/>
 </div>
 
-<div class="placeholder-flow-arrow">
-→
+<div class="smlm-results-panel">
+<div class="smlm-results-label">REAL SMLM DATA · DOWNSTREAM LOCALIZATION</div>
+<img
+  src="assets/smlm-real-results.png"
+  alt="Comparison of ScatNet, SVD and raw SMLM data, together with molecular localizations obtained from the filtered and unfiltered measurements."
+/>
 </div>
 
-<div class="placeholder-node placeholder-node-accent">
-<span>representation</span>
-<small>scattering coefficients</small>
-</div>
+<figcaption class="smlm-figure-caption">
+raw SMLM → structured representation → background-suppressed frames → molecular localization
+</figcaption>
 
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>separation</span>
-<small>low-rank structure</small>
-</div>
+</figure>
 
 </div>
-
-<div class="projects-placeholder-caption">
-Structured representation → background separation
-</div>
-
-</div>
-
-</div>
-
-
 
 <div class="projects-entry-copy">
 
@@ -735,34 +742,40 @@ Structured representation → background separation
 02.2</div>
 
 <div class="projects-entry-tags">
-SINGLE-MOLECULE LOCALIZATION MICROSCOPY · SCATTERING NETWORKS · SVD
+SINGLE-MOLECULE LOCALIZATION MICROSCOPY · BACKGROUND REMOVAL
 </div>
 
 <h3>
-Separating background from the signal needed for molecular localization.
+Can background be removed before localization without erasing the molecular signal?
 </h3>
 
 <p>
-Single-molecule localization microscopy relies on detecting sparse emitter
-signals in measurements that may contain substantial structured background.
-Removing that background without destroying the information used for
-localization is therefore part of the measurement problem itself.
+Single-Molecule Localization Microscopy (SMLM) reconstructs a super-resolved image from sparse emitters detected across many frames. Background is therefore not only a visual nuisance: it can perturb emitter detection and localization and propagate into false, missed or merged localizations in the final reconstruction.
 </p>
 
 <p>
-In this work I explored representations based on scattering transforms
-combined with singular-value decomposition to identify and separate
-background structure from the signal of interest.
+I explored two complementary representations matched to different background regimes. Scattering networks use a fixed multiscale wavelet transform to encode spatial structure before a learned decoder reconstructs the molecule-dominated image. Singular Value Decomposition (SVD), instead, uses the full temporal stack to separate coherent, slowly varying background from the faster molecular signal.
 </p>
 
-<p class="projects-entry-note">
-The project sits between signal representation, dimensionality reduction
-and computational microscopy, with the downstream localization problem
-determining what information must be preserved.
+<p>
+The two approaches become useful in different situations: SVD is better suited to temporally stable backgrounds, whereas the scattering-based method is more effective for spatially complex or blinking background. The purpose of this preprocessing is to prevent background structures from being interpreted as real emitters. Without an effective separation, background can generate spurious localizations, hide true molecules or merge nearby events, ultimately distorting the reconstructed biological structure. This is especially clear in the synthetic grid experiment, where false detections caused by the background disrupt an otherwise regular molecular pattern.
 </p>
 
+<div class="projects-entry-links">
+<a
+  href="https://doi.org/10.1038/s41598-026-73870-4"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Scientific Reports · accepted · DOI 10.1038/s41598-026-73870-4 ↗
+</a>
 </div>
 
+<div class="projects-entry-keywords">
+Scattering networks · singular value decomposition · wavelets · localization accuracy · image representation
+</div>
+
+</div>
 
 </article>
 
@@ -1092,56 +1105,21 @@ Before focusing on computational microscopy, I worked on inverse problems arisin
 </div>
 
 
+
+
 <article class="projects-entry" id="meg-sensor-design">
 
 
 <div class="projects-entry-visual">
 
-<div class="projects-generic-placeholder">
+<div class="meg-viewer-frame">
 
-<div class="projects-placeholder-label">
-FIGURE PLACEHOLDER
-</div>
-
-<div class="placeholder-flow">
-
-<div class="placeholder-node">
-<span>sources</span>
-<small>brain activity</small>
-</div>
-
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>fields</span>
-<small>forward model</small>
-</div>
-
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node placeholder-node-accent">
-<span>sensors</span>
-<small>array geometry</small>
-</div>
-
-<div class="placeholder-flow-arrow">
-→
-</div>
-
-<div class="placeholder-node">
-<span>inverse</span>
-<small>source information</small>
-</div>
-
-</div>
-
-<div class="projects-placeholder-caption">
-Source model → measurement geometry → inverse information
-</div>
+<iframe
+  src="assets/meg_sensor_array_3d.html"
+  title="Interactive 3D viewer of on-scalp MEG sensor arrays and source-localization simulations"
+  loading="lazy"
+  scrolling="no"
+></iframe>
 
 </div>
 
@@ -1152,39 +1130,49 @@ Source model → measurement geometry → inverse information
 <div class="projects-entry-copy">
 
 <div class="projects-entry-index">
-04.1</div>
+04.1
+</div>
 
 <div class="projects-entry-tags">
-MEG · SENSOR-ARRAY DESIGN · INVERSE SOURCE LOCALIZATION
+MASTER THESIS · ON-SCALP MEG · SENSOR-ARRAY DESIGN
 </div>
 
 <h3>
-How should sensors be placed to make an inverse problem more informative?
+How many sensors are needed, and where should they be placed, to localize brain activity accurately?
 </h3>
 
 <p>
-In magnetoencephalography, neuronal activity is observed indirectly through
-the magnetic fields measured outside the head. The geometry and density of
-the sensor array therefore influence which spatial information can be
-captured and subsequently reconstructed.
+Magnetoencephalography measures the magnetic fields generated by neural
+currents outside the head. Optically pumped magnetometers can operate much
+closer to the scalp than conventional cryogenic sensors, making the sensor
+array flexible rather than fixed by the hardware.
 </p>
 
 <p>
-My earlier work studied the design of MEG sensor arrays from this
-perspective, linking spatial sampling and measurement configuration to the
-inverse source-localization problem.
+My Master's thesis approached this flexibility as an experimental-design
+and inverse-problem question. I compared Leadfield- and Laplace-based
+spatial sampling for on-scalp arrays ranging from 20 to 400 sensors.
 </p>
 
-<p class="projects-entry-note">
-This work established an early connection between two questions that remain
-central in my research: what information does a measurement contain, and
-how does measurement design affect what can ultimately be inferred?
+<p>
+Synthetic measurements were generated from 513 cortical source locations
+in the left hemisphere and reconstructed using both Minimum Norm Estimation
+and the Bayesian SESAME method. This allowed the effect of sensor geometry
+to be examined across two different inverse approaches.
+</p>
+
+<p>
+Localization improves as sensor density increases before approaching a
+noise-dependent saturation regime. The interactive viewer connects the
+original sensor layouts with cortical sensitivity and source-localization
+metrics in the same 3D geometry.
 </p>
 
 </div>
 
 
 </article>
+
 
 <!-- =======================================================
      FINAL RESEARCH CLOSING

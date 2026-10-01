@@ -286,6 +286,7 @@
   letter-spacing: -0.015em;
 
   color: var(--text-main);
+  text-align: left;
 }
 
 .publication-authors {
@@ -329,7 +330,8 @@
   text-align: right;
 }
 
-.publication-link {
+.publication-link,
+.publication-links a {
   font-size: 0.65rem;
   font-weight: 500;
 
@@ -340,7 +342,8 @@
   color: var(--accent) !important;
 }
 
-.publication-link:hover {
+.publication-link:hover,
+.publication-links a:hover {
   text-decoration: underline !important;
 }
 

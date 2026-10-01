@@ -49,11 +49,11 @@ PUBLICATIONS
   href="#published"
   class="publications-overview-title"
 >
-Published
+Published / accepted
 </a>
 
 <span class="publications-overview-count">
-7 journal articles
+8 journal articles
 </span>
 
 </div>
@@ -87,7 +87,7 @@ Ongoing manuscripts
 </a>
 
 <span class="publications-overview-count">
-4 manuscripts
+3 manuscripts
 </span>
 
 </div>
@@ -114,7 +114,7 @@ Ongoing manuscripts
 <div class="publications-section-header">
 
 <div class="section-overline">
-PUBLISHED
+PUBLISHED / ACCEPTED
 </div>
 
 <h2>
@@ -126,6 +126,49 @@ Peer-reviewed journal articles
 
 
 <div class="publication-list">
+
+
+<!-- 00 -->
+
+<article class="publication-entry">
+
+<div class="publication-meta">
+
+<div class="publication-date">
+SEP 2026
+</div>
+</div>
+
+<div class="publication-main">
+
+<h3>
+Advanced background removal methods in single molecule localization microscopy using scattering networks and SVD
+</h3>
+
+<p class="publication-authors">
+<strong>Lisa Cuneo</strong>, Simone Civita, S. Ivan Trapasso, Luca Ratti, Alberto Diaspro, Paolo Bianchini
+</p>
+
+<p class="publication-venue">
+Scientific Reports · accepted
+</p>
+
+</div>
+
+<div class="publication-links">
+
+<a
+  href="https://doi.org/10.1038/s41598-026-73870-4"
+  class="publication-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+DOI ↗
+</a>
+
+</div>
+
+</article>
 
 
 <!-- 01 -->
@@ -828,39 +871,6 @@ PREPRINT DOI ↗
 </article>
 
 
-
-<!-- 02 -->
-
-<article class="publication-entry publication-entry-unpublished">
-
-<div class="publication-meta publication-meta-status">
-
-<div class="publication-status-text">
-UNDER REVIEW
-</div>
-</div>
-
-
-<div class="publication-main">
-
-<h3>
-Advanced Background Removal Methods in Single Molecule Localization Microscopy Using Scattering Networks and SVD
-</h3>
-
-<p class="publication-authors">
-<strong>Lisa Cuneo</strong>, Simone Civita, Ivan Trapasso, Luca Ratti, Paolo Bianchini, Alberto Diaspro
-</p>
-
-<p class="publication-venue">
-Scientific Reports
-</p>
-
-</div>
-
-
-<div class="publication-links"></div>
-
-</article>
 
 
 

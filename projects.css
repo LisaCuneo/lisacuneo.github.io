@@ -2604,66 +2604,88 @@
   gap: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
-.lifetime-learning-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-bottom: 0.7rem;
+.lifetime-learning-head-stacked {
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--line);
+}
 
-  font-size: 0.69rem;
+.lifetime-learning-project-title {
+  font-size: 0.72rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.055em;
   color: #243149;
 }
 
-.lifetime-learning-head > div:last-child {
+.lifetime-learning-project-subtitle {
+  margin-top: 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.035em;
   color: var(--text-faint);
-  text-align: right;
+}
+
+.lifetime-learning-project-subtitle strong {
+  font-weight: 700;
+  color: #243149;
+}
+
+.lifetime-learning-components-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.45rem, 0.9vw, 0.7rem);
+  align-items: start;
+}
+
+.lifetime-learning-component {
+  min-width: 0;
+}
+
+.lifetime-learning-component-title {
+  min-height: 1.45rem;
+  margin-bottom: 0.35rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(0.72rem, 1vw, 0.9rem);
+  line-height: 1.15;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+}
+
+.lifetime-learning-component-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-width: none !important;
+  object-fit: cover;
+  background: #440154;
 }
 
 .lifetime-learning-panel {
   min-width: 0;
 }
 
-.lifetime-learning-label {
-  margin-bottom: 0.45rem;
-  font-size: 0.64rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.055em;
-  color: var(--text-faint);
+.lifetime-learning-panel-architecture {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
 }
 
-.lifetime-learning-components,
 .lifetime-learning-architecture {
   display: block;
   width: 100%;
   height: auto;
   max-width: none !important;
+  padding: 0.1rem 0;
+  background: #ffffff;
   object-fit: contain;
-}
-
-.lifetime-learning-components {
-  background: #ffffff;
-}
-
-.lifetime-learning-panel-architecture {
-  padding-top: 0.2rem;
-  border-top: 1px solid var(--line);
-}
-
-.lifetime-learning-architecture {
-  padding: 0.25rem 0;
-  background: #ffffff;
 }
 
 .lifetime-learning-caption {
   margin: 0;
   padding-top: 0.6rem;
   border-top: 1px solid var(--line);
-
   font-size: 0.67rem;
   font-weight: 400;
   line-height: 1.4;
@@ -2690,12 +2712,324 @@
 }
 
 @media (max-width: 620px) {
-  .lifetime-learning-head {
-    display: block;
+  .lifetime-learning-components-grid {
+    grid-template-columns: 1fr;
   }
 
-  .lifetime-learning-head > div:last-child {
-    margin-top: 0.2rem;
-    text-align: left;
+  .lifetime-learning-component-title {
+    min-height: 0;
+    margin-top: 0.25rem;
   }
 }
+
+/* =========================================================
+   SMLM BACKGROUND REMOVAL
+   ========================================================= */
+
+.smlm-figure {
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.smlm-figure-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.59rem;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: 0.085em;
+  color: var(--text-main);
+}
+
+.smlm-figure-head > div:last-child {
+  color: var(--text-faint);
+  text-align: right;
+}
+
+.smlm-graphical-panel {
+  padding: 0.9rem 1rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.smlm-results-label,
+.smlm-method-title {
+  font-size: 0.6rem;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: 0.07em;
+  color: var(--text-main);
+}
+
+.smlm-results-label {
+  margin-bottom: 0.7rem;
+  color: var(--text-faint);
+}
+
+.smlm-graphical-abstract {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none !important;
+}
+
+.smlm-results-panel {
+  padding: 1rem;
+}
+
+.smlm-results-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none !important;
+}
+
+.smlm-figure-caption {
+  padding: 0.8rem 1rem 0.85rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 0.58rem;
+  line-height: 1.4;
+  color: var(--text-faint);
+}
+
+@media (min-width: 1101px) {
+  #smlm-background {
+    grid-template-columns: minmax(430px, 0.96fr) minmax(500px, 1.04fr);
+    gap: clamp(3.5rem, 6vw, 6rem);
+  }
+
+  #smlm-background .projects-entry-visual {
+    width: 104%;
+    margin-right: -4%;
+  }
+}
+
+
+
+
+/* ===== MEG VIEWER V2 START ===== */
+
+
+/* =========================================================
+   MASTER THESIS — ON-SCALP MEG
+   ========================================================= */
+
+#meg-sensor-design {
+
+  grid-template-columns:
+    minmax(620px, 1.18fr)
+    minmax(390px, 0.82fr);
+
+  gap:
+    clamp(2.8rem, 4.5vw, 5rem);
+
+}
+
+
+#meg-sensor-design
+.projects-entry-copy {
+
+  max-width:
+    620px;
+
+}
+
+
+#meg-sensor-design
+.projects-entry-visual {
+
+  width:
+    100%;
+
+  min-width:
+    0;
+
+}
+
+
+/* ---------------------------------------------------------
+   Interactive viewer
+   --------------------------------------------------------- */
+
+.meg-viewer-frame {
+
+  width:
+    100%;
+
+  height:
+    700px;
+
+  min-width:
+    0;
+
+  overflow:
+    hidden;
+
+  border:
+    1px solid var(--line);
+
+  background:
+    #ffffff;
+
+}
+
+
+.meg-viewer-frame iframe {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  margin:
+    0;
+
+  padding:
+    0;
+
+  border:
+    0;
+
+  overflow:
+    hidden;
+
+  background:
+    #ffffff;
+
+}
+
+
+/* =========================================================
+   PUBLIC PROJECT MAP
+   ========================================================= */
+
+/*
+The local projects.qmd contains four branches.
+projects_online.qmd contains three.
+
+This class changes only the public copy.
+*/
+
+.projects-project-map-grid.projects-project-map-grid-public {
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  #meg-sensor-design {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  #meg-sensor-design
+  .projects-entry-visual {
+
+    width:
+      100%;
+
+    margin-left:
+      0;
+
+  }
+
+
+  .meg-viewer-frame {
+
+    height:
+      660px;
+
+  }
+
+
+  .projects-project-map-grid.projects-project-map-grid-public {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .meg-viewer-frame {
+
+    height:
+      590px;
+
+  }
+
+
+  .projects-project-map-grid.projects-project-map-grid-public {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
+
+
+/* ===== MEG VIEWER V2 END ===== */
+
+
+
+/* ===== PUBLIC PROJECT MAP START ===== */
+
+.projects-project-map-grid.projects-project-map-grid-public {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+
+@media (max-width: 1100px) {
+
+  .projects-project-map-grid.projects-project-map-grid-public {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .projects-project-map-grid.projects-project-map-grid-public {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+/* ===== PUBLIC PROJECT MAP END ===== */

@@ -2,6 +2,7 @@ project:
   render:
     - index.qmd
     - research.qmd
+    - projects_online.qmd
     - publications.qmd
     - conferences.qmd
     - teaching.qmd
@@ -11,6 +12,9 @@ website:
     left:
       - href: research.qmd
         text: Research
+
+      - href: projects_online.qmd
+        text: Projects
 
       - href: publications.qmd
         text: Publications
