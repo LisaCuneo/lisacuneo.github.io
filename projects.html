@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>teaching – Lisa Cuneo</title>
+<title>projects_online – Lisa Cuneo</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,10 +75,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="teaching.css">
+<link rel="stylesheet" href="projects.css">
 <meta property="og:title" content="Lisa Cuneo">
+<meta property="og:image" content="https://lisacuneo.github.io/assets/rbn-biological-object-full.png">
 <meta property="og:site_name" content="Lisa Cuneo">
-<link rel="canonical" href="https://lisacuneo.github.io/teaching.html">
+<meta property="og:image:alt" content="Schematic biological cell extracted from the RbN microscopy figure.">
+<meta property="og:image:height" content="326">
+<meta property="og:image:width" content="326">
+<link rel="canonical" href="https://lisacuneo.github.io/projects.html">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -115,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Conferences</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
@@ -148,457 +152,613 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- =======================================================
-     TEACHING — HEADER
+     PROJECTS — PAGE HEADER
      ======================================================= -->
-<section class="tt-header page-columns page-full">
-<div class="tt-header-inner column-screen-inset">
-<div class="tt-header-grid">
-<div class="tt-title" role="heading" aria-level="1">
-<p>Teaching &amp; academic activities.</p>
+<section class="projects-page-header page-columns page-full">
+<div class="projects-page-header-inner column-screen-inset">
+<div class="projects-page-overline">
+<p>PROJECTS</p>
+</div>
+<div class="projects-page-header-grid">
+<div class="projects-page-title" role="heading" aria-level="1">
+<p>Mathematical approaches applied to biological measurements</p>
+</div>
+<div class="projects-page-header-copy">
+<p class="projects-page-lead">
+I am interested in the mathematical layer between what an experiment can physically measure and what we want to learn about a biological system. Depending on the information available in the data, this may lead to a model-based inverse problem, an optimization method, physics-aware learning, or the design and control of the measurement itself.
+</p>
 </div>
 </div>
 <!-- =======================================================
-     OVERVIEW
+     PROJECT MAP
      ======================================================= -->
-<div class="tt-overview">
-<div class="tt-overview-item">
-<p><a href="#teaching" class="tt-overview-title"> Teaching </a></p>
-<p><span class="tt-overview-count"> 4 course assignments </span></p>
+<div class="projects-project-map">
+<div class="projects-project-map-label">
+<p>APPROACHES</p>
 </div>
-<div class="tt-overview-item">
-<p><a href="#schools" class="tt-overview-title"> Schools &amp; workshops </a></p>
-<p><span class="tt-overview-count"> lecturing · talks · organisation </span></p>
+<div class="projects-project-map-grid projects-project-map-grid-public">
+<div class="projects-project-branch">
+<p><a class="projects-project-branch-title" href="#model-based"> Model-based &amp; optimization </a></p>
+<p class="projects-project-branch-description">
+Explicit models, losses, regularization and numerical optimization.
+</p>
+<ul class="projects-project-links">
+<li>
+<a href="#regularization-by-noise">Regularization by Noise</a>
+</li>
+<li>
+<a href="#psf-distiller">PSF Distiller &amp; blind deconvolution</a>
+</li>
+<li>
+<a href="#lifetime-unmixing-model">Lifetime unmixing · optimization</a>
+</li>
+</ul>
 </div>
-<div class="tt-overview-item">
-<p><a href="#awards" class="tt-overview-title"> Awards &amp; grants </a></p>
-<p><span class="tt-overview-count"> recognition · travel · challenges </span></p>
+<div class="projects-project-branch">
+<p><a class="projects-project-branch-title" href="#learning"> Physics-aware learning </a></p>
+<p class="projects-project-branch-description">
+Learning in which the measurement structure or physical model remains explicit.
+</p>
+<ul class="projects-project-links">
+<li>
+<a href="#lifetime-unmixing-learning">Lifetime unmixing · explained by design</a>
+</li>
+<li>
+<a href="#smlm-background">SMLM background removal</a>
+</li>
+</ul>
+</div>
+<div class="projects-project-branch projects-project-branch-earlier">
+<p><a class="projects-project-branch-title" href="#earlier-work"> Earlier work </a></p>
+<p class="projects-project-branch-description">
+Inverse problems and measurement design beyond microscopy.
+</p>
+<ul class="projects-project-links">
+<li>
+<a href="#meg-sensor-design">MEG sensor-array design</a>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 </section>
 <!-- =======================================================
-     TEACHING
+     MODEL-BASED & OPTIMIZATION
      ======================================================= -->
-<section class="tt-section page-columns page-full" id="teaching">
-<div class="tt-inner column-screen-inset">
-<h2 class="tt-section-title">
-Teaching
+<section class="projects-theme-section projects-theme-light page-columns page-full" id="model-based">
+<div class="projects-theme-inner column-screen-inset">
+<div class="projects-theme-header">
+<div>
+<div class="section-overline">
+<p>MODEL-BASED &amp; OPTIMIZATION</p>
+</div>
+<h2>
+Exploiting a known physical forward model.
 </h2>
-<div class="tt-list">
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-date">
-<p>2024–2026</p>
 </div>
-<div class="tt-entry-type">
-<p>STATISTICS</p>
+<p>
+Here, the relationship between measurement and unknown is represented through an explicit physical or statistical model. Losses, regularization, constraints and numerical optimization then determine how the latent quantity is recovered.
+</p>
+</div>
+<article class="projects-entry" id="regularization-by-noise">
+<div class="projects-entry-visual">
+<figure class="projects-rbn-figure projects-rbn-chain figure">
+<div class="rbn-chain-layout">
+<div class="rbn-chain-top">
+<div class="rbn-chain-panel rbn-chain-panel-object">
+<div class="rbn-chain-panel-title">
+<p>BIOLOGICAL OBJECT</p>
+</div>
+<div class="rbn-chain-object-visual">
+<p><img src="assets/rbn-biological-object-full.png" alt="Schematic biological cell extracted from the RbN microscopy figure." class="figure-img"></p>
 </div>
 </div>
-<div class="tt-entry-main">
+<div class="rbn-chain-panel rbn-chain-panel-spad">
+<div class="rbn-chain-panel-title">
+<p>TIME-RESOLVED SPAD</p>
+</div>
+<div class="rbn-chain-spad-stack">
+<p><img src="assets/spad-spatial-classified.gif" alt="Animated photon stream showing photon detections assigned to pixels of a 5 by 5 SPAD detector." class="rbn-chain-gif rbn-chain-gif-spatial figure-img"></p>
+<div class="rbn-chain-spad-bottom">
+<p><img src="assets/spad-class-images.gif" alt="Animated microscopy images corresponding to the three independent temporal noise realizations." class="rbn-chain-gif rbn-chain-gif-images figure-img"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="rbn-chain-result">
+<div class="rbn-chain-panel-title rbn-chain-result-title">
+<p>MORPHOLOGY-AGNOSTIC RECONSTRUCTION</p>
+</div>
+<div class="rbn-result-grid">
+<figure class="rbn-compare-card rbn-compare-card-top rbn-compare-card-left figure">
+<figcaption>
+TOMM20 · Mitochondrial membrane
+</figcaption>
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-tomm20-rbn.jpg" alt="TOMM20 reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn figure-img"> <img src="assets/rbn-tomm20-clsm.jpg" alt="TOMM20 CLSM input" class="rbn-compare-image rbn-compare-clsm figure-img">
+<div class="rbn-compare-label rbn-compare-label-left">
+CLSM
+</div>
+<div class="rbn-compare-label rbn-compare-label-right">
+s²ISM-RbN
+</div>
+<div class="rbn-compare-divider" aria-hidden="true">
+<span>↔︎</span>
+</div>
+<p><input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for TOMM20"></p>
+</div>
+</figure>
+<figure class="rbn-compare-card rbn-compare-card-top rbn-compare-card-right figure">
+<figcaption>
+Vimentin · Intermediate filaments
+</figcaption>
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-vimentin-rbn.jpg" alt="Vimentin reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn figure-img"> <img src="assets/rbn-vimentin-clsm.jpg" alt="Vimentin CLSM input" class="rbn-compare-image rbn-compare-clsm figure-img">
+<div class="rbn-compare-label rbn-compare-label-left">
+CLSM
+</div>
+<div class="rbn-compare-label rbn-compare-label-right">
+s²ISM-RbN
+</div>
+<div class="rbn-compare-divider" aria-hidden="true">
+<span>↔︎</span>
+</div>
+<p><input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for vimentin"></p>
+</div>
+</figure>
+<figure class="rbn-compare-card rbn-compare-card-bottom rbn-compare-card-left figure">
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-tubulin-rbn.jpg" alt="Alpha-tubulin reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn figure-img"> <img src="assets/rbn-tubulin-clsm.jpg" alt="Alpha-tubulin CLSM input" class="rbn-compare-image rbn-compare-clsm figure-img">
+<div class="rbn-compare-label rbn-compare-label-left">
+CLSM
+</div>
+<div class="rbn-compare-label rbn-compare-label-right">
+s²ISM-RbN
+</div>
+<div class="rbn-compare-divider" aria-hidden="true">
+<span>↔︎</span>
+</div>
+<p><input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for alpha-tubulin"></p>
+</div>
+<figcaption>
+α-Tubulin · Microtubules
+</figcaption>
+</figure>
+<figure class="rbn-compare-card rbn-compare-card-bottom rbn-compare-card-right figure">
+<div class="rbn-compare" style="--position: 50%;">
+<img src="assets/rbn-h3k9me3-rbn.jpg" alt="Histone H3K9me3 reconstructed with s²ISM-RbN" class="rbn-compare-image rbn-compare-rbn figure-img"> <img src="assets/rbn-h3k9me3-clsm.jpg" alt="Histone H3K9me3 CLSM input" class="rbn-compare-image rbn-compare-clsm figure-img">
+<div class="rbn-compare-label rbn-compare-label-left">
+CLSM
+</div>
+<div class="rbn-compare-label rbn-compare-label-right">
+s²ISM-RbN
+</div>
+<div class="rbn-compare-divider" aria-hidden="true">
+<span>↔︎</span>
+</div>
+<p><input class="rbn-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare CLSM and s²ISM-RbN for Histone H3K9me3"></p>
+</div>
+<figcaption>
+Histone H3K9me3 · Chromatin
+</figcaption>
+</figure>
+<div class="rbn-result-center-cell" aria-hidden="true">
+<p><img src="assets/rbn-biological-object-center.png" alt="" class="figure-img"></p>
+</div>
+</div>
+</div>
+</div>
+</figure>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".rbn-compare").forEach(function (comparison) {
+    const range = comparison.querySelector(".rbn-compare-range");
+    if (!range) return;
+
+    const update = function () {
+      comparison.style.setProperty("--position", range.value + "%");
+    };
+
+    range.addEventListener("input", update);
+    update();
+  });
+});
+</script>
+</div>
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+01.1
+</div>
+<div class="projects-entry-tags">
+<p>REGULARIZATION BY NOISE</p>
+</div>
 <h3>
-Applied Statistics
+Can multiple noise realizations reveal information about the sample?
 </h3>
-<p class="tt-entry-context">
-Exercise classes · University of Genoa
+<p>
+Time-resolved SPAD detection preserves the arrival time of individual photons. Partitioning the photon stream into disjoint temporal windows turns a single acquisition into multiple independent Poisson realizations of the same underlying object.
 </p>
 <p>
-Second-year course for the Degree in Mathematics and SMID (Statistics, Mathematics and Data Processing).
-</p>
-<p class="tt-entry-detail">
-Supervisors: Eva Riccomagno and Francesco Porro
-</p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-date">
-<p>2022–2023</p>
-</div>
-<div class="tt-entry-type">
-<p>ANALYSIS</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-Mathematical Analysis 2
-</h3>
-<p class="tt-entry-context">
-Exercise classes · University of Genoa
+In Image Scanning Microscopy, the SPAD array produces a 5×5 set of detector images, each providing a blurred observation of the same specimen. These measurements must then be combined and deconvolved to recover a higher-resolution estimate of the underlying object rather than the optically blurred image formed by the microscope.
 </p>
 <p>
-Second-year course for the Degree in Mathematics.
-</p>
-<p class="tt-entry-detail">
-Supervisor: Giovanni Alberti
-</p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-date">
-<p>2021–2023</p>
-</div>
-<div class="tt-entry-type">
-<p>STATISTICS</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-Descriptive Statistics
-</h3>
-<p class="tt-entry-context">
-Exercise classes · University of Genoa
+Richardson–Lucy (RL) is a natural reconstruction method for photon-counting data because it follows the physical forward model and Poisson statistics. Its iterations are, however, semi-convergent: after an initial improvement, prolonged optimization progressively fits the measurement noise. In practice, RL therefore requires either early stopping or an explicit prior on the unknown image.
 </p>
 <p>
-First-year course for the Degree in Mathematics and SMID (Statistics, Mathematics and Data Processing).
+Regularization by Noise replaces morphology-based priors with agreement across independent realizations: reproducible features are preserved, while realization-specific fluctuations are suppressed. The prior is therefore statistical rather than morphological, allowing the same regularization principle to be applied across very different biological structures. The resulting coupled variational problem also leads to a nontrivial optimization task, for which we are developing a dedicated algorithm with convergence guarantees.
 </p>
-<p class="tt-entry-detail">
-Supervisors: Alberto Sorrentino and Francesco Porro
-</p>
+<div class="projects-entry-links">
+<p><a href="https://www.biorxiv.org/content/10.64898/2026.09.12.751176v1" target="_blank" rel="noopener noreferrer"> bioRxiv preprint · DOI 10.64898/2026.09.12.751176 ↗ </a></p>
+</div>
+<div class="projects-entry-keywords">
+<p>Poisson inverse problems · morphology-agnostic regularization · variational modelling · numerical optimization · convergence analysis</p>
+</div>
 </div>
 </article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-date">
-<p>2021–2023</p>
+<article class="projects-entry" id="psf-distiller">
+<div class="projects-entry-visual">
+<figure class="psf-distiller-figure figure">
+<div class="psf-distiller-panel psf-distiller-calibration">
+<div class="psf-distiller-panel-heading">
+<p><span>01 · CALIBRATION FROM A BEAD</span> <small>known object → optical aberrations</small></p>
 </div>
-<div class="tt-entry-type">
-<p>ANALYSIS</p>
+<div class="psf-calibration-flow">
+<div class="psf-distiller-media-card psf-calibration-input-card">
+<div class="psf-distiller-media-label">
+SIMULATED 5×5 ISM PSFs
+</div>
+<div class="psf-calibration-psf-frame">
+<p><img src="assets/psf-calibration-ism-psfs.png" alt="Simulated 5 by 5 ISM PSF dataset used as input for Zernike coefficient estimation" class="figure-img"></p>
+</div>
+<div class="psf-calibration-equation" aria-label="ISM point spread function model">
+<div>
+<i>h</i>(<b>x</b><sub>s</sub> | <b>x</b><sub>d</sub>) = <i>h</i><sub>exc</sub>(<b>x</b><sub>s</sub>) · [<i>h</i><sub>em</sub> ∗ <i>p</i>](<b>x</b><sub>s</sub> − <b>x</b><sub>d</sub>)
+</div>
+<div class="psf-calibration-equation-approx">
+≈ <i>h</i>[<b>x</b><sub>s</sub> − <b>μ</b>(<b>x</b><sub>d</sub>)]
 </div>
 </div>
-<div class="tt-entry-main">
+</div>
+<div class="psf-distiller-arrow" aria-hidden="true">
+→
+</div>
+<div class="psf-distiller-media-card psf-distiller-media-card-wide">
+<div class="psf-distiller-media-label">
+RECOVERED ZERNIKE COEFFICIENTS · SIMULATION
+</div>
+<div class="psf-zernike-results">
+<p><img src="assets/psf-zernike-excitation-sim.png" alt="Ground-truth and fitted Zernike coefficients for the excitation PSF in simulation" class="figure-img"> <img src="assets/psf-zernike-emission-sim.png" alt="Ground-truth and fitted Zernike coefficients for the emission PSF in simulation" class="figure-img"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="psf-distiller-panel psf-distiller-blind">
+<div class="psf-distiller-panel-heading">
+<p><span>02 · BLIND DECONVOLUTION</span> <small>unknown object + unknown PSF → estimate both</small></p>
+</div>
+<div class="psf-blind-flow">
+<div class="psf-distiller-media-card">
+<div class="psf-distiller-media-label">
+ISM DATA · 25 DETECTOR IMAGES
+</div>
+<div class="psf-blind-square">
+<p><img src="assets/psf-blind-input-grid.png" alt="Twenty-five ISM detector images used as input for blind deconvolution" class="figure-img"></p>
+</div>
+</div>
+<div class="psf-distiller-arrow" aria-hidden="true">
+→
+</div>
+<div class="psf-blind-results">
+<div class="psf-distiller-media-card">
+<div class="psf-distiller-media-label">
+RECONSTRUCTED OBJECT
+</div>
+<div class="psf-blind-square">
+<p><img src="assets/psf-blind-reconstruction.png" alt="Reconstructed biological object from blind deconvolution" class="figure-img"></p>
+</div>
+</div>
+<div class="psf-distiller-media-card psf-blind-psf-card">
+<div class="psf-distiller-media-label">
+ESTIMATED PSFs
+</div>
+<div class="psf-blind-psf-frame">
+<p><img src="assets/psf-blind-psfs.png" alt="Twenty-five detector-dependent PSFs estimated jointly with the object" class="figure-img"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="psf-distiller-caption">
+calibration: 5×5 PSF measurements → aberration coefficients &nbsp;&nbsp;|&nbsp;&nbsp; blind deconvolution: 25 ISM detector images → object + PSFs
+</figcaption>
+</figure>
+</div>
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+01.2 · ONGOING
+</div>
+<div class="projects-entry-tags">
+<p>PSF DISTILLER &amp; BLIND DECONVOLUTION</p>
+</div>
 <h3>
-Mathematical Analysis — Module 2
+Can the microscope response be recovered directly from the data?
 </h3>
-<p class="tt-entry-context">
-Exercise classes · University of Genoa
+<p>
+The point-spread function (PSF) describes the optical response of the microscope. Aberrations distort its shape, so recovering the PSF also reveals how the imaging system departs from the ideal model.
+</p>
+<div class="projects-entry-subhead">
+CALIBRATION FROM A BEAD
+</div>
+<p>
+A fluorescent bead provides a known calibration object. In ISM, the 5×5 detector array produces 25 related PSFs whose shifts depend on detector position but whose optical content comes from the same excitation and emission paths. I fit the complete PSF grid with a physics-based model and express the recovered wavefront distortions through Zernike coefficients. On simulated data, the estimated excitation and emission coefficients can be compared directly with the ground truth.
+</p>
+<div class="projects-entry-subhead">
+BLIND DECONVOLUTION
+</div>
+<p>
+With a biological sample, the object is no longer known: the 25 detector images are blurred by PSFs that are themselves unknown. I therefore treat reconstruction as a blind multi-image inverse problem, jointly estimating the specimen and the microscope response from the same ISM acquisition while exploiting the shared image-formation physics across detector channels.
+</p>
+<div class="projects-entry-keywords">
+<p>Point-spread function · optical aberrations · Zernike polynomials · microscope calibration · blind deconvolution</p>
+</div>
+</div>
+</article>
+<article class="projects-entry projects-entry-reverse" id="lifetime-unmixing-model">
+<div class="projects-entry-visual">
+<figure class="lifetime-visual-panel figure">
+<div class="lifetime-panel-headings">
+<div>
+MIXED TCSPC-ISM DATA
+</div>
+<div>
+UNMIXED SUPER-RESOLVED TARGETS
+</div>
+</div>
+<div class="lifetime-visual-grid">
+<div class="lifetime-input-column">
+<div class="lifetime-input-frame">
+<p><img src="assets/lifetime-mixed-tcspc.gif" alt="Animated mixed TCSPC-ISM acquisition shown across photon-arrival-time bins." class="figure-img"> <span class="lifetime-dimension-badge">x × y × t</span></p>
+</div>
+<div class="lifetime-subheading">
+LIFETIME FINGERPRINTS
+</div>
+<p><img class="lifetime-fingerprint-plot figure-img" src="assets/lifetime-fingerprints.svg" alt="Fluorescence lifetime fingerprints with 3 ns and 6 ns decay times."></p>
+</div>
+<div class="lifetime-output-column">
+<div class="lifetime-target-card">
+<p><img src="assets/lifetime-target-3ns.png" alt="Unmixed super-resolved reconstruction of target 1 with a 3 ns fluorescence lifetime." class="figure-img"> <span class="lifetime-target-label">TARGET 1 · τ = 3 ns</span></p>
+</div>
+<div class="lifetime-target-card">
+<p><img src="assets/lifetime-target-6ns.png" alt="Unmixed super-resolved reconstruction of target 2 with a 6 ns fluorescence lifetime." class="figure-img"> <span class="lifetime-target-label">TARGET 2 · τ = 6 ns</span></p>
+</div>
+</div>
+</div>
+<figcaption class="lifetime-visual-caption">
+one mixed x–y–t TCSPC-ISM acquisition → joint spatial–temporal unmixing → one super-resolved image per target
+</figcaption>
+</figure>
+</div>
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+01.3
+</div>
+<div class="projects-entry-tags">
+<p>LIFETIME UNMIXING · MODEL-BASED OPTIMIZATION</p>
+</div>
+<h3>
+Can reconstruction and lifetime unmixing be solved as a single inverse problem?
+</h3>
+<p>
+Time-resolved microscopy acquires an <em>x–y–t</em> dataset: TCSPC — Time-Correlated Single-Photon Counting — adds photon-arrival time to the spatial measurement. When fluorophores overlap spectrally, differences in their fluorescence decay provide an additional contrast mechanism for multi-label separation.
+</p>
+<div class="projects-entry-subhead">
+APPROACH 1 · JOINT OPTIMIZATION
+</div>
+<p>
+In time-resolved Image Scanning Microscopy, I formulate spatial reconstruction and temporal unmixing as one spatio-temporal inverse problem, rather than reconstructing space and analysing time in separate steps.
 </p>
 <p>
-Second-year course for the Degree in Mechanical Engineering.
+Reference decay signatures are used to separate the mixed signal while the detector-array information recovers spatial detail. The output is therefore one separated, super-resolved reconstruction for each molecular target rather than a pixel-wise lifetime map.
 </p>
-<p class="tt-entry-detail">
-Supervisor: Edoardo Mainini
-</p>
+<div class="projects-entry-keywords">
+<p>Spatio-temporal inverse problems · TCSPC · fluorescence lifetime · multi-target imaging · super-resolution</p>
+</div>
 </div>
 </article>
-</div>
 </div>
 </section>
 <!-- =======================================================
-     SCHOOLS & WORKSHOPS — TEACHING / TALKS / ORGANISATION
+     PHYSICS-AWARE LEARNING
      ======================================================= -->
-<section class="tt-section page-columns page-full" id="schools">
-<div class="tt-inner column-screen-inset">
-<h2 class="tt-section-title">
-Schools &amp; workshops
+<section class="projects-theme-section projects-theme-white page-columns page-full" id="learning">
+<div class="projects-theme-inner column-screen-inset">
+<div class="projects-theme-header">
+<div>
+<div class="section-overline">
+<p>PHYSICS-AWARE LEARNING</p>
+</div>
+<h2>
+Embedding measurement physics into learning.
 </h2>
-<div class="tt-events-list">
-<!-- CIL SCHOOL 2026 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>23–27 FEB 2026</p>
 </div>
-<div class="tt-event-role tt-event-role-accent">
-<p>LECTURER · ORGANISATION</p>
+<p>
+Data-driven models learn complex relationships directly from microscopy measurements, while physical knowledge of image formation and signal structure remains part of the model design. Depending on the problem, this information enters through the architecture, the representation or the reconstruction constraints, keeping the learned solution connected to the acquisition.
+</p>
+</div>
+<article class="projects-entry" id="lifetime-unmixing-learning">
+<div class="projects-entry-visual">
+<figure class="lifetime-learning-figure figure">
+<div class="lifetime-learning-head lifetime-learning-head-stacked">
+<div class="lifetime-learning-project-title">
+Lifetime unmixing
+</div>
+<div class="lifetime-learning-project-subtitle">
+<strong>EXPLAINABLE-BY-DESIGN</strong> Neural Networks
 </div>
 </div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
+<div class="lifetime-learning-components-grid">
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title">
+<em>Image</em>(x, y, t)
+</div>
+<p><img class="lifetime-learning-component-image figure-img" src="assets/lifetime-learning-mixed.gif" alt="Animated synthetic time-resolved mixture, shown from t = 0 to t = 12 ns and then restarted from t = 0."></p>
+</div>
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title">
+<em>A</em><sub>1</sub>(x, y) &nbsp; τ<sub>1</sub> = 3.4 ns
+</div>
+<p><img class="lifetime-learning-component-image figure-img" src="assets/lifetime-learning-A1.png" alt="First spatial component of the simulated mixture."></p>
+</div>
+<div class="lifetime-learning-component">
+<div class="lifetime-learning-component-title">
+<em>A</em><sub>2</sub>(x, y) &nbsp; τ<sub>2</sub> = 2.8 ns
+</div>
+<p><img class="lifetime-learning-component-image figure-img" src="assets/lifetime-learning-A2.png" alt="Second spatial component of the simulated mixture."></p>
+</div>
+</div>
+<div class="lifetime-learning-panel lifetime-learning-panel-architecture">
+<p><img class="lifetime-learning-architecture figure-img" src="assets/lifetime-learning-architecture.png" alt="Explainable-by-design neural network that predicts spatial components and fluorescence decay parameters and deterministically reconstructs the measured time-resolved sequence."></p>
+</div>
+<figcaption class="lifetime-learning-caption">
+<em>x–y–t</em> sequence → spatial components A<sub>i</sub> + decay parameters τ<sub>i</sub> → deterministic reconstruction of the measurement
+</figcaption>
+</figure>
+</div>
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+02.1
+</div>
+<div class="projects-entry-tags">
+<p>LIFETIME UNMIXING · EXPLAINABLE-BY-DESIGN LEARNING</p>
+</div>
 <h3>
-Computational Imaging &amp; Learning: From Physics to data-driven methods
+Can the same unmixing problem be learned without hiding the physics?
 </h3>
-<div class="tt-event-location">
-<p>Genoa, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Lecture: “Image Scanning Microscopy: from image formation to inverse problem”
+<p>
+A second route is to learn the separation directly from time-resolved data. The network receives the complete <em>W × H × T</em> sequence and processes spatial and temporal information together, rather than fitting each pixel independently.
 </p>
-<p class="tt-event-context">
-PhD winter school
+<p>
+The architecture is explainable by design: separate branches predict a spatial component A<sub>i</sub> and a fluorescence-decay parameter τ<sub>i</sub> for each species. A deterministic part then rebuilds the corresponding time-resolved components and sums them back to the measured sequence, keeping the physical meaning of the intermediate outputs explicit.
 </p>
-<p><a href="https://sites.google.com/view/gruppomiva/eventi" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
+<p>
+Because training is constrained through reconstruction of the input sequence, the method does not require a ground-truth decomposition for every measurement. The original two-component formulation was subsequently extended toward the separation of up to four spectrally overlapping fluorophores.
+</p>
+<div class="projects-entry-keywords">
+<p>Fluorescence lifetime · explainable-by-design · physics-aware learning · spectral unmixing · spatio-temporal imaging</p>
+</div>
 </div>
 </article>
-<!-- CIRM 2025 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>29 SEP–03 OCT 2025</p>
-</div>
-<div class="tt-event-role tt-event-role-accent">
-<p>WORKSHOP TALK</p>
+<article class="projects-entry projects-entry-reverse" id="smlm-background">
+<div class="projects-entry-visual">
+<figure class="smlm-figure figure">
+<div class="smlm-figure-head">
+<div>
+BACKGROUND REMOVAL FOR SMLM
 </div>
 </div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
+<div class="smlm-graphical-panel">
+<p><img class="smlm-graphical-abstract figure-img" src="assets/smlm-graphical-abstract.png" alt="Graphical abstract showing SMLM input frames and localizations, the scattering-network encoder and learned decoder, and background-suppressed output frames and localizations."></p>
+</div>
+<div class="smlm-results-panel">
+<div class="smlm-results-label">
+REAL SMLM DATA · DOWNSTREAM LOCALIZATION
+</div>
+<p><img src="assets/smlm-real-results.png" alt="Comparison of ScatNet, SVD and raw SMLM data, together with molecular localizations obtained from the filtered and unfiltered measurements." class="figure-img"></p>
+</div>
+<figcaption class="smlm-figure-caption">
+raw SMLM → structured representation → background-suppressed frames → molecular localization
+</figcaption>
+</figure>
+</div>
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+02.2
+</div>
+<div class="projects-entry-tags">
+<p>SINGLE-MOLECULE LOCALIZATION MICROSCOPY · BACKGROUND REMOVAL</p>
+</div>
 <h3>
-(Blind) inverse problems in imaging: from foundations to applications
+Can background be removed before localization without erasing the molecular signal?
 </h3>
-<div class="tt-event-location">
-<p>Marseille, France</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Talk: “Reconstruction Approaches in Image Scanning Microscopy: Regularization and Optimization”
+<p>
+Single-Molecule Localization Microscopy (SMLM) reconstructs a super-resolved image from sparse emitters detected across many frames. Background is therefore not only a visual nuisance: it can perturb emitter detection and localization and propagate into false, missed or merged localizations in the final reconstruction.
 </p>
-<p class="tt-event-context">
-CIRM
+<p>
+I explored two complementary representations matched to different background regimes. Scattering networks use a fixed multiscale wavelet transform to encode spatial structure before a learned decoder reconstructs the molecule-dominated image. Singular Value Decomposition (SVD), instead, uses the full temporal stack to separate coherent, slowly varying background from the faster molecular signal.
 </p>
-<p><a href="https://conferences.cirm-math.fr/3349.html" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
+<p>
+The two approaches become useful in different situations: SVD is better suited to temporally stable backgrounds, whereas the scattering-based method is more effective for spatially complex or blinking background. The purpose of this preprocessing is to prevent background structures from being interpreted as real emitters. Without an effective separation, background can generate spurious localizations, hide true molecules or merge nearby events, ultimately distorting the reconstructed biological structure. This is especially clear in the synthetic grid experiment, where false detections caused by the background disrupt an otherwise regular molecular pattern.
+</p>
+<div class="projects-entry-links">
+<p><a href="https://doi.org/10.1038/s41598-026-73870-4" target="_blank" rel="noopener noreferrer"> Scientific Reports · accepted · DOI 10.1038/s41598-026-73870-4 ↗ </a></p>
+</div>
+<div class="projects-entry-keywords">
+<p>Scattering networks · singular value decomposition · wavelets · localization accuracy · image representation</p>
+</div>
 </div>
 </article>
-<!-- NIC@IIT 2024 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>02–06 DEC 2024</p>
-</div>
-<div class="tt-event-role">
-<p>ORGANISATION</p>
-</div>
-</div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
-<h3>
-9th NIC@IIT and MOSBRI Advanced Microscopy Practical Workshop
-</h3>
-<div class="tt-event-location">
-<p>Genoa, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Contributed to the organisation of the event.
-</p>
-<p><a href="https://mix.iit.it/events/iit-nikon-imaging-center/9th-nic-iit-and-mosbri" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
-</div>
-</article>
-<!-- NIC@IIT 2023 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>27 NOV–01 DEC 2023</p>
-</div>
-<div class="tt-event-role">
-<p>ORGANISATION</p>
-</div>
-</div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
-<h3>
-8th NIC@IIT Advanced Microscopy Practical Workshop
-</h3>
-<div class="tt-event-location">
-<p>Genoa, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Contributed to the organisation of the event.
-</p>
-<p><a href="https://mix.iit.it/events/iit-nikon-imaging-center/8th-nic-iit-2023" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
-</div>
-</article>
-<!-- NIC@IIT 2022 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>28 NOV–02 DEC 2022</p>
-</div>
-<div class="tt-event-role">
-<p>ORGANISATION</p>
-</div>
-</div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
-<h3>
-7th NIC@IIT Advanced Microscopy Practical Workshop
-</h3>
-<div class="tt-event-location">
-<p>Genoa, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Contributed to the organisation of the event.
-</p>
-<p><a href="https://mix.iit.it/events/iit-nikon-imaging-center/7th-nic-iit-2022" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
-</div>
-</article>
-<!-- PRIMO 2022 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>06–08 SEP 2022</p>
-</div>
-<div class="tt-event-role tt-event-role-accent">
-<p>WORKSHOP TALK</p>
-</div>
-</div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
-<h3>
-PRIMO Workshop 2022
-</h3>
-<div class="tt-event-location">
-<p>Trieste, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Talk: “Scattering Networks: a tool to remove background in microscopy images.”
-</p>
-<p class="tt-event-context">
-Post-graduate Researchers in Inverse Problems, Machine Learning and Optimization
-</p>
-</div>
-</article>
-<!-- ENRICO FERMI 2022 -->
-<article class="tt-event-entry">
-<div class="tt-event-meta">
-<div class="tt-event-date">
-<p>10–15 JUL 2022</p>
-</div>
-<div class="tt-event-role tt-event-role-accent">
-<p>FLASH TALK</p>
-</div>
-</div>
-<div class="tt-event-main">
-<div class="tt-event-heading-row">
-<h3>
-International School of Physics “Enrico Fermi”
-</h3>
-<div class="tt-event-location">
-<p>Varenna, Italy</p>
-</div>
-</div>
-<p class="tt-event-contribution">
-Flash talk: “Scattering Networks: a tool to remove the background.”
-</p>
-<p class="tt-event-context">
-Multimodal and Nanoscale Optical Microscopy
-</p>
-<p><a href="https://mix.iit.it/events/ivsla/varenna-2022" class="tt-event-website" target="_blank" rel="noopener noreferrer"> Event website ↗ </a></p>
-</div>
-</article>
-</div>
 </div>
 </section>
 <!-- =======================================================
-     AWARDS & GRANTS
+     EARLIER WORK
      ======================================================= -->
-<section class="tt-section tt-section-alt page-columns page-full" id="awards">
-<div class="tt-inner column-screen-inset">
-<h2 class="tt-section-title">
-Awards &amp; grants
+<section class="projects-theme-section projects-theme-white page-columns page-full" id="earlier-work">
+<div class="projects-theme-inner column-screen-inset">
+<div class="projects-theme-header">
+<div>
+<div class="section-overline">
+<p>EARLIER WORK</p>
+</div>
+<h2>
+Different physics, the same concern with what can be inferred.
 </h2>
-<div class="tt-list tt-awards-list">
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type tt-award-type">
-<p>TRAVEL GRANT</p>
+</div>
+<p>
+Before focusing on computational microscopy, I worked on inverse problems arising from electromagnetic measurements of brain activity. The physical system was different, but the relationship between measurement design and inference was already central.
+</p>
+</div>
+<article class="projects-entry" id="meg-sensor-design">
+<div class="projects-entry-visual">
+<div class="meg-viewer-frame">
+<iframe src="assets/meg_sensor_array_3d.html" title="Interactive 3D viewer of on-scalp MEG sensor arrays and source-localization simulations" loading="lazy" scrolling="no">
+</iframe>
 </div>
 </div>
-<div class="tt-entry-main">
+<div class="projects-entry-copy">
+<div class="projects-entry-index">
+<p>03.1</p>
+</div>
+<div class="projects-entry-tags">
+<p>MASTER THESIS · ON-SCALP MEG · SENSOR-ARRAY DESIGN</p>
+</div>
 <h3>
-SIBPA Travel Grant
+How many sensors are needed, and where should they be placed, to localize brain activity accurately?
 </h3>
-<p class="tt-entry-context">
-€1,500 travel support
+<p>
+Magnetoencephalography measures the magnetic fields generated by neural currents outside the head. Optically pumped magnetometers can operate much closer to the scalp than conventional cryogenic sensors, making the sensor array flexible rather than fixed by the hardware.
 </p>
 <p>
-Grant from the Italian Society of Pure and Applied Biophysics (SIBPA) to participate in the Biophysical Society Annual Meeting in San Diego, California.
+My Master’s thesis approached this flexibility as an experimental-design and inverse-problem question. I compared Leadfield- and Laplace-based spatial sampling for on-scalp arrays ranging from 20 to 400 sensors.
+</p>
+<p>
+Synthetic measurements were generated from 513 cortical source locations in the left hemisphere and reconstructed using both Minimum Norm Estimation and the Bayesian SESAME method. This allowed the effect of sensor geometry to be examined across two different inverse approaches.
+</p>
+<p>
+Localization improves as sensor density increases before approaching a noise-dependent saturation regime. The interactive viewer connects the original sensor layouts with cortical sensitivity and source-localization metrics in the same 3D geometry.
 </p>
 </div>
 </article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type tt-award-type">
-<p>BEST COMMUNICATION</p>
+<!-- =======================================================
+     FINAL RESEARCH CLOSING
+     ======================================================= -->
+<div class="projects-final-closing">
+<div class="projects-final-closing-title">
+<p>Different measurements.<br> Same mathematical habit.</p>
 </div>
-</div>
-<div class="tt-entry-main">
-<h3>
-107th Congresso SIF
-</h3>
-<p class="tt-entry-context">
-Selected among the Best Communications
-</p>
 <p>
-“An automated tool to estimate chromatin compaction in stained nuclei”
+Across optical imaging, photon-counting systems and electromagnetic measurements, I am interested in the same underlying structure: identify the quantity that matters, understand how the instrument encodes it, formulate the resulting inference problem, and exploit that structure computationally.
 </p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type tt-award-type">
-<p>BEST FLASH TALK</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-International School of Physics “Enrico Fermi”
-</h3>
-<p class="tt-entry-context">
-Selected as Best Flash Talk
-</p>
-<p>
-“Scattering Networks: a tool to remove the background”
-</p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type tt-award-type">
-<p>BEST COMMUNICATION</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-108th Congresso SIF
-</h3>
-<p class="tt-entry-context">
-Selected among the Best Communications
-</p>
-<p>
-“A deep learning-based method to spectrally separate overlapping fluorophores based on their fluorescence lifetime”
-</p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type">
-<p>MICCAI AIIB23</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-Task 1 — Segmentation
-</h3>
-<p class="tt-entry-context">
-Airway-Informed Quantitative CT Imaging Biomarker for Fibrotic Lung Disease
-</p>
-<p>
-8th position out of 20 participants.
-</p>
-</div>
-</article>
-<article class="tt-entry">
-<div class="tt-entry-meta">
-<div class="tt-entry-type">
-<p>MICCAI AIIB23</p>
-</div>
-</div>
-<div class="tt-entry-main">
-<h3>
-Task 2 — Binary classification
-</h3>
-<p class="tt-entry-context">
-Airway-Informed Quantitative CT Imaging Biomarker for Fibrotic Lung Disease
-</p>
-<p>
-4th position out of 6 participants.
-</p>
-</div>
-</article>
 </div>
 </div>
 </section>
